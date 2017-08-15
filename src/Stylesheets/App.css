@@ -1,0 +1,39 @@
+html {
+  font-size: 120%; }
+
+p {
+  margin: 0px; }
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #e8e8e8;
+  color: black;
+  font-family: "Quicksand";
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px; }
+  button:hover {
+    background-color: #d8d8d8; }
+
+.subheading {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  text-align: center; }
+
+@media (min-width: 300px) {
+  html {
+    font-size: 35%; } }
+
+@media (min-width: 500px) {
+  html {
+    font-size: 50%; } }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 75%; } }
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 100%; } }
