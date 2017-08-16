@@ -3,6 +3,7 @@ import '../Stylesheets/Home.css';
 import Cover from './Home/Cover';
 import Intro from './Home/Intro';
 import NavCont from './Home/NavCont';
+import Me from './Home/Me';
 
 class Home extends Component {
 
@@ -12,6 +13,7 @@ class Home extends Component {
         <Cover />
         <Intro />
         <NavCont />
+        <Me />
       </div>
     );
   }
