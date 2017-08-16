@@ -6,7 +6,7 @@ class Me extends Component {
     return (
       <div id="me-cont">
         <p className="subheading">I'm Sunny.</p>
-        <p>Check out my Github <a target="_blank" href="https://github.com/sunjot"><span>HERE.</span></a></p>
+        <p>If you want to know how I built this site, check out my Github <a target="_blank" href="https://github.com/sunjot"><span>HERE.</span></a></p>
       </div>
     );
   }

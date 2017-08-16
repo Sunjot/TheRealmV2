@@ -73,10 +73,9 @@
 }
 
 .nav-prev {
-  @include flex(column, flex-start, center);
+  @include flex(column, center, center);
   @include animate(fadein, 1s, 0s, forwards);
-  height: 200px;
-  padding-top: 50px;
+  height: 300px;
 
   #button-row {
     @include flex(row, center, flex-start);
@@ -177,8 +176,12 @@
   .button-row > button {
     padding: 3px 12px 3px 12px;
   }
-  .nav-prev > #sectionDesc {
-    margin: 0 20px 10px 20px;
+  .nav-prev {
+    height: 200px;
+
+    #sectionDesc {
+      margin: 0 20px 10px 20px;
+    }
   }
   .intro-cont {
     padding: 25px 0 25px 0;
@@ -191,6 +194,9 @@
     #intro-sec > .subheading {
       padding-right: 20px;
     }
+  }
+  #me-cont {
+    height: 200px;
   }
 }
 
@@ -207,11 +213,18 @@
       }
     }
   }
-  .nav-prev > #sectionDesc {
-    margin: 0 40px 10px 40px;
+  .nav-prev {
+    height: 300px;
+
+    #sectionDesc {
+      margin: 0 40px 10px 40px;
+    }
   }
   .intro-cont {
     padding: 50px 0 50px 0;
+  }
+  #me-cont {
+    height: 300px;
   }
 }
 

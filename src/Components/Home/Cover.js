@@ -53,7 +53,7 @@ class Cover extends Component {
     return (
       <div className="cover-img-cont">
         <div id="cover-text">
-          <p id="cover-title">Welcome to The Realm</p>
+          <p id="cover-title">Welcome to The Realm.</p>
           <p id="cover-desc">The Game of Thrones diary.</p>
         </div>
         <img src={this.state.imageCover} alt="cover"/>
