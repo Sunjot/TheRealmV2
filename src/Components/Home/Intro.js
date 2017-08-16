@@ -32,9 +32,8 @@ class Intro extends Component {
           <div className={dividerClasses}></div>
           <p id="desc">Well, as a huge Game of Thrones fan I decided to build a visual guide
           of the show that anybody could find useful. Maybe you just started
-          watching the series, or you're resuming season 3 and you want to quickly catch up on
-          what you've seen already. You might even be done and thinking about reliving that
-          crazy episode you saw in 2014 (there's been a lot of them). Either way, the idea
+          watching the series, or you're resuming from the middle and you want to quickly catch up on
+          what you've seen already. Either way, the idea
           is that this will hopefully be more entertaining than reading the plot section on
           wikipedia. I've created pages for each season, plus one as an introduction to the
           series if you've never watched before.</p>

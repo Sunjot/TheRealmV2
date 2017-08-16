@@ -47,7 +47,7 @@ button {
 .cover-img-cont {
   width: 100%;
   position: relative;
-  background-color: #ededed; }
+  background-color: #b6bbc4; }
   .cover-img-cont #cover-text {
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ button {
   align-items: center;
   width: 100%;
   padding: 50px 0 50px 0;
-  background-color: #ededed; }
+  background-color: #b6bbc4; }
   .intro-cont #intro-sec {
     display: flex;
     flex-direction: row;
@@ -96,7 +96,7 @@ button {
     .intro-cont #intro-sec .subheading {
       padding-right: 75px; }
     .intro-cont #intro-sec .divider {
-      border-right: 1px solid #282828; }
+      border-right: 1px solid white; }
   .intro-cont #desc {
     width: 60%;
     text-align: center;
@@ -181,6 +181,12 @@ button {
     height: 80%; } }
 
 @media (min-width: 300px) {
+  .cover-img-cont #cover-text {
+    top: 60%; }
+    .cover-img-cont #cover-text #cover-title {
+      font-size: 3.25rem; }
+    .cover-img-cont #cover-text #cover-desc {
+      font-size: 2.25rem; }
   .button-row > button {
     padding: 3px 12px 3px 12px; }
   .nav-prev > #sectionDesc {
@@ -194,6 +200,12 @@ button {
       padding-right: 20px; } }
 
 @media (min-width: 500px) {
+  .cover-img-cont #cover-text {
+    top: 45%; }
+    .cover-img-cont #cover-text #cover-title {
+      font-size: 2.5rem; }
+    .cover-img-cont #cover-text #cover-desc {
+      font-size: 1.25rem; }
   .nav-prev > #sectionDesc {
     margin: 0 40px 10px 40px; }
   .intro-cont {

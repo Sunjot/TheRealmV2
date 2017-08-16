@@ -7,7 +7,7 @@
 .cover-img-cont {
   width: 100%;
   position: relative;
-  background-color: #ededed;
+  background-color: #b6bbc4;
 
   #cover-text {
     @include flex(column, flex-start, flex-start);
@@ -44,7 +44,7 @@
   @include flex(column, flex-start, center);
   width: 100%;
   padding: 50px 0 50px 0;
-  background-color: #ededed;
+  background-color: #b6bbc4;
 
   #intro-sec {
       @include flex(row, center, center);
@@ -56,7 +56,7 @@
       }
 
       .divider {
-        border-right: 1px solid #282828;
+        border-right: 1px solid white;
       }
   }
 
@@ -138,6 +138,18 @@
 // Media queries
 
 @media (min-width: 300px) {
+  .cover-img-cont {
+    #cover-text {
+      top: 60%;
+
+      #cover-title { // override default font-size when cover pic is the mobile version
+        font-size: 3.25rem;
+      }
+      #cover-desc {
+        font-size: 2.25rem;
+      }
+    }
+  }
   .button-row > button {
     padding: 3px 12px 3px 12px;
   }
@@ -159,6 +171,18 @@
 }
 
 @media (min-width: 500px) {
+  .cover-img-cont {
+    #cover-text {
+      top: 45%;
+
+      #cover-title { // restore to default font-sizes after cover pic reverts to desktop version
+        font-size: 2.5rem;
+      }
+      #cover-desc {
+        font-size: 1.25rem;
+      }
+    }
+  }
   .nav-prev > #sectionDesc {
     margin: 0 40px 10px 40px;
   }
