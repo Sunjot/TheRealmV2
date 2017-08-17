@@ -101,7 +101,12 @@
   z-index: 20;
 
   a {
+    color: #adbad3;
     transition: color 1s;
+
+    &:hover {
+      color: #61789b;
+    }
 
     span {
       font-size: 1.5rem;

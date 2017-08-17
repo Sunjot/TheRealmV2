@@ -1,10 +1,18 @@
 html {
-  font-size: 120%; }
+  font-size: 120%;
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+#root, .App {
+  height: 100%; }
 
 p {
   margin: 0px; }
 
-button {
+button,
+[role="button"] {
   padding: 10px;
   border-radius: 5px;
   border-style: none;
@@ -14,7 +22,8 @@ button {
   font-size: 1rem;
   cursor: pointer;
   margin: 5px; }
-  button:hover {
+  button:hover,
+  [role="button"]:hover {
     background-color: #d8d8d8; }
 
 .subheading {
@@ -23,11 +32,17 @@ button {
   text-align: center; }
 
 a {
-  text-decoration: none;
-  color: #adbad3; }
+  text-decoration: none; }
   a:hover {
-    color: #61789b;
     cursor: pointer; }
+
+@keyframes slidefade {
+  from {
+    transform: translateX(-20px);
+    opacity: 0; }
+  to {
+    transform: translateX(0px);
+    opacity: 1; } }
 
 @media (min-width: 300px) {
   html {
@@ -143,7 +158,10 @@ a {
   background-color: #e5e5e5;
   z-index: 20; }
   #me-cont a {
+    color: #adbad3;
     transition: color 1s; }
+    #me-cont a:hover {
+      color: #61789b; }
     #me-cont a span {
       font-size: 1.5rem; }
 

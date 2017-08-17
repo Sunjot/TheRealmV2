@@ -1,0 +1,72 @@
+// Imports
+
+@import 'App.scss';
+
+// General code
+
+// Header
+
+#headerCont {
+  @include flex(row, center, center);
+  height: 60px;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #afaeae;
+
+  .header-links {
+    padding: 0 25px 0 25px;
+    color: #262626;
+
+    &:hover {
+      color: #93b7d6;
+    }
+  }
+}
+
+// All Pages
+
+.page-container {
+  @include flex(column, flex-start, flex-start)
+  width: 100%;
+  height: 100%;
+}
+
+.body-cont {
+  @include flex(row, flex-start, flex-start);
+  width: 100%;
+  flex: 1;
+}
+
+.content {
+  @include flex(column, flex-start, center);
+  padding: 20px 20px 20px 20px;
+  width: 75%;
+}
+
+// Table component
+
+.table {
+  @include flex(column, flex-start, center);
+  width: 25%;
+  background-color: #f9f9f9;
+  height: 100%;
+  border-right: 1px solid #afaeae;
+}
+
+.item-cont {
+  @include flex(column, center, center);
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #afaeae;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: #e8e8e8;
+  }
+}
+
+.active-item {
+  background-color: #e5e5e5;
+}

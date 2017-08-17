@@ -18,13 +18,23 @@
 
 html {
   font-size: 120%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#root, .App {
+  height: 100%;
 }
 
 p {
   margin: 0px;
 }
 
-button {
+button,
+[role="button"] {
   padding: 10px;
   border-radius: 5px;
   border-style: none;
@@ -48,11 +58,22 @@ button {
 
 a {
   text-decoration: none;
-  color: #adbad3;
 
   &:hover {
-    color: #61789b;
     cursor: pointer;
+  }
+}
+
+// Keyframes
+
+@keyframes slidefade {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
