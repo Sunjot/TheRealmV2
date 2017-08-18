@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Header from './Pages/Header';
-import Table from './Pages/Table';
 import Start from './Pages/Intro/Start';
 import Westeros from './Pages/Intro/Westeros';
 import Structure from './Pages/Intro/Structure';
 import Houses from './Pages/Intro/Houses';
 import Rebellion from './Pages/Intro/Rebellion';
+import TableWrapper from './Pages/TableWrapper';
 
 class Intro extends Component {
 
@@ -45,7 +45,7 @@ class Intro extends Component {
       <div className="page-container">
         <Header/>
         <div className="body-cont">
-          <Table items={tableItems} itemClick={this.handleClick}/>
+          <TableWrapper items={tableItems} itemClick={this.handleClick}/>
           {this.state.sectionClicked}
         </div>
       </div>

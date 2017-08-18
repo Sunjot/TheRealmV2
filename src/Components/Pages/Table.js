@@ -21,7 +21,7 @@ class Table extends Component {
 
   render() {
     return (
-      <div className="table">
+      <div className={this.props.inout}>
         {this.props.items.map(i => {
 
           let activeClass = "item-cont";

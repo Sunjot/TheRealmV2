@@ -1,6 +1,7 @@
 // Imports
 
 @import 'App.scss';
+@import 'Home.scss';
 
 // General code
 
@@ -33,24 +34,45 @@
 
 .body-cont {
   @include flex(row, flex-start, flex-start);
+  position: relative;
   width: 100%;
   flex: 1;
 }
 
 .content {
   @include flex(column, flex-start, center);
-  padding: 20px 20px 20px 20px;
-  width: 75%;
+  padding: 20px 80px 20px 80px;
+  width: 100%;
 }
 
 // Table component
 
+.tableIcon {
+  @include flex(row, center, center);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+  border-radius: 25px;
+  background-color: #e8e8e8;
+  cursor: pointer;
+  border: solid 1px #afafaf;
+  z-index: 20;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+
+}
+
 .table {
   @include flex(column, flex-start, center);
-  width: 25%;
+  transform: translateX(-200px);
   background-color: #f9f9f9;
-  height: 100%;
-  border-right: 1px solid #afaeae;
+  border: 1px solid #afaeae;
+  margin-top: 100px;
+  width: 200px;
 }
 
 .item-cont {
@@ -69,4 +91,78 @@
 
 .active-item {
   background-color: #e5e5e5;
+}
+
+#table-wrap {
+  position: fixed;
+}
+
+// Westeros component
+
+#mapLink {
+  width: 50%;
+}
+
+#map-cont {
+  width: 100%;
+}
+
+// Animation classes
+
+.expand {
+  @include animate(expand, 0.5s, 0s, forwards);
+}
+
+.collapse {
+  @include animate(collapse, 0.5s, 0s, forwards);
+}
+
+// Keyframes
+
+@keyframes expand {
+  from {
+    transform: translateX(-205px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes collapse {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-205px);
+  }
+}
+
+// Media queries
+
+@media (min-width: 300px) {
+  .table {
+    width: 100px;
+  }
+  .tableIcon {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+  }
+}
+
+@media (min-width: 500px) {
+  .table {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .table {
+    width: 200px;
+  }
+  .tableIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
 }

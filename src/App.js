@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './Stylesheets/App.css';
 import './Stylesheets/Pages.css';
 import Home from './Components/Home';
@@ -7,7 +8,6 @@ import S1 from './Components/S1';
 import S2 from './Components/S2';
 import S3 from './Components/S3';
 import S4 from './Components/S4';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
