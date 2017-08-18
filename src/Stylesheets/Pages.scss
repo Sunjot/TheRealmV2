@@ -43,6 +43,7 @@
   @include flex(column, flex-start, center);
   padding: 20px 80px 20px 80px;
   width: 100%;
+  text-align: center;
 }
 
 // Table component
@@ -68,7 +69,7 @@
 
 .table {
   @include flex(column, flex-start, center);
-  transform: translateX(-200px);
+  transform: translateX(-205px);
   background-color: #f9f9f9;
   border: 1px solid #afaeae;
   margin-top: 100px;
@@ -97,7 +98,7 @@
   position: fixed;
 }
 
-// Westeros component
+// World component
 
 #mapLink {
   width: 50%;
@@ -105,6 +106,24 @@
 
 #map-cont {
   width: 100%;
+}
+
+#continentButtons {
+  @include flex(row, center, flex-start);
+
+  .button-active {
+    border: 1px solid #afaeae;
+  }
+}
+
+#continentInfo {
+  margin-top: 10px;
+  width: 95%;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #afaeae;
+  padding: 15px 10px 15px 10px;
+  background-color: #e8e8e8;
 }
 
 // Animation classes

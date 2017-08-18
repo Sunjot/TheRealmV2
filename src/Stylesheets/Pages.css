@@ -21,7 +21,8 @@ button,
   font-family: "Quicksand";
   font-size: 1rem;
   cursor: pointer;
-  margin: 5px; }
+  margin: 5px;
+  outline: 0; }
   button:hover,
   [role="button"]:hover {
     background-color: #d8d8d8; }
@@ -83,7 +84,8 @@ button,
   font-family: "Quicksand";
   font-size: 1rem;
   cursor: pointer;
-  margin: 5px; }
+  margin: 5px;
+  outline: 0; }
   button:hover,
   [role="button"]:hover {
     background-color: #d8d8d8; }
@@ -377,7 +379,8 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 20px 80px 20px 80px;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 .tableIcon {
   display: flex;
@@ -402,7 +405,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  transform: translateX(-200px);
+  transform: translateX(-205px);
   background-color: #f9f9f9;
   border: 1px solid #afaeae;
   margin-top: 100px;
@@ -433,6 +436,23 @@ a {
 
 #map-cont {
   width: 100%; }
+
+#continentButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; }
+  #continentButtons .button-active {
+    border: 1px solid #afaeae; }
+
+#continentInfo {
+  margin-top: 10px;
+  width: 95%;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #afaeae;
+  padding: 15px 10px 15px 10px;
+  background-color: #e8e8e8; }
 
 .expand {
   animation: expand 0.5s;
