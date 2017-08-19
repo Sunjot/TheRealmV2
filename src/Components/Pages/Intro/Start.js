@@ -6,11 +6,12 @@ class Start extends Component {
     return (
       <div className="content">
         <p className="subheading">Starting out...</p>
-        <p>On the left you will find a table of contents for the introduction portion of
+        <p className="desc-cont">Near the top left you will find an icon leading to a table
+          of contents for the introduction portion of
           this guide. If you feel you already know something, I've made it easy for you to
-          navigate to other sections you may want to read instead. Shall we begin?</p><br/>
+          navigate to other sections you may want to read instead. Shall we begin?<br/><br/>
 
-        <p>Game of Thrones consists of 8 seasons, 7 of which have aired as of this writing.
+        Game of Thrones consists of 8 seasons, 7 of which have aired as of this writing.
         The show is an adaptation of the 7 novels in the series A Song of Ice and Fire, written
         by George R. R. Martin. Of those 7 novels, only 5 have been released so far (because
         GRRM is a cruel man), but the show itself has moved ahead. If you're wondering how,

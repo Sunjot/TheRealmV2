@@ -32,6 +32,10 @@ button,
   padding-bottom: 10px;
   text-align: center; }
 
+.miniheading {
+  font-size: 1.5rem;
+  text-align: center; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -95,6 +99,10 @@ button,
   padding-bottom: 10px;
   text-align: center; }
 
+.miniheading {
+  font-size: 1.5rem;
+  text-align: center; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -133,7 +141,7 @@ a {
 .cover-img-cont {
   width: 100%;
   position: relative;
-  background-color: #b6bbc4; }
+  background-color: #f2f2f2; }
   .cover-img-cont #cover-text {
     display: flex;
     flex-direction: column;
@@ -171,7 +179,7 @@ a {
   align-items: center;
   width: 100%;
   padding: 50px 0 50px 0;
-  background-color: #b6bbc4; }
+  background-color: #f2f2f2; }
   .intro-cont #intro-sec {
     display: flex;
     flex-direction: row;
@@ -182,7 +190,7 @@ a {
     .intro-cont #intro-sec .subheading {
       padding-right: 75px; }
     .intro-cont #intro-sec .divider {
-      border-right: 1px solid white; }
+      border-right: 1px solid #2A3A3F; }
   .intro-cont #desc {
     width: 60%;
     text-align: center;
@@ -219,13 +227,14 @@ a {
   align-items: center;
   height: 300px;
   width: 100%;
-  background-color: #e5e5e5;
-  z-index: 20; }
+  background-color: #2A3A3F;
+  z-index: 20;
+  color: white; }
   #me-cont a {
-    color: #adbad3;
+    color: white;
     transition: color 1s; }
     #me-cont a:hover {
-      color: #61789b; }
+      color: #adbad3; }
     #me-cont a span {
       font-size: 1.5rem; }
 
@@ -378,7 +387,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 80px 20px 80px;
+  padding: 20px 0 0 0;
   width: 100%;
   text-align: center; }
 
@@ -429,30 +438,48 @@ a {
   background-color: #e5e5e5; }
 
 #table-wrap {
-  position: fixed; }
+  position: absolute;
+  z-index: 20; }
 
-#mapLink {
-  width: 50%; }
+.desc-cont {
+  padding: 30px 100px 30px 100px; }
 
-#map-cont {
-  width: 100%; }
-
-#continentButtons {
+#map-wrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; }
-  #continentButtons .button-active {
-    border: 1px solid #afaeae; }
-
-#continentInfo {
-  margin-top: 10px;
-  width: 95%;
-  height: 70px;
-  border-radius: 10px;
-  border: 1px solid #afaeae;
-  padding: 15px 10px 15px 10px;
-  background-color: #e8e8e8; }
+  align-items: center;
+  width: 100%;
+  position: relative; }
+  #map-wrap #map-cont {
+    width: 100%;
+    filter: brightness(40%); }
+  #map-wrap #continent-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 15;
+    color: white;
+    width: 100%; }
+    #map-wrap #continent-wrap .continent-sec {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      padding: 20px 80px 20px 80px; }
+      #map-wrap #continent-wrap .continent-sec .subheading {
+        font-family: "Poppins"; }
+      #map-wrap #continent-wrap .continent-sec .desc {
+        font-size: 1.1rem; }
+  #map-wrap #mapLink {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 16; }
 
 .expand {
   animation: expand 0.5s;
@@ -482,11 +509,17 @@ a {
   .tableIcon {
     width: 34px;
     height: 34px;
-    border-radius: 17px; } }
+    border-radius: 17px; }
+  #headerCont > .header-links {
+    padding: 0px 15px 0px 15px; }
+  .desc-cont {
+    padding: 20px 50px 20px 50px; } }
 
 @media (min-width: 500px) {
   .table {
-    width: 150px; } }
+    width: 150px; }
+  .desc-cont {
+    padding: 30px 70px 30px 70px; } }
 
 @media (min-width: 768px) {
   .table {
@@ -494,4 +527,18 @@ a {
   .tableIcon {
     width: 50px;
     height: 50px;
-    border-radius: 25px; } }
+    border-radius: 25px; }
+  #headerCont > .header-links {
+    padding: 0px 20px 0px 20px; }
+  .desc-cont {
+    padding: 30px 100px 30px 100px; } }
+
+@media (min-width: 1280px) {
+  #continentTabsWrapper .cover-wes {
+    margin: 0 0 0 15px;
+    width: 100px; }
+  #continentTabsWrapper .cover-ess {
+    margin: 0 0 0 150px;
+    width: 58px; }
+  #headerCont > .header-links {
+    padding: 0px 25px 0px 25px; } }

@@ -41,7 +41,7 @@
 
 .content {
   @include flex(column, flex-start, center);
-  padding: 20px 80px 20px 80px;
+  padding: 20px 0 0 0;
   width: 100%;
   text-align: center;
 }
@@ -95,36 +95,58 @@
 }
 
 #table-wrap {
-  position: fixed;
+  position: absolute;
+  z-index: 20;
 }
 
 // World component
 
-#mapLink {
-  width: 50%;
+.desc-cont {
+  padding: 30px 100px 30px 100px;
 }
 
-#map-cont {
+#map-wrap {
+  @include flex(column, center, center);
   width: 100%;
-}
+  position: relative;
 
-#continentButtons {
-  @include flex(row, center, flex-start);
+  #map-cont {
+    width: 100%;
+    filter: brightness(40%);
+  }
 
-  .button-active {
-    border: 1px solid #afaeae;
+  #continent-wrap {
+    @include flex(row, center, flex-start);
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 15;
+    color: white;
+    width: 100%;
+
+    .continent-sec {
+      @include flex(column, center, center);
+      width: 400px;
+      padding: 20px 80px 20px 80px;
+
+      .subheading {
+        font-family: "Poppins";
+      }
+
+      .desc {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  #mapLink {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 16;
   }
 }
 
-#continentInfo {
-  margin-top: 10px;
-  width: 95%;
-  height: 70px;
-  border-radius: 10px;
-  border: 1px solid #afaeae;
-  padding: 15px 10px 15px 10px;
-  background-color: #e8e8e8;
-}
+
 
 // Animation classes
 
@@ -167,11 +189,20 @@
     height: 34px;
     border-radius: 17px;
   }
+  #headerCont > .header-links {
+    padding: 0px 15px 0px 15px;
+  }
+  .desc-cont {
+    padding: 20px 50px 20px 50px;
+  }
 }
 
 @media (min-width: 500px) {
   .table {
     width: 150px;
+  }
+  .desc-cont {
+    padding: 30px 70px 30px 70px;
   }
 }
 
@@ -183,5 +214,27 @@
     width: 50px;
     height: 50px;
     border-radius: 25px;
+  }
+  #headerCont > .header-links {
+    padding: 0px 20px 0px 20px;
+  }
+  .desc-cont {
+    padding: 30px 100px 30px 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #continentTabsWrapper {
+    .cover-wes {
+      margin: 0 0 0 15px;
+      width: 100px;
+    }
+    .cover-ess {
+      margin: 0 0 0 150px;
+      width: 58px;
+    }
+  }
+  #headerCont > .header-links {
+    padding: 0px 25px 0px 25px;
   }
 }

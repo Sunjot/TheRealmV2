@@ -12,7 +12,7 @@
 .cover-img-cont {
   width: 100%;
   position: relative;
-  background-color: #b6bbc4;
+  background-color: #f2f2f2;
 
   #cover-text {
     @include flex(column, flex-start, flex-start);
@@ -49,7 +49,7 @@
   @include flex(column, flex-start, center);
   width: 100%;
   padding: 50px 0 50px 0;
-  background-color: #b6bbc4;
+  background-color: #f2f2f2;
 
   #intro-sec {
       @include flex(row, center, center);
@@ -61,7 +61,7 @@
       }
 
       .divider {
-        border-right: 1px solid white;
+        border-right: 1px solid #2A3A3F;
       }
   }
 
@@ -97,15 +97,16 @@
   @include flex(column, center, center);
   height: 300px;
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: #2A3A3F;
   z-index: 20;
+  color: white;
 
   a {
-    color: #adbad3;
+    color: white;
     transition: color 1s;
 
     &:hover {
-      color: #61789b;
+      color: #adbad3;
     }
 
     span {

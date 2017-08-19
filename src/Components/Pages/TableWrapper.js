@@ -7,6 +7,7 @@ class TableWrapper extends Component {
   constructor() {
     super();
     this.tableInOut = this.tableInOut.bind(this);
+    this.openClose = this.openClose.bind(this);
 
     this.state = {
       table: "table"
@@ -25,11 +26,16 @@ class TableWrapper extends Component {
     });
   }
 
+  openClose(res) {
+    this.props.itemClick(res);
+    this.tableInOut();
+  }
+
   render() {
     return (
       <div id="table-wrap">
         <TableIcon handleClick={this.tableInOut}/>
-        <Table inout={this.state.table} items={this.props.items} itemClick={this.props.itemClick}/>
+        <Table inout={this.state.table} items={this.props.items} itemClick={this.openClose}/>
       </div>
     );
   }
