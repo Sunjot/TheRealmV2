@@ -23,13 +23,13 @@ class World extends Component {
               this is the western region.
               This area is split into two itself - the Seven Kingdoms (majority of the continent) and
               the area Beyond the Wall (the northern white area).
-              Most of the show takes place in this continent.</p>
+              Most of the show takes place on this continent.</p>
             </div>
             <div id="essos-cont" className="continent-sec">
               <p className="subheading">Essos</p>
               <p className="desc">The middle/eastern region on the map is known as Essos. Its
               significance is not that of Westeros, but one of the long-term storylines in the
-              show does take place here. So, it's important that we at least get to know the
+              show does take place here. So, it's important that we get to know the
               different regions at the very least.</p>
             </div>
           </div>

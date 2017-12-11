@@ -21,13 +21,16 @@ class Table extends Component {
 
   render() {
     return (
+      /* 1 by 1, lists all the items in the table and if its the active one, 
+      it gets a distinct bg color so it can be identified */
       <div className={this.props.inout}>
         {this.props.items.map(i => {
 
           let activeClass = "item-cont";
           if (i.id === this.state.activeItemID)
-            activeClass = "item-cont active-item"
+            activeClass = "item-cont active-item" // active-item class gives the new bg color
 
+          // each table item with onclick event handler to update the active item
           return <div
             className={activeClass}
             onClick={() => this.divClick(i.id) }

@@ -7,10 +7,15 @@ class Westeros extends Component {
     return (
       <div className="content">
         <p className="subheading">Westeros</p>
-        <p className="desc-cont">Westeros is the most important continent, by far. On the map above, this is the western region.
-        This area is split into two itself - the Seven Kingdoms (majority of the continent) and
-        the area Beyond the Wall (the northern white area).
-        Most of the show takes place here, and so we'll make sure to go into more detail next.</p>
+        <p className="desc-cont">If you read the previous section, you know that I mentioned the importance
+          of Westeros. Almost all the action in the show takes place here. I also made a point to mention
+          that this continent is split into two areas - the Seven Kingdoms and the area Beyond the Wall.
+          However, it isn't that simple. We must break it down even further! I mean, it's called the Seven
+          Kingdoms for a reason - it's important we go into detail on what these kingdoms actually are.
+          Not only that, but what exactly lies Beyond the Wall? Not to worry, everything will be addressed!
+        </p>
+        
+
       </div>
     );
   }
