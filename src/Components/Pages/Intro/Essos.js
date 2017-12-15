@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Braavos from "../../../images/braavos.jpg"
+import Meereen from "../../../images/meereen.jpg"
+import Dothraki from "../../../images/dothraki.jpg"
 
 class Essos extends Component {
 
@@ -7,9 +10,42 @@ class Essos extends Component {
     return (
       <div className="content">
         <p className="subheading">Essos</p>
-        <p className="desc-cont">The middle/eastern region on the map is known as Essos. Compared to Westeros, this
-        continent isn't all that relevant either. However, one of the long-term storylines in the
-        show does take place here, so it's important that we at least know what's there.</p>
+        <p className="desc-cont">While not as relevant as Westeros, it is still essential
+        that we at least briefly go over the significance of Essos in the show. If you looked at the map,
+        you'll see that Essos is a very large continent. Most of it, however, has been untouched.
+        The focus is going to be on 3 regions: the Free Cities, Slaver's Bay, and the Dothraki Sea.
+        All of them play an important role in a long-term storyline and so we'll briefly go over each.</p>
+        <div id="essos-cont">
+          <div id="free-cities-cont" className="essos-subsec">
+            <p className="miniheading">Free Cities</p>
+            <div className="desc-img">
+              <img id="" src={Braavos}></img>
+              <p className="desc">The Free Cities, just like the Seven Kingdoms, is made up of 9 regions -
+              each a city-state on the western end of Essos. To keep things simple as to how they came to be
+              - this land was ruled by Valyrians (blonde-haired, blue-eyed individuals) and their dragons until a
+              bunch of volcanic eruptions destroyed a chunk of land and their people.
+              <br/><br/>
+              The surviving colonies from this disaster became known as what is now the Free Cities.
+              These city-states include: Braavos, Lorath, Lys, Myr, Norvos, Pentos, Qohor, Tyroth and Volantis.
+              Braavos (pictured here) is the most influential of these city-states and is also the location for the Iron Bank of 
+              Braavos - the most powerful bank in the Known World, as it funds the Iron Throne.</p>
+            </div>
+          </div>
+          <div id="slavers-cont" className="essos-subsec">
+            <p className="miniheading">Slaver's Bay</p>
+            <div className="desc-img">
+              <img id="" src={Meereen}></img>
+              <p className="desc"></p>
+            </div>
+          </div>
+          <div id="dothraki-cont" className="essos-subsec">
+            <p className="miniheading">Dothraki Sea</p>
+            <div className="desc-img">
+              <img id="" src={Dothraki}></img>
+              <p className="desc"></p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
