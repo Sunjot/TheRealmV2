@@ -10,7 +10,7 @@ class Essos extends Component {
     return (
       <div className="content">
         <p className="subheading">Essos</p>
-        <p className="desc-cont">While not as relevant as Westeros, it is still essential
+        <p className="desc-cont" id="desc-cont-essos">While not as relevant as Westeros, it is still essential
         that we at least briefly go over the significance of Essos in the show. If you looked at the map,
         you'll see that Essos is a very large continent. Most of it, however, has been untouched.
         The focus is going to be on 3 regions: the Free Cities, Slaver's Bay, and the Dothraki Sea.
@@ -31,6 +31,7 @@ class Essos extends Component {
               the Iron Bank of Braavos - the most powerful bank in the Known World, as it funds the Iron Throne.</p>
             </div>
           </div>
+          <div id="essos-divider"></div>
           <div id="slavers-cont" className="essos-subsec">
             <p className="miniheading">Slaver's Bay</p>
             <div className="desc-img">
@@ -45,6 +46,7 @@ class Essos extends Component {
               slave trade.</p>
             </div>
           </div>
+          <div id="essos-divider"></div>
           <div id="dothraki-cont" className="essos-subsec">
             <p className="miniheading">Dothraki Sea</p>
             <div className="desc-img">

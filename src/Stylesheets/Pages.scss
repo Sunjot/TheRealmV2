@@ -189,12 +189,22 @@
 
 // Essos component
 
+#desc-cont-essos {
+  padding-bottom: 0px;
+}
+
+#essos-divider {
+  width: 95%;
+  height: 1px;
+  background-color: #bfbfbf;
+}
+
 #essos-cont {
   @include flex(column, flex-start, center);
 
   .essos-subsec {
     @include flex(column, flex-start, flex-start);
-    margin: 0 50px 40px 50px;
+    margin: 50px 50px 60px 50px;
 
     .miniheading {
       padding-bottom: 10px;
@@ -212,11 +222,11 @@
       .desc {
         width: 50%;
         margin-left: 30px;
+        margin-top: 0px;
         text-align: left;
       }
     }
   }
-
 }
 
 
@@ -293,6 +303,27 @@
       flex-direction: column-reverse;
     }
   }
+  #essos-cont {
+
+    .essos-subsec {
+      margin: 50px 50px 60px 50px;
+
+      .desc-img {
+        @include flex(column, flex-start, flex-start);
+
+        img {
+          width: 100%;
+        }
+
+        .desc {
+          width: 100%;
+          margin-left: 0px;
+          margin-top: 10px;
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 500px) {
@@ -330,6 +361,28 @@
     }
     #beyond-wall {
       flex-direction: row;
+    }
+  }
+
+  #essos-cont {
+
+    .essos-subsec {
+      margin: 50px 50px 60px 50px;
+
+      .desc-img {
+        @include flex(row, flex-start, flex-start);
+
+        img {
+          width: 45%;
+        }
+
+        .desc {
+          width: 50%;
+          margin-left: 30px;
+          margin-top: 0px;
+          text-align: left;
+        }
+      }
     }
   }
 }
