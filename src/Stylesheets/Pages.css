@@ -675,7 +675,32 @@ a {
         width: 100%;
         margin-left: 0px;
         margin-top: 10px;
-        text-align: left; } }
+        text-align: left; }
+  #structure-cont #top-half {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 280px 150px 165px; }
+    #structure-cont #top-half #king-cont {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1; }
+      #structure-cont #top-half #king-cont img {
+        width: 100px; }
+    #structure-cont #top-half #hand-cont {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center; }
+    #structure-cont #top-half #council-cont {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center; } }
 
 @media (min-width: 500px) {
   .table {
@@ -729,7 +754,32 @@ a {
   #headerCont > .header-links {
     padding: 0px 20px 0px 20px; }
   .desc-cont {
-    padding: 30px 100px 30px 100px; } }
+    padding: 30px 100px 30px 100px; }
+  #structure-cont #top-half {
+    display: grid;
+    grid-template-columns: 300px 450px;
+    grid-template-rows: 220px 220px; }
+    #structure-cont #top-half #king-cont {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2; }
+      #structure-cont #top-half #king-cont img {
+        width: 130px; }
+    #structure-cont #top-half #hand-cont {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left; }
+    #structure-cont #top-half #council-cont {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left; } }
 
 @media (min-width: 1280px) {
   #continentTabsWrapper .cover-wes {
@@ -739,4 +789,10 @@ a {
     margin: 0 0 0 150px;
     width: 58px; }
   #headerCont > .header-links {
-    padding: 0px 25px 0px 25px; } }
+    padding: 0px 25px 0px 25px; }
+  #structure-cont #top-half {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-rows: 250px 250px; }
+    #structure-cont #top-half #king-cont img {
+      width: 160px; } }
