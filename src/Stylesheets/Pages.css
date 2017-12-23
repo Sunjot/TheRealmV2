@@ -551,6 +551,64 @@ a {
         margin-top: 0px;
         text-align: left; }
 
+#structure-cont {
+  padding: 20px 50px 20px 50px; }
+  #structure-cont .miniheading {
+    font-family: "Poppins";
+    padding: 5px; }
+  #structure-cont #top-half {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    grid-template-rows: 250px 250px; }
+    #structure-cont #top-half #king-cont {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 20px 10px 20px; }
+      #structure-cont #top-half #king-cont img {
+        width: 160px; }
+    #structure-cont #top-half #hand-cont {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      padding: 10px 20px 10px 20px; }
+    #structure-cont #top-half #council-cont {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      padding: 10px 20px 10px 20px; }
+    #structure-cont #top-half .card-shadow {
+      -webkit-box-shadow: 0px 0px 2px 0px #8a8a8a;
+      -moz-box-shadow: 0px 0px 2px 0px #8a8a8a;
+      box-shadow: 0px 0px 2px 0px #8a8a8a;
+      border: 1px solid #f4f4f4; }
+
+.house-buttons {
+  padding: 10px 15px 10px 15px;
+  margin: 0;
+  border-radius: 0;
+  background-color: white;
+  border: 1px solid #595959; }
+  .house-buttons:hover {
+    background-color: #f9f9f9; }
+
+#house-cont {
+  padding: 20px 100px 20px 100px; }
+
 .expand {
   animation: expand 0.5s;
   animation-delay: 0s;
