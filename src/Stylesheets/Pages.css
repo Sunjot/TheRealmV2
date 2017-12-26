@@ -555,7 +555,7 @@ a {
   padding: 20px 50px 20px 50px; }
   #structure-cont .miniheading {
     font-family: "Poppins";
-    padding: 5px; }
+    padding: 5px 0 5px 0; }
   #structure-cont #top-half {
     display: grid;
     grid-template-columns: 400px 600px;
@@ -570,7 +570,7 @@ a {
       align-items: center;
       padding: 10px 20px 10px 20px; }
       #structure-cont #top-half #king-cont img {
-        width: 160px; }
+        width: 140px; }
     #structure-cont #top-half #hand-cont {
       grid-column: 2 / span 1;
       grid-row: 1 / span 1;
@@ -591,11 +591,35 @@ a {
       align-items: flex-start;
       text-align: left;
       padding: 10px 20px 10px 20px; }
-    #structure-cont #top-half .card-shadow {
-      -webkit-box-shadow: 0px 0px 2px 0px #8a8a8a;
-      -moz-box-shadow: 0px 0px 2px 0px #8a8a8a;
-      box-shadow: 0px 0px 2px 0px #8a8a8a;
-      border: 1px solid #f4f4f4; }
+  #structure-cont #bottom-half {
+    display: grid;
+    grid-template-columns: 530px 470px;
+    grid-template-rows: 300px; }
+    #structure-cont #bottom-half #house-cont {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      padding: 10px 20px 10px 20px; }
+    #structure-cont #bottom-half #other-cont {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      padding: 10px 20px 10px 20px; }
+  #structure-cont .card-shadow {
+    -webkit-box-shadow: 0px 0px 2px 0px #8a8a8a;
+    -moz-box-shadow: 0px 0px 2px 0px #8a8a8a;
+    box-shadow: 0px 0px 2px 0px #8a8a8a;
+    border: 1px solid #f4f4f4; }
 
 .house-buttons {
   padding: 10px 15px 10px 15px;
@@ -679,12 +703,12 @@ a {
   #structure-cont #top-half {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 280px 150px 165px; }
+    grid-template-rows: 265px 150px 165px; }
     #structure-cont #top-half #king-cont {
       grid-column: 1 / span 1;
       grid-row: 1 / span 1; }
       #structure-cont #top-half #king-cont img {
-        width: 100px; }
+        width: 80px; }
     #structure-cont #top-half #hand-cont {
       grid-column: 1 / span 1;
       grid-row: 2 / span 1;
@@ -696,6 +720,26 @@ a {
     #structure-cont #top-half #council-cont {
       grid-column: 1 / span 1;
       grid-row: 3 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center; }
+  #structure-cont #bottom-half {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 185px 175px; }
+    #structure-cont #bottom-half #house-cont {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center; }
+    #structure-cont #bottom-half #other-cont {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -758,12 +802,12 @@ a {
   #structure-cont #top-half {
     display: grid;
     grid-template-columns: 300px 450px;
-    grid-template-rows: 220px 220px; }
+    grid-template-rows: 200px 200px; }
     #structure-cont #top-half #king-cont {
       grid-column: 1 / span 1;
       grid-row: 1 / span 2; }
       #structure-cont #top-half #king-cont img {
-        width: 130px; }
+        width: 120px; }
     #structure-cont #top-half #hand-cont {
       grid-column: 2 / span 1;
       grid-row: 1 / span 1;
@@ -775,6 +819,26 @@ a {
     #structure-cont #top-half #council-cont {
       grid-column: 2 / span 1;
       grid-row: 2 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left; }
+  #structure-cont #bottom-half {
+    display: grid;
+    grid-template-columns: 400px 350px;
+    grid-template-rows: 250px; }
+    #structure-cont #bottom-half #house-cont {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left; }
+    #structure-cont #bottom-half #other-cont {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -795,4 +859,8 @@ a {
     grid-template-columns: 400px 600px;
     grid-template-rows: 250px 250px; }
     #structure-cont #top-half #king-cont img {
-      width: 160px; } }
+      width: 140px; }
+  #structure-cont #bottom-half {
+    display: grid;
+    grid-template-columns: 530px 470px;
+    grid-template-rows: 300px; } }

@@ -36,6 +36,27 @@ class Structure extends Component {
                 (aka Littlefinger), Varys, Renly Baratheon and Stannis Baratheon.</p>
             </div>
           </div>
+          <div id="bottom-half">
+            <div id="house-cont" className="card-shadow">
+              <p className="miniheading">Great Houses</p>
+              <p>Game of Thrones consists of hundreds of "houses", which are just different families with
+                varying lineages. Every region in the Seven Kingdoms has a house
+                that has authority over that respective region - this is referred to as a Great House. So
+                naturally, with 9 regions come 9 Great Houses. The heads of these
+                Great Houses can be considered the rulers over that region and make decisions on local matters.
+                In the next section, we'll go into detail on each of these Great Houses and the relevant
+                portions of their family trees.</p>
+            </div>
+            <div id="other-cont" className="card-shadow">
+              <p className="miniheading">Vassals & Commoners</p>
+              <p>Each of the Great Houses have vassals, which are just smaller houses that have pledged an
+                allegiance to that Great House. These vassals in turn could have their own vassals, and so on.
+                The rulers of the lower-level vassals report to the head of the vassal above them, and the heads
+                of the top layer of vassals report to the head of their Great House. At the lowest level, we
+                have what are called commoners or smallfolk - they own no land or titles. Essentially, the
+                homeless.</p>
+            </div>
+          </div>
         </div>
       </div>
     );
