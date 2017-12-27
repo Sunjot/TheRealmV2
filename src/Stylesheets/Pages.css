@@ -645,29 +645,42 @@ a {
   #houses-cont .miniheading {
     font-family: "Poppins"; }
   #houses-cont > div {
-    width: 100%; }
+    width: 100%;
+    animation: fadein 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0; }
+  #houses-cont .houseIntroCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left; }
+    #houses-cont .houseIntroCont .house-intro {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 50%; }
+      #houses-cont .houseIntroCont .house-intro .house-general {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+      #houses-cont .houseIntroCont .house-intro .sigils {
+        margin-right: 10px;
+        background-image: url("../images/sigils-3.png"); }
+    #houses-cont .houseIntroCont .general-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 50%; }
   #houses-cont .house-divider {
     width: calc(100% - 25px);
     height: 1px;
     background-color: #bfbfbf;
     margin: 20px 0 20px 0; }
-  #houses-cont .house-intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    animation: fadein 0.5s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    opacity: 0; }
-    #houses-cont .house-intro .house-general {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start; }
-    #houses-cont .house-intro .sigils {
-      margin-right: 10px;
-      background-image: url("../images/sigils-3.png"); }
   #houses-cont #sigil-0 {
     background-position: 0px 0px;
     height: 104px;

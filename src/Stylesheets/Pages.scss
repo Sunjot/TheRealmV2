@@ -340,6 +340,32 @@
 
   > div {
     width: 100%;
+    @include animate(fadein, 0.5s, 0s, forwards);
+    opacity: 0;
+  }
+
+  .houseIntroCont {
+    @include flex(row, flex-start, flex-start);
+    text-align: left;
+
+    .house-intro {
+      @include flex(row, flex-start, flex-start);
+      width: 50%;
+
+      .house-general {
+        @include flex(column, flex-start, flex-start);
+      }
+
+      .sigils {
+        margin-right: 10px;
+        background-image: url('../images/sigils-3.png');
+      }
+    }
+
+    .general-info {
+      @include flex(column, flex-start, flex-start);
+      width: 50%;
+    }
   }
 
   .house-divider {
@@ -347,21 +373,6 @@
     height: 1px;
     background-color: #bfbfbf;;
     margin: 20px 0 20px 0;
-  }
-
-  .house-intro {
-    @include flex(row, flex-start, flex-start);
-    @include animate(fadein, 0.5s, 0s, forwards);
-    opacity: 0;
-
-    .house-general {
-      @include flex(column, flex-start, flex-start);
-    }
-
-    .sigils {
-      margin-right: 10px;
-      background-image: url('../images/sigils-3.png');
-    }
   }
 
   #sigil-0 {
