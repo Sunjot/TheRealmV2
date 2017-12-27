@@ -41,9 +41,8 @@ class Structure extends Component {
               <p className="miniheading">Great Houses</p>
               <p>Game of Thrones consists of hundreds of "houses", which are just different families with
                 varying lineages. Every region in the Seven Kingdoms has a house
-                that has authority over that respective region - this is referred to as a Great House. So
-                naturally, with 9 regions come 9 Great Houses. The heads of these
-                Great Houses can be considered the rulers over that region and make decisions on local matters.
+                that has authority over that respective region - this is referred to as a Great House. The heads
+                of these Great Houses can be considered the rulers over that region and make decisions on local matters.
                 In the next section, we'll go into detail on each of these Great Houses and the relevant
                 portions of their family trees.</p>
             </div>

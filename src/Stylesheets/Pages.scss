@@ -310,20 +310,125 @@
 
 // House component
 
-.house-buttons {
-  padding: 10px 15px 10px 15px;
-  margin: 0;
-  border-radius: 0;
-  background-color: white;
-  border: 1px solid #595959;
-
-  &:hover {
-    background-color: #f9f9f9;
-  }
+#last-10 {
+  border-right: none;
 }
 
-#house-cont {
-  padding: 20px 100px 20px 100px;
+.house-buttons {
+  padding: 10px 15px 10px 15px;
+  margin: 5px 0 0 0;
+  border-radius: 0;
+  background-color: white;
+  border-right: 1px solid #9daecc;
+  background-color: #e1e9f7;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: #d7e0ef;
+  }
+
+}
+
+#houses-cont {
+  @include flex(column, flex-start, flex-start);
+  margin: 50px 0 20px 0;
+  width: calc(100% - 100px);
+
+  .miniheading {
+    font-family: "Poppins";
+  }
+
+  > div {
+    width: 100%;
+  }
+
+  .house-divider {
+    width: calc(100% - 25px);
+    height: 1px;
+    background-color: #bfbfbf;;
+    margin: 20px 0 20px 0;
+  }
+
+  .house-intro {
+    @include flex(row, flex-start, flex-start);
+    @include animate(fadein, 0.5s, 0s, forwards);
+    opacity: 0;
+
+    .house-general {
+      @include flex(column, flex-start, flex-start);
+    }
+
+    .sigils {
+      margin-right: 10px;
+      background-image: url('../images/sigils-3.png');
+    }
+  }
+
+  #sigil-0 {
+    background-position: 0px 0px;
+    height: 104px;
+    width: 95px;
+  }
+
+  #sigil-1 {
+    background-position: 0px -104px;
+    height: 104px;
+    width: 95px;
+  }
+
+  #sigil-2 {
+    background-position: 0px -207px;
+    height: 104px;
+    width: 95px;
+  }
+
+  #sigil-3 {
+    background-position: 0px -311px;
+    height: 102px;
+    width: 95px;
+  }
+
+  #sigil-4 {
+    background-position: 0px -414px;
+    height: 101px;
+    width: 95px;
+  }
+
+  #sigil-5 {
+    background-position: 0px -516px;
+    height: 104px;
+    width: 95px;
+  }
+
+  #sigil-6 {
+    background-position: 0px -620px;
+    height: 103px;
+    width: 95px;
+  }
+
+  #sigil-7 {
+    background-position: 0px -723px;
+    height: 103px;
+    width: 95px;
+  }
+
+  #sigil-8 {
+    background-position: 0px -826px;
+    height: 104px;
+    width: 95px;
+  }
+
+  #sigil-9 {
+    background-position: 0px -930px;
+    height: 103px;
+    width: 95px;
+  }
+
+  #sigil-10 {
+    background-position: 0px -1033px;
+    height: 104px;
+    width: 95px;
+  }
 }
 
 
@@ -467,6 +572,9 @@
       }
     }
   }
+  #houses-cont {
+    width: calc(100% - 20px);
+  }
 }
 
 @media (min-width: 500px) {
@@ -527,6 +635,9 @@
         }
       }
     }
+  }
+  #houses-cont {
+    width: calc(100% - 50px);
   }
 }
 
@@ -591,6 +702,9 @@
       }
     }
   }
+  #houses-cont {
+    width: calc(100% - 200px);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -624,5 +738,8 @@
       grid-template-columns: 530px 470px;
       grid-template-rows: 300px;
     }
+  }
+  #houses-cont {
+    width: calc(100% - 200px);
   }
 }

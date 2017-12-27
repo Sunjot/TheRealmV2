@@ -621,17 +621,97 @@ a {
     box-shadow: 0px 0px 2px 0px #8a8a8a;
     border: 1px solid #f4f4f4; }
 
+#last-10 {
+  border-right: none; }
+
 .house-buttons {
   padding: 10px 15px 10px 15px;
-  margin: 0;
+  margin: 5px 0 0 0;
   border-radius: 0;
   background-color: white;
-  border: 1px solid #595959; }
+  border-right: 1px solid #9daecc;
+  background-color: #e1e9f7;
+  transition: background-color 0.5s; }
   .house-buttons:hover {
-    background-color: #f9f9f9; }
+    background-color: #d7e0ef; }
 
-#house-cont {
-  padding: 20px 100px 20px 100px; }
+#houses-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 50px 0 20px 0;
+  width: calc(100% - 100px); }
+  #houses-cont .miniheading {
+    font-family: "Poppins"; }
+  #houses-cont > div {
+    width: 100%; }
+  #houses-cont .house-divider {
+    width: calc(100% - 25px);
+    height: 1px;
+    background-color: #bfbfbf;
+    margin: 20px 0 20px 0; }
+  #houses-cont .house-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation: fadein 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0; }
+    #houses-cont .house-intro .house-general {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+    #houses-cont .house-intro .sigils {
+      margin-right: 10px;
+      background-image: url("../images/sigils-3.png"); }
+  #houses-cont #sigil-0 {
+    background-position: 0px 0px;
+    height: 104px;
+    width: 95px; }
+  #houses-cont #sigil-1 {
+    background-position: 0px -104px;
+    height: 104px;
+    width: 95px; }
+  #houses-cont #sigil-2 {
+    background-position: 0px -207px;
+    height: 104px;
+    width: 95px; }
+  #houses-cont #sigil-3 {
+    background-position: 0px -311px;
+    height: 102px;
+    width: 95px; }
+  #houses-cont #sigil-4 {
+    background-position: 0px -414px;
+    height: 101px;
+    width: 95px; }
+  #houses-cont #sigil-5 {
+    background-position: 0px -516px;
+    height: 104px;
+    width: 95px; }
+  #houses-cont #sigil-6 {
+    background-position: 0px -620px;
+    height: 103px;
+    width: 95px; }
+  #houses-cont #sigil-7 {
+    background-position: 0px -723px;
+    height: 103px;
+    width: 95px; }
+  #houses-cont #sigil-8 {
+    background-position: 0px -826px;
+    height: 104px;
+    width: 95px; }
+  #houses-cont #sigil-9 {
+    background-position: 0px -930px;
+    height: 103px;
+    width: 95px; }
+  #houses-cont #sigil-10 {
+    background-position: 0px -1033px;
+    height: 104px;
+    width: 95px; }
 
 .expand {
   animation: expand 0.5s;
@@ -744,7 +824,9 @@ a {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      text-align: center; } }
+      text-align: center; }
+  #houses-cont {
+    width: calc(100% - 20px); } }
 
 @media (min-width: 500px) {
   .table {
@@ -786,7 +868,9 @@ a {
         width: 50%;
         margin-left: 30px;
         margin-top: 0px;
-        text-align: left; } }
+        text-align: left; }
+  #houses-cont {
+    width: calc(100% - 50px); } }
 
 @media (min-width: 768px) {
   .table {
@@ -843,7 +927,9 @@ a {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      text-align: left; } }
+      text-align: left; }
+  #houses-cont {
+    width: calc(100% - 200px); } }
 
 @media (min-width: 1280px) {
   #continentTabsWrapper .cover-wes {
@@ -863,4 +949,6 @@ a {
   #structure-cont #bottom-half {
     display: grid;
     grid-template-columns: 530px 470px;
-    grid-template-rows: 300px; } }
+    grid-template-rows: 300px; }
+  #houses-cont {
+    width: calc(100% - 200px); } }
