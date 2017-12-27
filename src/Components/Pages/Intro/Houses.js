@@ -100,7 +100,7 @@ class Houses extends Component {
                     <p className="miniheading">Other Notes</p>
                     <p>House Stark is one of the oldest houses in the Seven Kingdoms and have ruled over
                     The North since the beginning of time. They are one of two houses that play a significant
-                    role in the show above all others.</p>
+                    role in the series above all other houses.</p>
                   </div>
                 </div>
                 <div className="house-divider"></div>
@@ -113,7 +113,7 @@ class Houses extends Component {
                     regions="The North" castles="Dreadfort" />
                   <div className="general-info">
                     <p className="miniheading">Other Notes</p>
-                    <p>A vassal under House Stark, the Boltons play a significant role as the show progresses.
+                    <p>A vassal under House Stark, the Boltons come to play a bigger part as the show progresses.
                     As their sigil shows, they are known for flaying their enimies (removing layers of skin).</p>
                   </div>
                 </div>
