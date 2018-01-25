@@ -681,6 +681,33 @@ a {
     height: 1px;
     background-color: #bfbfbf;
     margin: 20px 0 20px 0; }
+  #houses-cont .family-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    #houses-cont .family-members #mems-of-house {
+      padding-bottom: 30px; }
+    #houses-cont .family-members .member-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 600px;
+      padding-bottom: 30px; }
+      #houses-cont .family-members .member-row img {
+        width: 100px; }
+      #houses-cont .family-members .member-row .member-info-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px; }
+        #houses-cont .family-members .member-row .member-info-cont .member-title {
+          font-size: 17px;
+          font-weight: bold; }
+        #houses-cont .family-members .member-row .member-info-cont p {
+          text-align: left; }
   #houses-cont #sigil-0 {
     background-position: 0px 0px;
     height: 104px;

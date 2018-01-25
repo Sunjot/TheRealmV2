@@ -375,6 +375,38 @@
     margin: 20px 0 20px 0;
   }
 
+  .family-members {
+    @include flex(column, flex-start, center);
+
+    #mems-of-house {
+      padding-bottom: 30px;
+    }
+
+    .member-row {
+      @include flex(row, flex-start, flex-start);
+      width: 600px;
+      padding-bottom: 30px;
+
+      img {
+        width: 100px;
+      }
+
+      .member-info-cont {
+        @include flex(column, flex-start, flex-start);
+        padding-left: 10px;
+
+        .member-title {
+          font-size: 17px;
+          font-weight: bold;
+        }
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+
   #sigil-0 {
     background-position: 0px 0px;
     height: 104px;

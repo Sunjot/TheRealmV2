@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import HouseIntro from './Houses/HouseIntro'
+import HouseIntro from './Houses/HouseIntro';
+import Rob from "../../../images/rob-c.png";
+import Stan from "../../../images/stan-c.png";
+import Ren from "../../../images/renly-c.png";
+import Joff from "../../../images/joff-c.png";
 
 class Houses extends Component {
 
@@ -60,6 +64,45 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Rob} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Robert Baratheon</p>
+                      <p>As described already, Robert is the King. He has 2 brothers, Stannis and Renly.
+                      He is also married to Cersei Lannister, and they have 3 children:
+                      Joffrey, Myrcella, and Tommen Baratheon. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Joff} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Joffrey Baratheon</p>
+                      <p>The son of Robert and Cersei. Joffrey is a scumbag (if the picture didn't give it
+                      away) known for his arrogance and childishness. He has 2 younger siblings - Myrcella and
+                      Tommen.
+                        </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Stan} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Stannis Baratheon</p>
+                      <p>The brother of Robert and Renly Baratheon. He is part of the Small Council.
+                      He is married to Selyse Baratheon and they have a daughter named Shireen.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Ren} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Renly Baratheon</p>
+                      <p>The youngest of the 3 brothers who is also part of the Small Council.
+                      Renly has a gay relationship with Loras Tyrell, which they must keep a secret
+                      as homosexuality is considered a sin in the Seven Kingdoms.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "1" &&
