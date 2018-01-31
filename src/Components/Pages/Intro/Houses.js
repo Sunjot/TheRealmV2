@@ -4,6 +4,7 @@ import Rob from "../../../images/rob-c.png";
 import Stan from "../../../images/stan-c.png";
 import Ren from "../../../images/renly-c.png";
 import Joff from "../../../images/joff-c.png";
+import JonArr from "../../../images/jonarr-c.png"
 
 class Houses extends Component {
 
@@ -117,6 +118,18 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={JonArr} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Jon Arryn</p>
+                      <p>The last known Hand of the King as the series gets underway (spoiler alert, but not really)
+                      as he is killed just before the beginning of episode one.
+                      The picture on the left would be the one and only shot of him in the series.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "2" &&
