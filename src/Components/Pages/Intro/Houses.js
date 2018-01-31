@@ -5,6 +5,11 @@ import Stan from "../../../images/stan-c.png";
 import Ren from "../../../images/renly-c.png";
 import Joff from "../../../images/joff-c.png";
 import JonArr from "../../../images/jonarr-c.png"
+import Lysa from "../../../images/lysa-c.png"
+import Robin from "../../../images/robin-c.png"
+import Doran from "../../../images/doran-c.png"
+import Oberyn from "../../../images/oberyn-c.png"
+import Elia from "../../../images/elia-c.png"
 
 class Houses extends Component {
 
@@ -124,9 +129,28 @@ class Houses extends Component {
                     <img src={JonArr} />
                     <div className="member-info-cont">
                       <p className="member-title">Jon Arryn</p>
-                      <p>The last known Hand of the King as the series gets underway (spoiler alert, but not really)
+                      <p>The head of House Arryn and the last known Hand of the King as the series gets
+                      underway (spoiler alert, but not really)
                       as he is killed just before the beginning of episode one.
                       The picture on the left would be the one and only shot of him in the series.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Lysa} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Lysa Arryn</p>
+                      <p>Born into House Tully, Lysa married Jon during Robert's Rebellion (discussed last).
+                      She takes over as the ruler of House Arryn after Jon's death on behalf of her
+                      son, Robin, who is too young at the time for those duties. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Robin} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Robin Arryn</p>
+                      <p>The son of Jon and Lysa who takes the title as ruler of House Arryn after his father
+                      dies. However, because of his age at the time, his mother rules on his behalf until he
+                      is old enough.</p>
                     </div>
                   </div>
                 </div>
@@ -145,6 +169,37 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Doran} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Doran Martell</p>
+                      <p>The head of House Martell and has two siblings, Elia and Oberyn. Unlike his
+                      brother, Doran is much more level-headed and seldom gives in to making rash
+                      decisions as a leader.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Oberyn} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Oberyn Martell</p>
+                      <p>Often referred to as the Red Viper (he apparently knows a lot about poisons).
+                      He has two siblings, Doran and Elia. His style of combat makes him a huge threat in
+                      battle, but not to be outdone by his good looks and charm, which has made it easy
+                      for him to sleep around quite a bit.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Elia} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Elia Martell</p>
+                      <p>The sister of Doran and Oberyn, she is deceased before the events of the show.
+                      I list her here because she plays a critical role during Robert's Rebellion in what
+                      sets off some of the events in the series. </p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "3" &&
