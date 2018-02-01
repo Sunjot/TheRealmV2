@@ -10,6 +10,17 @@ import Robin from "../../../images/robin-c.png"
 import Doran from "../../../images/doran-c.png"
 import Oberyn from "../../../images/oberyn-c.png"
 import Elia from "../../../images/elia-c.png"
+import Rickard from "../../../images/rickard-c.png"
+import Eddard from "../../../images/ed-c.png"
+import Cat from "../../../images/cat-c.png"
+import Robb from "../../../images/robb-c.png"
+import Sansa from "../../../images/sansa-c.png"
+import Arya from "../../../images/arya-c.png"
+import Bran from "../../../images/bran-c.png"
+import Jon from "../../../images/jon-c.png"
+import Rickon from "../../../images/rickon-c.png"
+import Roose from "../../../images/roose-c.png"
+import Ramsay from "../../../images/ramsay-c.png"
 
 class Houses extends Component {
 
@@ -186,8 +197,7 @@ class Houses extends Component {
                       <p className="member-title">Oberyn Martell</p>
                       <p>Often referred to as the Red Viper (he apparently knows a lot about poisons).
                       He has two siblings, Doran and Elia. His style of combat makes him a huge threat in
-                      battle, but not to be outdone by his good looks and charm, which has made it easy
-                      for him to sleep around quite a bit.</p>
+                      battle. He has 8 bastard daughters (4 with Ellaria Sand), referred to as the Sand Snakes.</p>
                     </div>
                   </div>
                   <div className="member-row">
@@ -215,6 +225,86 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Rickard} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Rickard Stark</p>
+                      <p>The former head of House Stark until he was killed during Robert's Rebellion. He has
+                      4 children: Eddard, Benjen, Brandon, and Lyanna. The latter 2 played a significant role
+                      during Robert's Rebellion as well and are deceased as the series gets underway. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Eddard} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Eddard Stark</p>
+                      <p>The head of House Stark and married to Catelyn Stark, with whom he has 5 children:
+                      Robb, Sansa, Arya, Bran, and Rickon. He also has a bastard son, Jon Snow, who he raises
+                      in Winterfell.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Cat} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Catelyn Stark</p>
+                      <p>Born into House Tully, Catelyn married Eddard during Robert's Rebellion (along with
+                      her sister Lysa who married into House Arryn). The two marriages were done to form an
+                      alliance between the 3 houses during their battle against the Targaryens.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Jon} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Jon Snow</p>
+                      <p>The bastard son of Eddard. His mother is kept secret from him and everybody else by
+                      Eddard. Due to his bastard status, he often feels like an outsider
+                      despite being treated well by his father and siblings. Catelyn, however, always felt
+                      a disconnect because he was not truly her son.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Robb} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Robb Stark</p>
+                      <p>The eldest son of Eddard and Catelyn. He is proficient in swordsmanship after training
+                      from a young age but takes after his father as more of a battle commander.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Sansa} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Sansa Stark</p>
+                      <p>The eldest daughter of Eddard and Catelyn. Unlike her sister Arya, Sansa is much
+                      more "lady-like" in her interests and takes after her mother.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Arya} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Arya Stark</p>
+                      <p>The youngest daughter of Eddard and Catelyn. In contrast to Sansa,
+                      Arya is a tomboy who prefers the warfare life like that of her brothers and father.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Bran} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Bran Stark</p>
+                      <p>The second son of Eddard and Catelyn. He is in combat training by his father and
+                      brothers with the goal of one day becoming a knight.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Rickon} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Rickon Stark</p>
+                      <p>The youngest son of Eddard and Catelyn. Rickon is fairly young to play much of an
+                        importance in the beginning of the series, but keep him noted for later on in the show.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "4" &&
@@ -229,6 +319,25 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Roose} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Roose Bolton</p>
+                      <p>The head of House Bolton and father of Ramsay, his legitimized bastard son.
+                      He is also married to Walda Frey. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Ramsay} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Ramsay Bolton</p>
+                      <p>The legitimized bastard son of Roose. He can be described as sadistic and
+                      cruel human being who enjoys torturing and killing others.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "5" &&
