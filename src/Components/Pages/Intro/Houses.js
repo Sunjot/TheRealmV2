@@ -21,6 +21,20 @@ import Jon from "../../../images/jon-c.png"
 import Rickon from "../../../images/rickon-c.png"
 import Roose from "../../../images/roose-c.png"
 import Ramsay from "../../../images/ramsay-c.png"
+import Balon from "../../../images/balon-c.png"
+import Euron from "../../../images/euron-c.png"
+import Yara from "../../../images/yara-c.png"
+import Theon from "../../../images/theon-c.png"
+import Tywin from "../../../images/tywin-c.png"
+import Cersei from "../../../images/cersei-c.png"
+import Jaime from "../../../images/jaime-c.png"
+import Tyrion from "../../../images/tyrion-c.png"
+import Mace from "../../../images/mace-c.png"
+import Olenna from "../../../images/olenna-c.png"
+import Margaery from "../../../images/margaery-c.png"
+import Loras from "../../../images/loras-c.png"
+import Hoster from "../../../images/hoster-c.png"
+import Edmure from "../../../images/edmure-c.png"
 
 class Houses extends Component {
 
@@ -352,6 +366,41 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Balon} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Balon Greyjoy</p>
+                      <p>The head of House Greyjoy. The father of two: Yara and Theon. He also has two brothers
+                      in Euron and Aeron. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Euron} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Euron Greyjoy</p>
+                      <p>The brother of Balon and Aeron and uncle to Yara and Theon. As of the beginning of
+                      the series, he is in exile. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Yara} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Yara Greyjoy</p>
+                      <p>The daughter of Balon and sister of Theon. She was raised to be a warrior - which - in the ironborn culture,
+                      is unusual for women. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Theon} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Theon Greyjoy</p>
+                      <p>The son of Balon and brother of Yara. As of the beginning of the series, he is held
+                      hostage at Winterfell. </p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "6" &&
@@ -367,6 +416,43 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Tywin} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Tywin Lannister</p>
+                      <p>The head of House Lannister. He was married to Joanna, the mother of his 3 children -
+                      Jaime and Cersei (twins), and Tyrion. She passed away giving birth to Tyrion.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Cersei} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Cersei Lannister</p>
+                      <p>The daughter of Tywin and Joanna, and the twin sister of Jaime. She is married to
+                        Robert, and they have 3 children - Joffrey, Myrcella, and Tommen Baratheon.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Jaime} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Jaime Lannister</p>
+                      <p>The son of Tywin and Joanna, and the twin brother of Cersei. He is referred to as
+                      the Kingslayer for killing the Mad King Aerys Targaryen during Robert's Rebellion. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Tyrion} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Tyrion Lannister</p>
+                      <p>The son of Tywin and Joanna, and brother of Cersei and Jaime. Tyrion was born a dwarf.
+                      As a result of his mother dying while giving birth to him, he is hated by his own family
+                      members Cersei and Tywin. Jaime, meanwhile, has always been close with him. He loves
+                      drinking, by the way.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "7" &&
@@ -382,6 +468,41 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Mace} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Mace Tyrell</p>
+                      <p>The head of House Tyrell and the son of Olenna. He has 2 children: Margaery and Loras.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Olenna} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Olenna Tyrell</p>
+                      <p>The mother of Mace. Olenna is rather witty and intelligent. Despite the title as ruler
+                      of House Tyrell belonging to Mace, she holds very high influence in the Reach.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Margaery} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Margaery Tyrell</p>
+                      <p>The daughter of Mace and sister of Loras. She is known for her beauty and cleverness
+                      (probably takes that from her grandmother, Olenna).</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Loras} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Loras Tyrell</p>
+                      <p>The son of Mace and brother of Margaery. He has a gay relationship with
+                      Renly Baratheon, which they must keep a secret as homosexuality is considered a
+                      sin in the Seven Kingdoms.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "8" &&
@@ -396,6 +517,26 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Hoster} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Hoster Tully</p>
+                      <p>The head of House Tully, but mostly by title only as his health has deteriorated
+                        and so his son Edmure has taken over most duties. He also has 2 daughters: Catelyn
+                        and Lysa.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Edmure} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Edmure Tully</p>
+                      <p>The son of Hoster Tully and the unofficial head of House Tully due to his
+                      father's health.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "9" &&
