@@ -35,6 +35,11 @@ import Margaery from "../../../images/margaery-c.png"
 import Loras from "../../../images/loras-c.png"
 import Hoster from "../../../images/hoster-c.png"
 import Edmure from "../../../images/edmure-c.png"
+import Walder from "../../../images/walder-c.png"
+import Aerys from "../../../images/aerys-c.png"
+import Rhaegar from "../../../images/rhaegar-c.png"
+import Viserys from "../../../images/viserys-c.png"
+import Daenerys from "../../../images/daenerys-c.png"
 
 class Houses extends Component {
 
@@ -525,7 +530,7 @@ class Houses extends Component {
                       <p className="member-title">Hoster Tully</p>
                       <p>The head of House Tully, but mostly by title only as his health has deteriorated
                         and so his son Edmure has taken over most duties. He also has 2 daughters: Catelyn
-                        and Lysa.</p>
+                        and Lysa. He is never seen on-screen.</p>
                     </div>
                   </div>
                   <div className="member-row">
@@ -551,6 +556,17 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Walder} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Walder Frey</p>
+                      <p>The head of House Frey. He has been married many times and has over two dozen
+                      children, and an unknown amount of bastard sons and daughters. </p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
           { this.state.choice === "last-10" &&
@@ -566,6 +582,44 @@ class Houses extends Component {
                   </div>
                 </div>
                 <div className="house-divider"></div>
+                <div className="family-members">
+                  <p className="miniheading" id="mems-of-house">Members</p>
+                  <div className="member-row">
+                    <img src={Aerys} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Aerys II Targaryen</p>
+                      <p>Aerys is the former King and head of House Targaryen. He married his sister Rhaella
+                      (Targaryens are into this sort of thing) and they had 3 children: Rhaegar, Viserys,
+                      and Daenerys. He was killed in the final events of Robert's Rebellion by Jamie Lannister.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Rhaegar} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Rhaegar Targaryen</p>
+                      <p>The son of the Mad King. He was married to Elia Martell but annulled it and "abducted" and
+                      married Lyanna Stark instead - this is what started Robert's Rebellion. He was killed by Robert
+                      Baratheon towards the end of the war.</p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Viserys} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Viserys Targaryen</p>
+                      <p>The son of the Mad King and head of the exiled House Targaryen.
+                      He and his sister, Daenerys, live in the Free Cities when the series kicks off. </p>
+                    </div>
+                  </div>
+                  <div className="member-row">
+                    <img src={Daenerys} />
+                    <div className="member-info-cont">
+                      <p className="member-title">Daenerys Targaryen</p>
+                      <p>The daughter of the Mad King. Her mother, Rhaella (while pregnant with Daenerys) fled
+                      to Dragonstone with Viserys after Rhaegar died. It was there that she gave birth to Daenerys
+                      and died soon after. Along with her brother, she was taken into exile in the Free Cities.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
           }
         </div>
