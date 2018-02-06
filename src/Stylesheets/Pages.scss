@@ -314,6 +314,10 @@
   border-right: none;
 }
 
+#house-selecs {
+  width: 80%;
+}
+
 .house-buttons {
   padding: 10px 15px 10px 15px;
   margin: 5px 0 0 0;
@@ -617,6 +621,41 @@
   }
   #houses-cont {
     width: calc(100% - 20px);
+    margin: 20px 0 20px 0;
+
+    .houseIntroCont {
+      @include flex(column, flex-start, center);
+      text-align: center;
+
+      .house-intro {
+        @include flex(column, flex-start, center);
+        width: 350px;
+
+        .house-general {
+          @include flex(column, flex-start, center);
+          padding-top: 20px;
+        }
+
+        .sigils {
+          margin-right: 0px;
+          background-image: url('../images/sigils-3.png');
+        }
+      }
+
+      .general-info {
+        @include flex(column, flex-start, center);
+        width: 350px;
+        padding-top: 20px;
+      }
+    }
+
+    .family-members > .member-row {
+      width: 350px;
+
+      .member-info-cont > .member-title {
+        font-size: 12px;
+      }
+    }
   }
 }
 
@@ -681,6 +720,41 @@
   }
   #houses-cont {
     width: calc(100% - 50px);
+    margin: 50px 0 20px 0;
+
+    .houseIntroCont {
+      @include flex(row, flex-start, flex-start);
+      text-align: left;
+
+      .house-intro {
+        @include flex(row, flex-start, flex-start);
+        width: 50%;
+
+        .house-general {
+          @include flex(column, flex-start, flex-start);
+          padding-top: 0px;
+        }
+
+        .sigils {
+          margin-right: 10px;
+          background-image: url('../images/sigils-3.png');
+        }
+      }
+
+      .general-info {
+        @include flex(column, flex-start, flex-start);
+        width: 50%;
+        padding-top: 0px;
+      }
+    }
+
+    .family-members > .member-row {
+      width: 500px;
+
+      .member-info-cont > .member-title {
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -784,5 +858,40 @@
   }
   #houses-cont {
     width: calc(100% - 200px);
+    margin: 50px 0 20px 0;
+
+    .houseIntroCont {
+      @include flex(row, flex-start, flex-start);
+      text-align: left;
+
+      .house-intro {
+        @include flex(row, flex-start, flex-start);
+        width: 50%;
+
+        .house-general {
+          @include flex(column, flex-start, flex-start);
+          padding-top: 0px;
+        }
+
+        .sigils {
+          margin-right: 10px;
+          background-image: url('../images/sigils-3.png');
+        }
+      }
+
+      .general-info {
+        @include flex(column, flex-start, flex-start);
+        width: 50%;
+        padding-top: 0px;
+      }
+    }
+
+    .family-members > .member-row {
+      width: 600px;
+
+      .member-info-cont > .member-title {
+        font-size: 17px;
+      }
+    }
   }
 }
