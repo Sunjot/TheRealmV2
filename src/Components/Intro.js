@@ -16,7 +16,7 @@ class Intro extends Component {
     this.handleClick = this.handleClick.bind(this);
 
     this.state = {
-      sectionClicked: <Houses /> // temporarily changed while coding - should be <Start /> 
+      sectionClicked: <Rebellion /> // temporarily changed while coding - should be <Start /> 
     };
   }
 
