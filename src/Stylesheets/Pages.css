@@ -789,7 +789,8 @@ a {
   padding: 15px;
   background: #5d81bf;
   color: white;
-  text-align: left; }
+  text-align: left;
+  opacity: 0; }
   .timeline ul li div .miniheading {
     padding-bottom: 10px; }
 
@@ -802,7 +803,7 @@ a {
   border-style: solid; }
 
 .timeline ul li:nth-child(odd) div {
-  left: 45px; }
+  left: 95px; }
 
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
@@ -810,7 +811,7 @@ a {
   border-color: transparent #5d81bf transparent transparent; }
 
 .timeline ul li:nth-child(even) div {
-  left: -475px; }
+  left: -525px; }
 
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
@@ -827,6 +828,16 @@ a {
   animation-delay: 0s;
   animation-fill-mode: forwards; }
 
+.block-in-left {
+  animation: moveblockleft 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards; }
+
+.block-in-right {
+  animation: moveblockright 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards; }
+
 @keyframes expand {
   from {
     transform: translateX(-205px); }
@@ -838,6 +849,22 @@ a {
     transform: translateX(0); }
   to {
     transform: translateX(-205px); } }
+
+@keyframes moveblockleft {
+  from {
+    transform: translateX(0);
+    opacity: 0; }
+  to {
+    transform: translateX(-50px);
+    opacity: 1; } }
+
+@keyframes moveblockright {
+  from {
+    transform: translateX(0);
+    opacity: 0; }
+  to {
+    transform: translateX(50px);
+    opacity: 1; } }
 
 @media (min-width: 300px) {
   .table {

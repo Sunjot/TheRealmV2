@@ -514,6 +514,7 @@
   background: #5d81bf;
   color: white;
   text-align: left;
+  opacity: 0;
 
   .miniheading {
     padding-bottom: 10px;
@@ -530,7 +531,7 @@
 }
 
 .timeline ul li:nth-child(odd) div {
-  left: 45px;
+  left: 95px;
 }
 
 .timeline ul li:nth-child(odd) div::before {
@@ -540,7 +541,7 @@
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -475px;
+  left: -525px;
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -557,6 +558,14 @@
 
 .collapse {
   @include animate(collapse, 0.5s, 0s, forwards);
+}
+
+.block-in-left {
+  @include animate(moveblockleft, 3s, 0s, forwards);
+}
+
+.block-in-right {
+  @include animate(moveblockright, 3s, 0s, forwards);
 }
 
 // Keyframes
@@ -576,6 +585,28 @@
   }
   to {
     transform: translateX(-205px);
+  }
+}
+
+@keyframes moveblockleft {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveblockright {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(50px);
+    opacity: 1;
   }
 }
 
