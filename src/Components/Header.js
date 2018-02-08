@@ -30,13 +30,13 @@ class Header extends Component {
   render() {
     let links = [
       { name: "Home", short: "Home", link: "/" },
-      { name: "Introduction", short: "Intro", link: "/intro" },
-      { name: "Season 1", short: "S1", link: "/s1" },
-      { name: "Season 2", short: "S2", link: "/s2" },
-      { name: "Season 3", short: "S3", link: "/s3" },
-      { name: "Season 4", short: "S4", link: "/s4" },
-      { name: "Season 5", short: "S5", link: "/intro" },
-      { name: "Season 6", short: "S6", link: "/intro" }];
+      { name: "Start", short: "St", link: "/start" },
+      { name: "World", short: "Wo", link: "/world" },
+      { name: "Westeros", short: "Wes", link: "/westeros" },
+      { name: "Essos", short: "Es", link: "/essos" },
+      { name: "Structure", short: "Str", link: "/structure" },
+      { name: "Houses", short: "H", link: "/houses" },
+      { name: "Rebellion", short: "Reb", link: "/rebellion" }];
 
     return (
       <div id="headerCont">

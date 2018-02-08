@@ -480,6 +480,15 @@
 
 // Rebellion component
 
+#desc-cont-reb {
+  padding: 20px !important;
+  margin-top: 50px;
+  border-radius: 3px;
+  background: #335084;
+  color: #ededed;
+  width: 800px;
+}
+
 .timeline {
   margin-right: 46px;
   margin-bottom: 50px;
@@ -760,6 +769,10 @@
     }
   }
 
+  #desc-cont-reb {
+    width: 300px;
+  }
+
   .timeline ul li div {
     width: 120px;
   }
@@ -867,6 +880,10 @@
     }
   }
 
+  #desc-cont-reb {
+    width: 550px;
+  }
+
   .timeline ul li div {
     width: 220px;
   }
@@ -939,6 +956,10 @@
   }
   #houses-cont {
     width: calc(100% - 200px);
+  }
+
+  #desc-cont-reb {
+    width: 700px;
   }
 
   .timeline ul li div {
@@ -1019,6 +1040,10 @@
         font-size: 17px;
       }
     }
+  }
+
+  #desc-cont-reb {
+    width: 800px;
   }
 
   .timeline ul li div {

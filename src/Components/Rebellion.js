@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Block from './Rebellion/Block';
+import Header from './Header';
 
 class Rebellion extends Component {
 
@@ -53,27 +54,32 @@ class Rebellion extends Component {
     And so we begin - strap on tight.`;
 
     return (
-      <div className="content">
-        <p className="subheading">Robert's Rebellion</p>
-        <p className="desc-cont">If you've read any of the previous sections, you probably saw mentions of
-          Robert's Rebellion. Well - turns out - it is one of the biggest series of events in the Game of Thrones
-          Universe and essential knowledge before you dive into the show. It occurs not long before beginning
-          of the series and sets up the current state in Westeros. You could probably read into it a lot more
-          elsewhere, but I will try to summarize the events the best I can.
-        </p>
-        <section className="timeline">
-          <ul>
-            <Block title="Targaryen Dynasty" info={b1} divid="1"/>
-            <Block title="The Absolute Madman" info={b2} divid="2"/>
-            <Block title="Broken Marriage" info={b3} divid="1"/>
-            <Block title="Trial by Fire?" info={b4} divid="2"/>
-            <Block title="Battle of the Trident" info={b5} divid="1"/>
-            <Block title="Sack of King's Landing" info={b6} divid="2"/>
-            <Block title="Flee the Scene" info={b7} divid="1"/>
-            <Block title="The Aftermath" info={b8} divid="2"/>
-            <Block title="15 Years Later..." info={b9} divid="1"/>
-          </ul>
-        </section>
+      <div>
+        <Header/>
+        <div className="content">
+          <div className="desc-cont" id="desc-cont-reb">
+            <p className="subheading">Robert's Rebellion</p>
+            <p>If you've read any of the previous sections, you probably saw mentions of
+              Robert's Rebellion. Well - turns out - it is one of the biggest series of events in the Game of Thrones
+              Universe and essential knowledge before you dive into the show. It occurs not long before beginning
+              of the series and sets up the current state in Westeros. You could probably read into it a lot more
+              elsewhere, but I will try to summarize the events the best I can.
+            </p>
+          </div>
+          <section className="timeline">
+            <ul>
+              <Block title="Targaryen Dynasty" info={b1} divid="1"/>
+              <Block title="The Absolute Madman" info={b2} divid="2"/>
+              <Block title="Broken Marriage" info={b3} divid="1"/>
+              <Block title="Trial by Fire?" info={b4} divid="2"/>
+              <Block title="Battle of the Trident" info={b5} divid="1"/>
+              <Block title="Sack of King's Landing" info={b6} divid="2"/>
+              <Block title="Flee the Scene" info={b7} divid="1"/>
+              <Block title="The Aftermath" info={b8} divid="2"/>
+              <Block title="15 Years Later..." info={b9} divid="1"/>
+            </ul>
+          </section>
+        </div>
       </div>
     );
   }

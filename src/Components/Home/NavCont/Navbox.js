@@ -28,17 +28,17 @@ class Navbox extends Component {
 
   render() {
     let buttons = [ // set the button title and id ahead of time
-      { title: "Calm before the storm", id: "0", short: "Intro" },
-      { title: "Season 1", id: "1", short: "S1" },
-      { title: "Season 2", id: "2", short: "S2" },
-      { title: "Season 3", id: "3", short: "S3" },
-      { title: "Season 4", id: "4", short: "S4" },
-      { title: "Season 5", id: "5", short: "S5" },
-      { title: "Season 6", id: "6", short: "S6" }];
+      { title: "Briefing", id: "0", short: "Brief" },
+      { title: "The Known World", id: "1", short: "Wo" },
+      { title: "Westeros", id: "2", short: "Wes" },
+      { title: "Essos", id: "3", short: "Ess" },
+      { title: "Social Structure", id: "4", short: "Str" },
+      { title: "Houses", id: "5", short: "H" },
+      { title: "Robert's Rebellion", id: "6", short: "Reb" }];
 
     return (
       <div id="navigation-cont" className="nav-prev">
-        <p className="subheading">Start at the beginning or step into the war</p>
+        <p className="subheading">Start at the beginning or review what you've missed</p>
         <div id="button-row">
           { buttons.map(b => { // map through title/id, create button for each
             return <button id={b.id} key={b.title} type="button"

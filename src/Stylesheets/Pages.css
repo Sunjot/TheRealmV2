@@ -756,6 +756,14 @@ a {
     height: 104px;
     width: 95px; }
 
+#desc-cont-reb {
+  padding: 20px !important;
+  margin-top: 50px;
+  border-radius: 3px;
+  background: #335084;
+  color: #ededed;
+  width: 800px; }
+
 .timeline {
   margin-right: 46px;
   margin-bottom: 50px; }
@@ -992,6 +1000,8 @@ a {
       width: 350px; }
       #houses-cont .family-members > .member-row .member-info-cont > .member-title {
         font-size: 12px; }
+  #desc-cont-reb {
+    width: 300px; }
   .timeline ul li div {
     width: 120px; }
   .timeline ul li:nth-child(even) div {
@@ -1073,6 +1083,8 @@ a {
       width: 500px; }
       #houses-cont .family-members > .member-row .member-info-cont > .member-title {
         font-size: 14px; }
+  #desc-cont-reb {
+    width: 550px; }
   .timeline ul li div {
     width: 220px; }
   .timeline ul li:nth-child(even) div {
@@ -1136,6 +1148,8 @@ a {
       text-align: left; }
   #houses-cont {
     width: calc(100% - 200px); }
+  #desc-cont-reb {
+    width: 700px; }
   .timeline ul li div {
     width: 300px; }
   .timeline ul li:nth-child(even) div {
@@ -1195,6 +1209,8 @@ a {
       width: 600px; }
       #houses-cont .family-members > .member-row .member-info-cont > .member-title {
         font-size: 17px; }
+  #desc-cont-reb {
+    width: 800px; }
   .timeline ul li div {
     width: 400px; }
   .timeline ul li:nth-child(even) div {

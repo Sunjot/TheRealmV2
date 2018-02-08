@@ -30,13 +30,13 @@ class Intro extends Component {
             bottomOffset="50px"
           />
           <div className={dividerClasses}></div>
-          <p id="desc">Well, as a huge Game of Thrones fan I decided to build a visual guide
-          of the show that anybody could find useful. Maybe you just started
-          watching the series, or you're resuming from the middle and you want to quickly catch up on
-          what you've seen already. Either way, the idea
-          is that this will hopefully be more entertaining than reading the plot section on
-          wikipedia. I've created pages for each season, plus one as an introduction to the
-          series if you've never watched before.</p>
+          <p id="desc">For someone who is just getting started with Game of Thrones,
+          it can be quite daunting considering the amount of information you need to consume right from the
+          get-go (family trees, regions, etc). You could probably just read up on that stuff by opening Wikipedia,
+          but there's so much content and it's all over the place - it may seem like a task. I made this website
+          with the intention of simplifying the show as much as possible while providing the essential
+          information before you dive into the series. You might be a new fan or simply revisiting some
+          bits of the show that you can't recall - either way, I hope you find it useful!</p>
         </div>
       </div>
     );

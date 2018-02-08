@@ -17,48 +17,51 @@ class Preview extends Component {
     let linkString = ``;
 
     if (this.props.bid === "0") {
-      linkString = `/intro`
+      linkString = `/start`
       descString = `
-          Well, not all that calm even before season 1 gets underway. If you're looking to read into the
-          beginnings, you're at the right place.
-          This section will introduce you to the world of Game of Thrones and provide you with
-          every bit of knowledge you will need to get started with episode one.`;
+          A small introduction to the series if you're going in completely blind.`;
     }
     if (this.props.bid === "1") {
-      linkString = `/s1`
+      linkString = `/world`
       descString = `
-          Just starting out? We've all been there at one point or another. Doesn't take long in
-          season one before some dark secrets begin to make their way out, and the consequences
-          end up more severe than you can imagine.`;
+          Before we can dive into the details, we need to know what the world of Game of Thrones looks like.
+          What are the different lands that exist and what will their importance be throughout the series?`;
     }
     if (this.props.bid === "2") {
-      linkString = `/s2`
+      linkString = `/westeros`
       descString = `
-          A wild ride during season one, with some heart-breaking moments. Well, it doesn't get any
-          better over the next ten episodes, so buckle up. The Lannisters attempt to defend the iron throne
-          and we get a good look at what lies beyond the wall.`;
+          An essential introduction to the continent of Westeros, which is where a large chunk of the action will
+          take place. Considering how big Westeros is and the million times the various regions will be mentioned,
+          you'll definitely want to read this one over.`;
     }
     if (this.props.bid === "3") {
-      linkString = `/s3`
+      linkString = `/essos`
       descString = `
-          Didn't cry enough during season two? Not to worry! By the time you finish season three, you'll
-          have enough tears to fill the great lakes. The battle for the iron throne continues, as families
-          look to rebound. Sausages are eaten and regards are sent in the third season of Game of Thrones.`;
+          Not to be overshadowed by Westeros, Essos is another continent of importance involving some key
+          characters. Just like Westeros, there are plenty of areas throughout that'll come up regularly
+          through dialogue.`;
     }
     if (this.props.bid === "4") {
-      linkString = `/s4`
+      linkString = `/structure`
       descString = `
-          I hope you've given yourself enough time to recover after season three, because the fourth
-          doesn't give you much time for anything before bringing the chaos right back. Wedding season is still
-          alive and well - this time in Kings Landing. Lets just hope it doesn't end like the last one (pls).`;
+          What's a commoner to a lord? What's a lord to a king? From the one with the crown down to the
+          homeless guy, you probably want to know about the ranks
+          and who holds authority over who in the show. It's not that complicated!`;
     }
     if (this.props.bid === "5") {
-      linkString = `/intro`
-      descString = `Coming soon!`;
+      linkString = `/houses`
+      descString = `
+          Alright, so there are hundreds of houses in existence, but there are a select few that are focal
+          points throughout the series. We'll give a brief overview of each and mention some of the
+          key family members.`;
     }
     if (this.props.bid === "6") {
-      linkString = `/intro`
-      descString = `Coming soon!`;
+      linkString = `/rebellion`
+      descString = `
+          In order to understand the state of the show in episode 1 and the storylines that follow, we must
+          revisit a series of events known
+          as Robert's Rebellion that occured about 15 years prior to the show. This will give you a solid
+          understanding of where the show stands as we kick off the series premiere.`;
     }
 
     this.setState({
