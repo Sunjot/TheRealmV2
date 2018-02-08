@@ -13,7 +13,7 @@ class Rebellion extends Component {
     their bloodline pure (get used to incest). So, Aerys was married to his sister, Rhaella,
     and they had 2 children at the time: Rhaegar and Viserys. Aerys was known as the Mad King and
     for good reason - he had people killed left and right and many houses rebelled against him
-    (Rebelled. Robert's Rebellion. See where I'm going?)`;
+    (Rebelled. Robert's Rebellion. See where this is going?)`;
 
     let b3 = `Rhaegar was married to Elia Martell but he had feelings for someone else - Robert's wife,
     Lyanna Stark. He went and abducted her but here's the catch: Lyanna felt the same way and
@@ -46,7 +46,7 @@ class Rebellion extends Component {
     wanted them punished, but Robert was more forgiving with the Targaryen dynasty finally over.
     He claimed the Iron Throne, married Cersei Lannister and made Jon Arryn his Hand. `;
 
-    let b9 = `Ah yes, we've finally reached the beginning of the series. Daenerys is a lot older but
+    let b9 = `Ah yes, so we reach episode 1. Daenerys is a lot older but
     still in the Free Cities with her brother; Robert and Cersei have a couple kids now; and Eddard
     is back in the North and has a few kids of his own with Catelyn. However, it's not all sunshine
     and roses as news breaks out that Jon Arryn has been killed.
@@ -66,12 +66,12 @@ class Rebellion extends Component {
             <Block title="Targaryen Dynasty" info={b1} divid="1"/>
             <Block title="The Absolute Madman" info={b2} divid="2"/>
             <Block title="Broken Marriage" info={b3} divid="1"/>
-            <Block title="Trial by Fire?" info={b3} divid="2"/>
-            <Block title="Battle of the Trident" info={b3} divid="1"/>
-            <Block title="Sack of King's Landing" info={b3} divid="2"/>
-            <Block title="Flee the Scene" info={b3} divid="1"/>
-            <Block title="The Aftermath" info={b3} divid="2"/>
-            <Block title="15 Years Later..." info={b3} divid="1"/>
+            <Block title="Trial by Fire?" info={b4} divid="2"/>
+            <Block title="Battle of the Trident" info={b5} divid="1"/>
+            <Block title="Sack of King's Landing" info={b6} divid="2"/>
+            <Block title="Flee the Scene" info={b7} divid="1"/>
+            <Block title="The Aftermath" info={b8} divid="2"/>
+            <Block title="15 Years Later..." info={b9} divid="1"/>
           </ul>
         </section>
       </div>

@@ -8,17 +8,17 @@ class Block extends Component {
     this.activate = this.activate.bind(this);
 
     this.state = {
-      block: "block-out"
+      block: ""
     }
   }
 
   activate() {
-    if (this.props.divid === "1") {
+    if (this.props.divid === "1") { // for right side blocks
       this.setState({
         block: "block-in-left"
       })
     }
-    if (this.props.divid === "2") {
+    if (this.props.divid === "2") { // for left side blocks
       this.setState({
         block: "block-in-right"
       })

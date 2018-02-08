@@ -515,6 +515,7 @@
   color: white;
   text-align: left;
   opacity: 0;
+  border-radius: 3px;
 
   .miniheading {
     padding-bottom: 10px;
@@ -758,6 +759,14 @@
       }
     }
   }
+
+  .timeline ul li div {
+    width: 120px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -240px;
+  }
 }
 
 @media (min-width: 500px) {
@@ -857,6 +866,14 @@
       }
     }
   }
+
+  .timeline ul li div {
+    width: 220px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -340px;
+  }
 }
 
 @media (min-width: 768px){
@@ -922,6 +939,14 @@
   }
   #houses-cont {
     width: calc(100% - 200px);
+  }
+
+  .timeline ul li div {
+    width: 300px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -425px;
   }
 }
 
@@ -994,5 +1019,13 @@
         font-size: 17px;
       }
     }
+  }
+
+  .timeline ul li div {
+    width: 400px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -525px;
   }
 }
