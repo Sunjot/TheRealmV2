@@ -48,7 +48,7 @@ class Houses extends Component {
     super();
 
     this.state = {
-      choice: "0"
+      choice: "-1"
     }
   }
 
@@ -60,36 +60,36 @@ class Houses extends Component {
 
   render() {
 
-    let houseButtons = [
-      {name: "Baratheon", id: "0"},
-      {name: "Arryn", id: "1"},
-      {name: "Martell", id: "2"},
-      {name: "Stark", id: "3"},
-      {name: "Bolton", id: "4"},
-      {name: "Greyjoy", id: "5"},
-      {name: "Lannister", id: "6"},
-      {name: "Tyrell", id: "7"},
-      {name: "Tully", id: "8"},
-      {name: "Frey", id: "9"},
-      {name: "Targaryen", id: "last-10"}
+    let houseImages = [
+      {name: "Baratheon", id: "0", sig: "sigil-0", cl: "sigils hover-image-one"},
+      {name: "Arryn", id: "1", sig: "sigil-1", cl: "sigils hover-image-two"},
+      {name: "Martell", id: "2", sig: "sigil-2", cl: "sigils hover-image-one"},
+      {name: "Stark", id: "3", sig: "sigil-3", cl: "sigils hover-image-two"},
+      {name: "Bolton", id: "4", sig: "sigil-4", cl: "sigils hover-image-one"},
+      {name: "Greyjoy", id: "5", sig: "sigil-5", cl: "sigils hover-image-two"},
+      {name: "Lannister", id: "6", sig: "sigil-6", cl: "sigils hover-image-one"},
+      {name: "Tyrell", id: "7", sig: "sigil-7", cl: "sigils hover-image-two"},
+      {name: "Tully", id: "8", sig: "sigil-8", cl: "sigils hover-image-one"},
+      {name: "Frey", id: "9", sig: "sigil-9", cl: "sigils hover-image-two"},
+      {name: "Targaryen", id: "last-10", sig: "sigil-10", cl: "sigils hover-image-one"}
     ];
 
     return (
       <div>
         <Header/>
         <div className="content">
-          <p className="subheading">Houses</p>
-          <p className="desc-cont">In this section we go over the Great Houses of the various regions. However, I also
-            thought it was important that we discuss a few which are not Great Houses but do play a significant
-            role in the show. Click below to get an overview of the respective house.
+          <p className="desc-cont">Below are a bunch of sigils that represent some of the key houses in the
+            series. Click on one to learn more!
           </p>
-          <div id="house-selecs">
-            { houseButtons.map(b => {
-              return <button id={b.id} className="house-buttons"
-                onClick={ () => this.setContent(b.id) }>{b.name}</button>
-            })}
-          </div>
-          <div id="houses-cont">
+          <div id="house-cont">
+            { this.state.choice === "-1" &&
+              <div id="house-selecs">
+                { houseImages.map(b => {
+                  return <div id={b.sig} className={b.cl} key={b.id}
+                    onClick={ () => this.setContent(b.id) }></div>
+                })}
+              </div>
+            }
             { this.state.choice === "0" &&
                 <div>
                   <div className="houseIntroCont">

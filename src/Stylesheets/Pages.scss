@@ -46,59 +46,6 @@
   text-align: center;
 }
 
-// Table component
-
-.tableIcon {
-  @include flex(row, center, center);
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 10px;
-  left: 10px;
-  border-radius: 25px;
-  background-color: #e8e8e8;
-  cursor: pointer;
-  border: solid 1px #afafaf;
-  z-index: 20;
-
-  &:hover {
-    background-color: #e0e0e0;
-  }
-
-}
-
-.table {
-  @include flex(column, flex-start, center);
-  transform: translateX(-205px);
-  background-color: #f9f9f9;
-  border: 1px solid #afaeae;
-  margin-top: 100px;
-  width: 200px;
-}
-
-.item-cont {
-  @include flex(column, center, center);
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  border-bottom: 1px solid #afaeae;
-  cursor: pointer;
-  transition: background-color 0.5s;
-
-  &:hover {
-    background-color: #e8e8e8;
-  }
-}
-
-.active-item {
-  background-color: #e5e5e5;
-}
-
-#table-wrap {
-  position: absolute;
-  z-index: 20;
-}
-
 // World component
 
 .desc-cont {
@@ -310,42 +257,108 @@
 
 // House component
 
-#last-10 {
-  border-right: none;
-}
 
-#house-selecs {
-  width: 80%;
-}
+#house-cont {
 
-.house-buttons {
-  padding: 10px 15px 10px 15px;
-  margin: 5px 0 0 0;
-  border-radius: 0;
-  background-color: white;
-  border-right: 1px solid #9daecc;
-  background-color: #e1e9f7;
-  transition: background-color 0.5s;
+  #house-selecs {
+    display: grid;
+    grid-template-columns: 110px 110px 110px 110px 110px 110px 110px 110px;
+    grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px;
+    margin: 20px;
 
-  &:hover {
-    background-color: #d7e0ef;
-  }
+    .sigils {
+      margin-right: 10px;
+      background-image: url('../images/sigils-3.png');
+      cursor: pointer;
+    }
 
-}
+    #sigil-0 {
+      background-position: 0px 0px;
+      height: 104px;
+      width: 95px;
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    }
 
-#houses-cont {
-  @include flex(column, flex-start, flex-start);
-  margin: 50px 0 20px 0;
-  width: calc(100% - 100px);
+    #sigil-1 {
+      background-position: 0px -104px;
+      height: 104px;
+      width: 95px;
+      grid-column: 3 / span 1;
+      grid-row: 3 / span 1;
+    }
 
-  .miniheading {
-    font-family: "Poppins";
-  }
+    #sigil-2 {
+      background-position: 0px -207px;
+      height: 104px;
+      width: 95px;
+      grid-column: 6 / span 1;
+      grid-row: 1 / span 1;
+    }
 
-  > div {
-    width: 100%;
-    @include animate(fadein, 0.5s, 0s, forwards);
-    opacity: 0;
+    #sigil-3 {
+      background-position: 0px -311px;
+      height: 102px;
+      width: 95px;
+      grid-column: 8 / span 1;
+      grid-row: 3 / span 1;
+    }
+
+    #sigil-4 {
+      background-position: 0px -414px;
+      height: 101px;
+      width: 95px;
+      grid-column: 2 / span 1;
+      grid-row: 5 / span 1;
+    }
+
+    #sigil-5 {
+      background-position: 0px -516px;
+      height: 104px;
+      width: 95px;
+      grid-column: 4 / span 1;
+      grid-row: 8 / span 1;
+    }
+
+    #sigil-6 {
+      background-position: 0px -620px;
+      height: 103px;
+      width: 95px;
+      grid-column: 7 / span 1;
+      grid-row: 5 / span 1;
+    }
+
+    #sigil-7 {
+      background-position: 0px -723px;
+      height: 103px;
+      width: 95px;
+      grid-column: 5 / span 1;
+      grid-row: 4 / span 1;
+    }
+
+    #sigil-8 {
+      background-position: 0px -826px;
+      height: 104px;
+      width: 95px;
+      grid-column: 1 / span 1;
+      grid-row: 7 / span 1;
+    }
+
+    #sigil-9 {
+      background-position: 0px -930px;
+      height: 103px;
+      width: 95px;
+      grid-column: 5 / span 1;
+      grid-row: 6 / span 1;
+    }
+
+    #sigil-10 {
+      background-position: 0px -1033px;
+      height: 104px;
+      width: 95px;
+      grid-column: 8 / span 1;
+      grid-row: 7 / span 1;
+    }
   }
 
   .houseIntroCont {
@@ -410,73 +423,8 @@
       }
     }
   }
-
-  #sigil-0 {
-    background-position: 0px 0px;
-    height: 104px;
-    width: 95px;
-  }
-
-  #sigil-1 {
-    background-position: 0px -104px;
-    height: 104px;
-    width: 95px;
-  }
-
-  #sigil-2 {
-    background-position: 0px -207px;
-    height: 104px;
-    width: 95px;
-  }
-
-  #sigil-3 {
-    background-position: 0px -311px;
-    height: 102px;
-    width: 95px;
-  }
-
-  #sigil-4 {
-    background-position: 0px -414px;
-    height: 101px;
-    width: 95px;
-  }
-
-  #sigil-5 {
-    background-position: 0px -516px;
-    height: 104px;
-    width: 95px;
-  }
-
-  #sigil-6 {
-    background-position: 0px -620px;
-    height: 103px;
-    width: 95px;
-  }
-
-  #sigil-7 {
-    background-position: 0px -723px;
-    height: 103px;
-    width: 95px;
-  }
-
-  #sigil-8 {
-    background-position: 0px -826px;
-    height: 104px;
-    width: 95px;
-  }
-
-  #sigil-9 {
-    background-position: 0px -930px;
-    height: 103px;
-    width: 95px;
-  }
-
-  #sigil-10 {
-    background-position: 0px -1033px;
-    height: 104px;
-    width: 95px;
-  }
 }
+
 
 // Rebellion component
 
@@ -578,7 +526,54 @@
   @include animate(moveblockright, 3s, 0s, forwards);
 }
 
+.hover-image-one {
+  @include animate(hoverimageone, 35s, 0s, forwards);
+  animation-iteration-count: infinite;
+}
+
+.hover-image-two {
+  @include animate(hoverimageone, 35s, 0s, forwards);
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
 // Keyframes
+
+@keyframes hoverimageone {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(5px, 5px);
+  }
+  20% {
+    transform: translate(-5px, -5px);
+  }
+  30% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(5px, 0px);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  60% {
+    transform: translate(-5px, -5px);
+  }
+  70% {
+    transform: translate(0px, 5px);
+  }
+  80% {
+    transform: translate(5px, 5px);
+  }
+  90% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 
 @keyframes expand {
   from {

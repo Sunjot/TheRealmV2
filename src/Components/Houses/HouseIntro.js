@@ -5,7 +5,6 @@ class HouseIntro extends Component {
   render() {
     return (
       <div className="house-intro">
-        <div id={this.props.sigil} className="sigils"></div>
         <div className="house-general">
           <p className="miniheading">
             House {this.props.name}
