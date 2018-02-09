@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import HouseIntro from './Houses/HouseIntro';
-import Rob from "../images/rob-c.png";
-import Stan from "../images/stan-c.png";
-import Ren from "../images/renly-c.png";
-import Joff from "../images/joff-c.png";
+import Family from './Houses/Family';
+import HouseItem from "./Houses/HouseItem";
 import JonArr from "../images/jonarr-c.png"
 import Lysa from "../images/lysa-c.png"
 import Robin from "../images/robin-c.png"
@@ -52,7 +50,7 @@ class Houses extends Component {
     }
   }
 
-  setContent(val) {
+  setContent = (val) => {
     this.setState({
       choice: val
     });
@@ -61,136 +59,82 @@ class Houses extends Component {
   render() {
 
     let houseImages = [
-      {name: "Baratheon", id: "0", sig: "sigil-0", cl: "sigils hover-image-one"},
-      {name: "Arryn", id: "1", sig: "sigil-1", cl: "sigils hover-image-two"},
-      {name: "Martell", id: "2", sig: "sigil-2", cl: "sigils hover-image-one"},
-      {name: "Stark", id: "3", sig: "sigil-3", cl: "sigils hover-image-two"},
-      {name: "Bolton", id: "4", sig: "sigil-4", cl: "sigils hover-image-one"},
-      {name: "Greyjoy", id: "5", sig: "sigil-5", cl: "sigils hover-image-two"},
-      {name: "Lannister", id: "6", sig: "sigil-6", cl: "sigils hover-image-one"},
-      {name: "Tyrell", id: "7", sig: "sigil-7", cl: "sigils hover-image-two"},
-      {name: "Tully", id: "8", sig: "sigil-8", cl: "sigils hover-image-one"},
-      {name: "Frey", id: "9", sig: "sigil-9", cl: "sigils hover-image-two"},
-      {name: "Targaryen", id: "last-10", sig: "sigil-10", cl: "sigils hover-image-one"}
+      {name: "Baratheon", id: "0", sig: "sigil-0", cl: "sigils"},
+      {name: "Arryn", id: "1", sig: "sigil-1", cl: "sigils"},
+      {name: "Martell", id: "2", sig: "sigil-2", cl: "sigils"},
+      {name: "Stark", id: "3", sig: "sigil-3", cl: "sigils"},
+      {name: "Bolton", id: "4", sig: "sigil-4", cl: "sigils"},
+      {name: "Greyjoy", id: "5", sig: "sigil-5", cl: "sigils"},
+      {name: "Lannister", id: "6", sig: "sigil-6", cl: "sigils"},
+      {name: "Tyrell", id: "7", sig: "sigil-7", cl: "sigils"},
+      {name: "Tully", id: "8", sig: "sigil-8", cl: "sigils"},
+      {name: "Frey", id: "9", sig: "sigil-9", cl: "sigils"},
+      {name: "Targaryen", id: "last-10", sig: "sigil-10", cl: "sigils"}
     ];
+
+    let Baratheon = [
+      { sigil: "sigil-0", name: "Baratheon", status: "Great House", leader: "Robert Baratheon",
+      regions: "The Crownlands & Stormlands", castles: "Storm's End, Red Keep, and Dragonstone" }
+    ];
+    let BaratheonFamily = [
+      {name: "Robert Baratheon", image: "https://i.imgur.com/EZRRQuo.png", info: `As described already, Robert is the King. He has 2 brothers, Stannis and Renly.
+      He is also married to Cersei Lannister, and they have 3 children:
+      Joffrey, Myrcella, and Tommen Baratheon.`},
+      {name: "Joffrey Baratheon", image: "https://i.imgur.com/m98x6Vc.png", info: `The son of Robert and Cersei. Joffrey is a scumbag (if the picture didn't give it
+      away) known for his arrogance and childishness. He has 2 younger siblings - Myrcella and
+      Tommen.`},
+      {name: "Stannis Baratheon", image: "https://i.imgur.com/ozOS6Uk.png", info: `The brother of Robert and Renly Baratheon. He is part of the Small Council.
+      He is married to Selyse Baratheon and they have a daughter named Shireen.`},
+      {name: "Renly Baratheon", image: "https://i.imgur.com/wYRJzSO.png", info: `The youngest of the 3 brothers who is also part of the Small Council.
+      Renly has a gay relationship with Loras Tyrell, which they must keep a secret
+      as homosexuality is considered a sin in the Seven Kingdoms.`}
+    ]
+
+    let Arryn = [
+      { sigil: "sigil-1", name: "Arryn", status: "Great House", leader: "Jon Arryn", regions: "The Vale",
+      castles: "The Eyrie" }];
+
+    let ArrynFamily = [
+      {name: "Jon Arryn", image: "https://i.imgur.com/Dipk7Sy.png", info: `The head of House Arryn and the last known Hand of the King as the series gets
+      underway (spoiler alert, but not really) as he is killed just before the beginning of episode one.
+      The picture on the left would be the one and only shot of him in the series.`},
+      {name: "Lysa Arryn", image: "https://i.imgur.com/jNlyu5O.png", info: `Born into House Tully, Lysa married Jon during Robert's Rebellion (discussed last).
+      She takes over as the ruler of House Arryn after Jon's death on behalf of her
+      son, Robin, who is too young at the time for those duties.`},
+      {name: "Robin Arryn", image: "https://i.imgur.com/vHTnUhr.png", info: `The son of Jon and Lysa who takes the title as ruler of House Arryn after his father
+      dies. However, because of his age at the time, his mother rules on his behalf until he is old enough.`}
+    ]
+
 
     return (
       <div>
         <Header/>
         <div className="content">
-          <p className="desc-cont">Below are a bunch of sigils that represent some of the key houses in the
-            series. Click on one to learn more!
-          </p>
           <div id="house-cont">
             { this.state.choice === "-1" &&
-              <div id="house-selecs">
-                { houseImages.map(b => {
-                  return <div id={b.sig} className={b.cl} key={b.id}
-                    onClick={ () => this.setContent(b.id) }></div>
-                })}
+              <div id="house-selecs-cont">
+                <p className="miniheading">Pick a house to learn more!</p>
+                <div id="house-selecs">
+                  { houseImages.map(b => {
+                    return <div id={b.sig} className={b.cl} key={b.id}
+                      onClick={ () => this.setContent(b.id) }></div>
+                  })}
+                </div>
               </div>
             }
             { this.state.choice === "0" &&
-                <div>
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-0" name="Baratheon" status="Great House" leader="Robert Baratheon"
-                      regions="The Crownlands & Stormlands" castles="Storm's End, Red Keep, and Dragonstone"/>
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>Given that Robert Baratheon is the King, House Baratheon automatically becomes the
-                      Royal House. As the Royal House, they also rule the Crownlands, which is the location
-                      of the Iron Throne (Red Keep in King's Landing) and where the King and his/her family reside.</p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Rob} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Robert Baratheon</p>
-                        <p>As described already, Robert is the King. He has 2 brothers, Stannis and Renly.
-                        He is also married to Cersei Lannister, and they have 3 children:
-                        Joffrey, Myrcella, and Tommen Baratheon. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Joff} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Joffrey Baratheon</p>
-                        <p>The son of Robert and Cersei. Joffrey is a scumbag (if the picture didn't give it
-                        away) known for his arrogance and childishness. He has 2 younger siblings - Myrcella and
-                        Tommen.
-                          </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Stan} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Stannis Baratheon</p>
-                        <p>The brother of Robert and Renly Baratheon. He is part of the Small Council.
-                        He is married to Selyse Baratheon and they have a daughter named Shireen.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Ren} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Renly Baratheon</p>
-                        <p>The youngest of the 3 brothers who is also part of the Small Council.
-                        Renly has a gay relationship with Loras Tyrell, which they must keep a secret
-                        as homosexuality is considered a sin in the Seven Kingdoms.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <HouseItem contentFunc={this.setContent} general={Baratheon} family={BaratheonFamily}
+                note="Given that Robert Baratheon is the King, House Baratheon automatically becomes the
+                Royal House. As the Royal House, they also rule the Crownlands, which is the location
+                of the Iron Throne (Red Keep in King's Landing) and where the King and his/her family reside."/>
             }
             { this.state.choice === "1" &&
-                <div>
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-1" name="Arryn" status="Great House" leader="Jon Arryn"
-                      regions="The Vale" castles="The Eyrie" />
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>House Arryn has ruled over The Vale for 100s of years - well before the events
-                      of the show take place. Jon Arryn, as mentioned prior, is The Hand.</p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={JonArr} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Jon Arryn</p>
-                        <p>The head of House Arryn and the last known Hand of the King as the series gets
-                        underway (spoiler alert, but not really)
-                        as he is killed just before the beginning of episode one.
-                        The picture on the left would be the one and only shot of him in the series.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Lysa} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Lysa Arryn</p>
-                        <p>Born into House Tully, Lysa married Jon during Robert's Rebellion (discussed last).
-                        She takes over as the ruler of House Arryn after Jon's death on behalf of her
-                        son, Robin, who is too young at the time for those duties. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Robin} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Robin Arryn</p>
-                        <p>The son of Jon and Lysa who takes the title as ruler of House Arryn after his father
-                        dies. However, because of his age at the time, his mother rules on his behalf until he
-                        is old enough.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Arryn} family={ArrynFamily}
+              note="House Arryn has ruled over The Vale for 100s of years - well before the events
+              of the show take place. Jon Arryn, as mentioned prior, is The Hand." />
             }
             { this.state.choice === "2" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-2" name="Martell" status="Great House" leader="Doran Martell"
                       regions="Dorne" castles="Sunspear" />
@@ -235,7 +179,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "3" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-3" name="Stark" status="Great House" leader="Eddard Stark"
                       regions="The North" castles="Winterfell" />
@@ -330,7 +274,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "4" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-4" name="Bolton" status="Vassal" leader="Roose Bolton"
                       regions="The North" castles="Dreadfort" />
@@ -363,7 +307,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "5" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-5" name="Greyjoy" status="Great House" leader="Balon Greyjoy"
                       regions="The Iron Islands" castles="Pyke"/>
@@ -412,7 +356,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "6" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-6" name="Lannister" status="Great House" leader="Tywin Lannister"
                       regions="Westerlands" castles="Casterly Rock" />
@@ -464,7 +408,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "7" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-7" name="Tyrell" status="Great House" leader="Mace Tyrell"
                       regions="The Reach" castles="Highgarden" />
@@ -514,7 +458,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "8" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-8" name="Tully" status="Great House" leader="Hoster Tully"
                       regions="The Riverlands" castles="Riverrun" />
@@ -548,7 +492,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "9" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-9" name="Frey" status="Vassal" leader="Walder Frey"
                       regions="The Riverlands" castles="The Twins"/>
@@ -573,7 +517,7 @@ class Houses extends Component {
                 </div>
             }
             { this.state.choice === "last-10" &&
-                <div>
+                <div className="house-item">
                   <div className="houseIntroCont">
                     <HouseIntro sigil="sigil-10" name="Targaryen" status="Exiled Great House" leader="Viserys Targaryen"
                       regions="None (based in The Free Cities)" castles="None"/>

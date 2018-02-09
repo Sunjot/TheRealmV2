@@ -5,15 +5,17 @@ class HouseIntro extends Component {
   render() {
     return (
       <div className="house-intro">
-        <div className="house-general">
-          <p className="miniheading">
-            House {this.props.name}
-          </p>
-          <p>Status: {this.props.status}</p>
-          <p>Leader: {this.props.leader}</p>
-          <p>Region(s): {this.props.regions}</p>
-          <p>Castle(s): {this.props.castles}</p>
-        </div>
+          {this.props.obj.map(o => {
+            return <div className="house-general">
+              <p className="miniheading">
+                House {o.name}
+              </p>
+              <p>Status: {o.status}</p>
+              <p>Leader: {o.leader}</p>
+              <p>Region(s): {o.regions}</p>
+              <p>Castle(s): {o.castles}</p>
+            </div>
+          })}
       </div>
     );
   }

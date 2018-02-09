@@ -571,142 +571,180 @@ a {
     box-shadow: 0px 0px 2px 0px #8a8a8a;
     border: 1px solid #f4f4f4; }
 
-#house-cont #house-selecs {
-  display: grid;
-  grid-template-columns: 110px 110px 110px 110px 110px 110px 110px 110px;
-  grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px;
-  margin: 20px; }
-  #house-cont #house-selecs .sigils {
-    margin-right: 10px;
-    background-image: url("../images/sigils-3.png");
-    cursor: pointer; }
-  #house-cont #house-selecs #sigil-0 {
-    background-position: 0px 0px;
-    height: 104px;
-    width: 95px;
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1; }
-  #house-cont #house-selecs #sigil-1 {
-    background-position: 0px -104px;
-    height: 104px;
-    width: 95px;
-    grid-column: 3 / span 1;
-    grid-row: 3 / span 1; }
-  #house-cont #house-selecs #sigil-2 {
-    background-position: 0px -207px;
-    height: 104px;
-    width: 95px;
-    grid-column: 6 / span 1;
-    grid-row: 1 / span 1; }
-  #house-cont #house-selecs #sigil-3 {
-    background-position: 0px -311px;
-    height: 102px;
-    width: 95px;
-    grid-column: 8 / span 1;
-    grid-row: 3 / span 1; }
-  #house-cont #house-selecs #sigil-4 {
-    background-position: 0px -414px;
-    height: 101px;
-    width: 95px;
-    grid-column: 2 / span 1;
-    grid-row: 5 / span 1; }
-  #house-cont #house-selecs #sigil-5 {
-    background-position: 0px -516px;
-    height: 104px;
-    width: 95px;
-    grid-column: 4 / span 1;
-    grid-row: 8 / span 1; }
-  #house-cont #house-selecs #sigil-6 {
-    background-position: 0px -620px;
-    height: 103px;
-    width: 95px;
-    grid-column: 7 / span 1;
-    grid-row: 5 / span 1; }
-  #house-cont #house-selecs #sigil-7 {
-    background-position: 0px -723px;
-    height: 103px;
-    width: 95px;
-    grid-column: 5 / span 1;
-    grid-row: 4 / span 1; }
-  #house-cont #house-selecs #sigil-8 {
-    background-position: 0px -826px;
-    height: 104px;
-    width: 95px;
-    grid-column: 1 / span 1;
-    grid-row: 7 / span 1; }
-  #house-cont #house-selecs #sigil-9 {
-    background-position: 0px -930px;
-    height: 103px;
-    width: 95px;
-    grid-column: 5 / span 1;
-    grid-row: 6 / span 1; }
-  #house-cont #house-selecs #sigil-10 {
-    background-position: 0px -1033px;
-    height: 104px;
-    width: 95px;
-    grid-column: 8 / span 1;
-    grid-row: 7 / span 1; }
-
-#house-cont .houseIntroCont {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left; }
-  #house-cont .houseIntroCont .house-intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 50%; }
-    #house-cont .houseIntroCont .house-intro .house-general {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start; }
-    #house-cont .houseIntroCont .house-intro .sigils {
-      margin-right: 10px;
-      background-image: url("../images/sigils-3.png"); }
-  #house-cont .houseIntroCont .general-info {
+#house-cont {
+  margin: 25px 5px 40px 5px; }
+  #house-cont #house-selecs-cont {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    width: 50%; }
-
-#house-cont .house-divider {
-  width: calc(100% - 25px);
-  height: 1px;
-  background-color: #bfbfbf;
-  margin: 20px 0 20px 0; }
-
-#house-cont .family-members {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
-  #house-cont .family-members #mems-of-house {
-    padding-bottom: 30px; }
-  #house-cont .family-members .member-row {
+    align-items: center;
+    animation: fadein 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards; }
+    #house-cont #house-selecs-cont .miniheading {
+      font-size: 20px !important; }
+    #house-cont #house-selecs-cont #house-selecs {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 760px;
+      margin: 20px; }
+      #house-cont #house-selecs-cont #house-selecs .sigils {
+        margin: 10px 15px 40px 15px;
+        background-image: url("../images/finalsig.png");
+        background-size: 100px 1155px;
+        cursor: pointer; }
+        #house-cont #house-selecs-cont #house-selecs .sigils:hover {
+          animation: rotateimage 1s;
+          animation-delay: 0s;
+          animation-fill-mode: forwards;
+          animation-timing-function: ease-in-out; }
+        #house-cont #house-selecs-cont #house-selecs .sigils:hover:after {
+          content: '';
+          font-family: 'Ubuntu';
+          font-size: 13px !important;
+          position: absolute;
+          bottom: -50px;
+          left: 0px;
+          width: 95px;
+          height: 50px; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-0 {
+        background-position: 0px 0px;
+        height: 104px;
+        width: 95px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-0:hover:after {
+          content: 'House Baratheon'; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-1 {
+        background-position: 0px -105px;
+        height: 104px;
+        width: 95px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-1:hover:after {
+          content: 'House Arryn'; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-2 {
+        background-position: 0px -210px;
+        height: 104px;
+        width: 95px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-2:hover:after {
+          content: 'House Martell'; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-3 {
+        background-position: 0px -315px;
+        height: 104px;
+        width: 95px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-3:hover:after {
+          content: 'House Stark'; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-4 {
+        background-position: 0px -420px;
+        height: 104px;
+        width: 87px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-4:hover:after {
+          content: 'House Bolton';
+          width: 87px; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-5 {
+        background-position: 0px -525px;
+        height: 104px;
+        width: 95px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-5:hover:after {
+          content: 'House Greyjoy'; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-6 {
+        background-position: 0px -630px;
+        height: 104px;
+        width: 87px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-6:hover:after {
+          content: 'House Lannister';
+          width: 87px; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-7 {
+        background-position: 0px -735px;
+        height: 104px;
+        width: 87px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-7:hover:after {
+          content: 'House Tyrell';
+          width: 87px; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-8 {
+        background-position: 0px -840px;
+        height: 104px;
+        width: 95px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-8:hover:after {
+          content: 'House Tully'; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-9 {
+        background-position: 0px -945px;
+        height: 104px;
+        width: 95px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-9:hover:after {
+          content: 'House Frey'; }
+      #house-cont #house-selecs-cont #house-selecs #sigil-10 {
+        background-position: 0px -1050px;
+        height: 104px;
+        width: 87px; }
+        #house-cont #house-selecs-cont #house-selecs #sigil-10:hover:after {
+          content: 'House Targaryen';
+          width: 87px; }
+  #house-cont .house-item {
+    animation: fadein 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0; }
+  #house-cont .returnSelecs {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    padding: 10px 10px 10px 10px; }
+  #house-cont .houseIntroCont {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 600px;
-    padding-bottom: 30px; }
-    #house-cont .family-members .member-row img {
-      width: 100px; }
-    #house-cont .family-members .member-row .member-info-cont {
+    text-align: left; }
+    #house-cont .houseIntroCont .house-intro {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 50%; }
+      #house-cont .houseIntroCont .house-intro .house-general {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
+    #house-cont .houseIntroCont .general-info {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      padding-left: 10px; }
-      #house-cont .family-members .member-row .member-info-cont .member-title {
-        font-size: 17px;
-        font-weight: bold; }
-      #house-cont .family-members .member-row .member-info-cont p {
-        text-align: left; }
+      width: 50%; }
+  #house-cont .house-divider {
+    width: calc(100% - 25px);
+    height: 1px;
+    background-color: #bfbfbf;
+    margin: 20px 0 20px 0; }
+  #house-cont .family-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    #house-cont .family-members #mems-of-house {
+      padding-bottom: 30px; }
+    #house-cont .family-members .member-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 600px;
+      padding-bottom: 30px; }
+      #house-cont .family-members .member-row img {
+        width: 100px; }
+      #house-cont .family-members .member-row .member-info-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px; }
+        #house-cont .family-members .member-row .member-info-cont .member-title {
+          font-size: 17px;
+          font-weight: bold; }
+        #house-cont .family-members .member-row .member-info-cont p {
+          text-align: left; }
 
 #desc-cont-reb {
   padding: 20px !important;
@@ -799,42 +837,19 @@ a {
   animation-delay: 0s;
   animation-fill-mode: forwards; }
 
-.hover-image-one {
-  animation: hoverimageone 35s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite; }
-
-.hover-image-two {
-  animation: hoverimageone 35s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-direction: reverse; }
-
-@keyframes hoverimageone {
+@keyframes rotateimage {
   0% {
-    transform: translate(0px, 0px); }
-  10% {
-    transform: translate(5px, 5px); }
+    transform: rotate(0deg); }
   20% {
-    transform: translate(-5px, -5px); }
-  30% {
-    transform: translate(-5px, 5px); }
+    transform: rotate(15deg); }
   40% {
-    transform: translate(5px, 0px); }
-  50% {
-    transform: translate(5px, -5px); }
+    transform: rotate(-15deg); }
   60% {
-    transform: translate(-5px, -5px); }
-  70% {
-    transform: translate(0px, 5px); }
+    transform: rotate(15deg); }
   80% {
-    transform: translate(5px, 5px); }
-  90% {
-    transform: translate(-5px, 5px); }
+    transform: rotate(-5deg); }
   100% {
-    transform: translate(0px, 0px); } }
+    transform: rotate(0deg); } }
 
 @keyframes expand {
   from {
@@ -954,40 +969,48 @@ a {
       justify-content: flex-start;
       align-items: center;
       text-align: center; }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 20px);
     margin: 20px 0 20px 0; }
-    #houses-cont .houseIntroCont {
+    #house-cont #house-selecs-cont #house-selecs {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 350px;
+      margin: 20px; }
+    #house-cont .houseIntroCont {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       text-align: center; }
-      #houses-cont .houseIntroCont .house-intro {
+      #house-cont .houseIntroCont .house-intro {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         width: 350px; }
-        #houses-cont .houseIntroCont .house-intro .house-general {
+        #house-cont .houseIntroCont .house-intro .house-general {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
           padding-top: 20px; }
-        #houses-cont .houseIntroCont .house-intro .sigils {
+        #house-cont .houseIntroCont .house-intro .sigils {
           margin-right: 0px;
           background-image: url("../images/sigils-3.png"); }
-      #houses-cont .houseIntroCont .general-info {
+      #house-cont .houseIntroCont .general-info {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         width: 350px;
         padding-top: 20px; }
-    #houses-cont .family-members > .member-row {
+    #house-cont .family-members > .member-row {
       width: 350px; }
-      #houses-cont .family-members > .member-row .member-info-cont > .member-title {
+      #house-cont .family-members > .member-row .member-info-cont > .member-title {
         font-size: 12px; }
   #desc-cont-reb {
     width: 300px; }
@@ -1037,40 +1060,48 @@ a {
         margin-left: 30px;
         margin-top: 0px;
         text-align: left; }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 50px);
     margin: 50px 0 20px 0; }
-    #houses-cont .houseIntroCont {
+    #house-cont #house-selecs-cont #house-selecs {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 600px;
+      margin: 20px; }
+    #house-cont .houseIntroCont {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
       text-align: left; }
-      #houses-cont .houseIntroCont .house-intro {
+      #house-cont .houseIntroCont .house-intro {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         width: 50%; }
-        #houses-cont .houseIntroCont .house-intro .house-general {
+        #house-cont .houseIntroCont .house-intro .house-general {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
           padding-top: 0px; }
-        #houses-cont .houseIntroCont .house-intro .sigils {
+        #house-cont .houseIntroCont .house-intro .sigils {
           margin-right: 10px;
           background-image: url("../images/sigils-3.png"); }
-      #houses-cont .houseIntroCont .general-info {
+      #house-cont .houseIntroCont .general-info {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         width: 50%;
         padding-top: 0px; }
-    #houses-cont .family-members > .member-row {
+    #house-cont .family-members > .member-row {
       width: 500px; }
-      #houses-cont .family-members > .member-row .member-info-cont > .member-title {
+      #house-cont .family-members > .member-row .member-info-cont > .member-title {
         font-size: 14px; }
   #desc-cont-reb {
     width: 550px; }
@@ -1135,8 +1166,16 @@ a {
       justify-content: flex-start;
       align-items: flex-start;
       text-align: left; }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 200px); }
+    #house-cont #house-selecs-cont #house-selecs {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 760px;
+      margin: 20px; }
   #desc-cont-reb {
     width: 700px; }
   .timeline ul li div {
@@ -1163,40 +1202,40 @@ a {
     display: grid;
     grid-template-columns: 530px 470px;
     grid-template-rows: 300px; }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 200px);
     margin: 50px 0 20px 0; }
-    #houses-cont .houseIntroCont {
+    #house-cont .houseIntroCont {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
       text-align: left; }
-      #houses-cont .houseIntroCont .house-intro {
+      #house-cont .houseIntroCont .house-intro {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         width: 50%; }
-        #houses-cont .houseIntroCont .house-intro .house-general {
+        #house-cont .houseIntroCont .house-intro .house-general {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
           padding-top: 0px; }
-        #houses-cont .houseIntroCont .house-intro .sigils {
+        #house-cont .houseIntroCont .house-intro .sigils {
           margin-right: 10px;
           background-image: url("../images/sigils-3.png"); }
-      #houses-cont .houseIntroCont .general-info {
+      #house-cont .houseIntroCont .general-info {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         width: 50%;
         padding-top: 0px; }
-    #houses-cont .family-members > .member-row {
+    #house-cont .family-members > .member-row {
       width: 600px; }
-      #houses-cont .family-members > .member-row .member-info-cont > .member-title {
+      #house-cont .family-members > .member-row .member-info-cont > .member-title {
         font-size: 17px; }
   #desc-cont-reb {
     width: 800px; }

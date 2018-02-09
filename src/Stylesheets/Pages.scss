@@ -259,106 +259,172 @@
 
 
 #house-cont {
+  margin: 25px 5px 40px 5px;
 
-  #house-selecs {
-    display: grid;
-    grid-template-columns: 110px 110px 110px 110px 110px 110px 110px 110px;
-    grid-template-rows: 110px 110px 110px 110px 110px 110px 110px 110px;
-    margin: 20px;
+  #house-selecs-cont {
+    @include flex(column, flex-start, center);
+    @include animate(fadein, 0.5s, 0s, forwards);
 
-    .sigils {
-      margin-right: 10px;
-      background-image: url('../images/sigils-3.png');
-      cursor: pointer;
+    .miniheading {
+      font-size: 20px !important;
     }
 
-    #sigil-0 {
-      background-position: 0px 0px;
-      height: 104px;
-      width: 95px;
-      grid-column: 1 / span 1;
-      grid-row: 2 / span 1;
-    }
+    #house-selecs {
 
-    #sigil-1 {
-      background-position: 0px -104px;
-      height: 104px;
-      width: 95px;
-      grid-column: 3 / span 1;
-      grid-row: 3 / span 1;
-    }
+      @include flex(row, center, flex-start);
+      flex-wrap: wrap;
+      width: 760px;
+      margin: 20px;
 
-    #sigil-2 {
-      background-position: 0px -207px;
-      height: 104px;
-      width: 95px;
-      grid-column: 6 / span 1;
-      grid-row: 1 / span 1;
-    }
+      .sigils {
+        margin: 10px 15px 40px 15px;
+        background-image: url('../images/finalsig.png');
+        background-size: 100px 1155px;
+        cursor: pointer;
 
-    #sigil-3 {
-      background-position: 0px -311px;
-      height: 102px;
-      width: 95px;
-      grid-column: 8 / span 1;
-      grid-row: 3 / span 1;
-    }
+        &:hover {
+          @include animate(rotateimage, 1s, 0s, forwards);
+          animation-timing-function: ease-in-out;
+        }
 
-    #sigil-4 {
-      background-position: 0px -414px;
-      height: 101px;
-      width: 95px;
-      grid-column: 2 / span 1;
-      grid-row: 5 / span 1;
-    }
+        &:hover:after {
+          content: '';
+          font-family: 'Ubuntu';
+          font-size: 13px !important;
+          position: absolute;
+          bottom: -50px;
+          left: 0px;
+          width: 95px;
+          height: 50px;
+        }
+      }
 
-    #sigil-5 {
-      background-position: 0px -516px;
-      height: 104px;
-      width: 95px;
-      grid-column: 4 / span 1;
-      grid-row: 8 / span 1;
-    }
+      #sigil-0 {
+        background-position: 0px 0px;
+        height: 104px;
+        width: 95px;
 
-    #sigil-6 {
-      background-position: 0px -620px;
-      height: 103px;
-      width: 95px;
-      grid-column: 7 / span 1;
-      grid-row: 5 / span 1;
-    }
+        &:hover:after {
+          content: 'House Baratheon';
+        }
+      }
 
-    #sigil-7 {
-      background-position: 0px -723px;
-      height: 103px;
-      width: 95px;
-      grid-column: 5 / span 1;
-      grid-row: 4 / span 1;
-    }
+      #sigil-1 {
+        background-position: 0px -105px;
+        height: 104px;
+        width: 95px;
 
-    #sigil-8 {
-      background-position: 0px -826px;
-      height: 104px;
-      width: 95px;
-      grid-column: 1 / span 1;
-      grid-row: 7 / span 1;
-    }
+        &:hover:after {
+          content: 'House Arryn';
+        }
+      }
 
-    #sigil-9 {
-      background-position: 0px -930px;
-      height: 103px;
-      width: 95px;
-      grid-column: 5 / span 1;
-      grid-row: 6 / span 1;
-    }
+      #sigil-2 {
+        background-position: 0px -210px;
+        height: 104px;
+        width: 95px;
 
-    #sigil-10 {
-      background-position: 0px -1033px;
-      height: 104px;
-      width: 95px;
-      grid-column: 8 / span 1;
-      grid-row: 7 / span 1;
+        &:hover:after {
+          content: 'House Martell';
+        }
+      }
+
+      #sigil-3 {
+        background-position: 0px -315px;
+        height: 104px;
+        width: 95px;
+
+        &:hover:after {
+          content: 'House Stark';
+        }
+      }
+
+      #sigil-4 {
+        background-position: 0px -420px;
+        height: 104px;
+        width: 87px;
+
+        &:hover:after {
+          content: 'House Bolton';
+          width: 87px;
+        }
+      }
+
+      #sigil-5 {
+        background-position: 0px -525px;
+        height: 104px;
+        width: 95px;
+
+        &:hover:after {
+          content: 'House Greyjoy';
+        }
+      }
+
+      #sigil-6 {
+        background-position: 0px -630px;
+        height: 104px;
+        width: 87px;
+
+        &:hover:after {
+          content: 'House Lannister';
+          width: 87px;
+        }
+      }
+
+      #sigil-7 {
+        background-position: 0px -735px;
+        height: 104px;
+        width: 87px;
+
+        &:hover:after {
+          content: 'House Tyrell';
+          width: 87px;
+        }
+      }
+
+      #sigil-8 {
+        background-position: 0px -840px;
+        height: 104px;
+        width: 95px;
+
+        &:hover:after {
+          content: 'House Tully';
+        }
+      }
+
+      #sigil-9 {
+        background-position: 0px -945px;
+        height: 104px;
+        width: 95px;
+
+        &:hover:after {
+          content: 'House Frey';
+        }
+      }
+
+      #sigil-10 {
+        background-position: 0px -1050px;
+        height: 104px;
+        width: 87px;
+
+        &:hover:after {
+          content: 'House Targaryen';
+          width: 87px;
+        }
+      }
     }
+  }
+
+  .house-item {
+    @include animate(fadein, 0.5s, 0s, forwards);
+    opacity: 0;
+  }
+
+  .returnSelecs {
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    padding: 10px 10px 10px 10px;
   }
 
   .houseIntroCont {
@@ -371,11 +437,6 @@
 
       .house-general {
         @include flex(column, flex-start, flex-start);
-      }
-
-      .sigils {
-        margin-right: 10px;
-        background-image: url('../images/sigils-3.png');
       }
     }
 
@@ -526,53 +587,15 @@
   @include animate(moveblockright, 3s, 0s, forwards);
 }
 
-.hover-image-one {
-  @include animate(hoverimageone, 35s, 0s, forwards);
-  animation-iteration-count: infinite;
-}
-
-.hover-image-two {
-  @include animate(hoverimageone, 35s, 0s, forwards);
-  animation-iteration-count: infinite;
-  animation-direction: reverse;
-}
-
 // Keyframes
 
-@keyframes hoverimageone {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  10% {
-    transform: translate(5px, 5px);
-  }
-  20% {
-    transform: translate(-5px, -5px);
-  }
-  30% {
-    transform: translate(-5px, 5px);
-  }
-  40% {
-    transform: translate(5px, 0px);
-  }
-  50% {
-    transform: translate(5px, -5px);
-  }
-  60% {
-    transform: translate(-5px, -5px);
-  }
-  70% {
-    transform: translate(0px, 5px);
-  }
-  80% {
-    transform: translate(5px, 5px);
-  }
-  90% {
-    transform: translate(-5px, 5px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
+@keyframes rotateimage {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(15deg); }
+  40% { transform: rotate(-15deg); }
+  60% { transform: rotate(15deg); }
+  80% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @keyframes expand {
@@ -725,9 +748,18 @@
       }
     }
   }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 20px);
     margin: 20px 0 20px 0;
+
+    #house-selecs-cont {
+      #house-selecs {
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 20px;
+      }
+    }
 
     .houseIntroCont {
       @include flex(column, flex-start, center);
@@ -836,9 +868,18 @@
       }
     }
   }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 50px);
     margin: 50px 0 20px 0;
+
+    #house-selecs-cont {
+      #house-selecs {
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
+        width: 600px;
+        margin: 20px;
+      }
+    }
 
     .houseIntroCont {
       @include flex(row, flex-start, flex-start);
@@ -949,8 +990,17 @@
       }
     }
   }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 200px);
+
+    #house-selecs-cont {
+      #house-selecs {
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
+        width: 760px;
+        margin: 20px;
+      }
+    }
   }
 
   #desc-cont-reb {
@@ -998,7 +1048,7 @@
       grid-template-rows: 300px;
     }
   }
-  #houses-cont {
+  #house-cont {
     width: calc(100% - 200px);
     margin: 50px 0 20px 0;
 
