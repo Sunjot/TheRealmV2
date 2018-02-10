@@ -105,6 +105,142 @@ class Houses extends Component {
       dies. However, because of his age at the time, his mother rules on his behalf until he is old enough.`}
     ]
 
+    let Martell = [
+      { sigil: "sigil-2", name: "Martell", status: "Great House", leader: "Doran Martell",
+        regions: "Dorne", castles: "Sunspear" }];
+
+    let MartellFamily = [
+      {name: "Doran Martell", image: "https://i.imgur.com/SwhOyKY.png", info: `The head of House Martell and has two siblings, Elia and Oberyn. Unlike his
+      brother, Doran is much more level-headed and seldom gives in to making rash decisions as a leader.`},
+      {name: "Oberyn Martell", image: "https://i.imgur.com/AIQnIQ9.png", info: `Often referred to as the Red Viper (he apparently knows a lot about poisons).
+      He has two siblings, Doran and Elia. His style of combat makes him a huge threat in
+      battle. He has 8 bastard daughters (4 with Ellaria Sand), referred to as the Sand Snakes.`},
+      {name: "Elia Martell", image: "https://i.imgur.com/ym8JN36.png", info: `The sister of Doran and Oberyn, she is deceased before the events of the show.
+      I list her here because she plays a critical role during Robert's Rebellion in what
+      sets off some of the events in the series.`}
+    ]
+
+    let Stark = [
+      { sigil: "sigil-3", name: "Stark", status: "Great House", leader: "Eddard Stark",
+        regions: "The North", castles: "Winterfell" }];
+
+    let StarkFamily = [
+      {name: "Rickard Stark", image: "https://i.imgur.com/gd0JOZp.png", info: `The former head of House Stark until he was killed during Robert's Rebellion. He has
+      4 children: Eddard, Benjen, Brandon, and Lyanna. The latter 2 played a significant role
+      during Robert's Rebellion as well and are deceased as the series gets underway.`},
+      {name: "Eddard Stark", image: "https://i.imgur.com/JxmxgXM.png", info: `The head of House Stark and married to Catelyn Stark, with whom he has 5 children:
+      Robb, Sansa, Arya, Bran, and Rickon. He also has a bastard son, Jon Snow, who he raises in Winterfell.`},
+      {name: "Catelyn Stark", image: "https://i.imgur.com/mm6hMnb.png", info: `Born into House Tully, Catelyn married Eddard during Robert's Rebellion (along with
+      her sister Lysa who married into House Arryn). The two marriages were done to form an alliance between the 3 houses during their battle against the Targaryens.`},
+      {name: "Jon Snow", image: "https://i.imgur.com/R5xSlki.png", info: `The bastard son of Eddard. His mother is kept secret from him and everybody else by
+      Eddard. Due to his bastard status, he often feels like an outsider despite being treated well by his father and siblings. Catelyn, however, always felt
+      a disconnect because he was not truly her son.`},
+      {name: "Robb Stark", image: "https://i.imgur.com/RUcuehV.png", info: `The eldest son of Eddard and Catelyn. He is proficient in swordsmanship after training
+      from a young age but takes after his father as more of a battle commander.`},
+      {name: "Sansa Stark", image: "https://i.imgur.com/1ZNMw9q.png", info: `The eldest daughter of Eddard and Catelyn. Unlike her sister Arya, Sansa is much
+      more "lady-like" in her interests and takes after her mother.`},
+      {name: "Arya Stark", image: "https://i.imgur.com/LINK1Zk.png", info: `The youngest daughter of Eddard and Catelyn. In contrast to Sansa,
+      Arya is a tomboy who prefers the warfare life like that of her brothers and father.`},
+      {name: "Bran Stark", image: "https://i.imgur.com/4yCWQRB.png", info: `The second son of Eddard and Catelyn. He is in combat training by his father and
+      brothers with the goal of one day becoming a knight.`},
+      {name: "Rickon Stark", image: "https://i.imgur.com/b6jmj5E.png", info: `The youngest son of Eddard and Catelyn. Rickon is fairly young to play much of an
+      importance in the beginning of the series, but keep him noted for later on in the show.`}
+    ]
+
+    let Bolton = [
+      { sigil: "sigil-4", name: "Bolton", status: "Vassal", leader: "Roose Bolton",
+        regions: "The North", castles: "Dreadfort" }];
+
+    let BoltonFamily = [
+      {name: "Roose Bolton", image: "https://i.imgur.com/qkrrsqM.png", info: `The head of House Bolton and father of Ramsay, his legitimized bastard son.
+      He is also married to Walda Frey. `},
+      {name: "Ramsay Bolton", image: "https://i.imgur.com/6tShB03.png", info: `The legitimized bastard son of Roose. He can be described as sadistic and
+      cruel human being who enjoys torturing and killing others.`}
+    ]
+
+    let Greyjoy = [
+      { sigil: "sigil-5", name: "Grejoy", status: "Great House", leader: "Balon Greyjoy",
+        regions: "Iron Islands", castles: "Pyke" }];
+
+    let GreyjoyFamily = [
+      {name: "Balon Greyjoy", image: "https://i.imgur.com/uD0IKBR.png", info: `The head of House Greyjoy. The father of two: Yara and Theon. He also has two brothers
+      in Euron and Aeron. `},
+      {name: "Euron Greyjoy", image: "https://i.imgur.com/K288Dng.png", info: `The brother of Balon and Aeron and uncle to Yara and Theon. As of the beginning of
+      the series, he is in exile. `},
+      {name: "Yara Greyjoy", image: "https://i.imgur.com/XTMymFg.png", info: `The daughter of Balon and sister of Theon. She was raised to be a warrior - which - in the ironborn culture,
+      is unusual for women. `},
+      {name: "Theon Greyjoy", image: "https://i.imgur.com/2S5AWsX.png", info: `The son of Balon and brother of Yara. As of the beginning of the series, he is held
+      hostage at Winterfell. `}
+    ]
+
+    let Lannister = [
+      { sigil: "sigil-6", name: "Lannister", status: "Great House", leader: "Tywin Lannister",
+        regions: "Westerlands", castles: "Casterly Rock" }];
+
+    let LannisterFamily = [
+      {name: "Tywin Lannister", image: "https://i.imgur.com/8uVk2DA.png", info: `The head of House Lannister. He was married to Joanna, the mother of his 3 children -
+      Jaime and Cersei (twins), and Tyrion. She passed away giving birth to Tyrion.`},
+      {name: "Cersei Lannister", image: "https://i.imgur.com/HJU334v.png", info: `The daughter of Tywin and Joanna, and the twin sister of Jaime. She is married to
+      Robert, and they have 3 children - Joffrey, Myrcella, and Tommen Baratheon.`},
+      {name: "Jaime Lannister", image: "https://i.imgur.com/J1vG1oP.png", info: `The son of Tywin and Joanna, and the twin brother of Cersei. He is referred to as
+      the Kingslayer for killing the Mad King Aerys Targaryen during Robert's Rebellion.`},
+      {name: "Tyrion Lannister", image: "https://i.imgur.com/i0DfEyW.png", info: `The son of Tywin and Joanna, and brother of Cersei and Jaime. Tyrion was born a dwarf.
+      As a result of his mother dying while giving birth to him, he is hated by his own family
+      members Cersei and Tywin. Jaime, meanwhile, has always been close with him. He loves
+      drinking, by the way.`}
+    ]
+
+    let Tyrell = [
+      { sigil: "sigil-7", name: "Tyrell", status: "Great House", leader: "Mace Tyrell",
+        regions: "The Reach", castles: "Highgarden" }];
+
+    let TyrellFamily = [
+      {name: "Mace Tyrell", image: "https://i.imgur.com/kzIFzBC.png", info: `The head of House Tyrell and the son of Olenna. He has 2 children: Margaery and Loras.`},
+      {name: "Olenna Tyrell", image: "https://i.imgur.com/n3JY4U0.png", info: `The mother of Mace. Olenna is rather witty and intelligent. Despite the title as ruler
+      of House Tyrell belonging to Mace, she holds very high influence in the Reach.`},
+      {name: "Margaery Tyrell", image: "https://i.imgur.com/HfiJxIl.png", info: `The daughter of Mace and sister of Loras. She is known for her beauty and cleverness
+      (probably takes that from her grandmother, Olenna).`},
+      {name: "Loras Tyrell", image: "https://i.imgur.com/E2lXFFf.png", info: `The son of Mace and brother of Margaery. He has a gay relationship with
+      Renly Baratheon, which they must keep a secret as homosexuality is considered a sin in the Seven Kingdoms.`}
+    ]
+
+    let Tully = [
+      { sigil: "sigil-8", name: "Tully", status: "Great House", leader: "Hoster Tully",
+        regions: "The Riverlands", castles: "Riverrun" }];
+
+    let TullyFamily = [
+      {name: "Hoster Tully", image: "https://i.imgur.com/JEitZjc.png", info: `The head of House Tully, but mostly by title only as his health has deteriorated
+      and so his son Edmure has taken over most duties. He also has 2 daughters: Catelyn and Lysa. He is never seen on-screen.`},
+      {name: "Edmure Tully", image: "https://i.imgur.com/OsgV2Ln.png", info: `The son of Hoster Tully and the unofficial head of House Tully due to his
+      father's health.`}
+    ]
+
+    let Frey = [
+      { sigil: "sigil-9", name: "Frey", status: "Vassal", leader: "Walder Frey",
+        regions: "The Riverlands", castles: "The Twins" }];
+
+    let FreyFamily = [
+      {name: "Walder Frey", image: "https://i.imgur.com/2EGVRKQ.png", info: `The head of House Frey. He has been married many times and has over two dozen
+      children, and an unknown amount of bastard sons and daughters. `}
+    ]
+
+    let Targaryen = [
+      { sigil: "sigil-10", name: "Targaryen", status: "Exiled Great House", leader: "Viserys Targaryen",
+        regions: "None (based in the Free Cities)", castles: "None" }];
+
+    let TargaryenFamily = [
+      {name: "Aerys II Targaryen", image: "https://i.imgur.com/A6Gy1MA.png", info: `Aerys is the former King and head of House Targaryen. He married his sister Rhaella
+      (Targaryens are into this sort of thing) and they had 3 children: Rhaegar, Viserys,
+      and Daenerys. He was killed in the final events of Robert's Rebellion by Jamie Lannister.`},
+      {name: "Rhaegar Targaryen", image: "https://i.imgur.com/uP3ruTH.png", info: `The son of the Mad King. He was married to Elia Martell but annulled it and "abducted" and
+      married Lyanna Stark instead - this is what started Robert's Rebellion. He was killed by Robert Baratheon towards the end of the war.`},
+      {name: "Viserys Targaryen", image: "https://i.imgur.com/mFwWGuP.png", info: `The son of the Mad King and head of the exiled House Targaryen.
+      He and his sister, Daenerys, live in the Free Cities when the series kicks off.`},
+      {name: "Daenerys Targaryen", image: "https://i.imgur.com/cUIg9eF.png", info: `The daughter of the Mad King. Her mother, Rhaella (while pregnant with Daenerys) fled
+      to Dragonstone with Viserys after Rhaegar died. It was there that she gave birth to Daenerys
+      and died soon after. Along with her brother, she was taken into exile in the Free Cities.`}
+    ]
+
 
     return (
       <div>
@@ -134,440 +270,52 @@ class Houses extends Component {
               of the show take place. Jon Arryn, as mentioned prior, is The Hand." />
             }
             { this.state.choice === "2" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-2" name="Martell" status="Great House" leader="Doran Martell"
-                      regions="Dorne" castles="Sunspear" />
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>House Martell has a history with House Lannister in a series of events that take
-                      place not long before the beginning of the show in what was called "Robert's Rebellion".
-                      </p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Doran} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Doran Martell</p>
-                        <p>The head of House Martell and has two siblings, Elia and Oberyn. Unlike his
-                        brother, Doran is much more level-headed and seldom gives in to making rash
-                        decisions as a leader.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Oberyn} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Oberyn Martell</p>
-                        <p>Often referred to as the Red Viper (he apparently knows a lot about poisons).
-                        He has two siblings, Doran and Elia. His style of combat makes him a huge threat in
-                        battle. He has 8 bastard daughters (4 with Ellaria Sand), referred to as the Sand Snakes.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Elia} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Elia Martell</p>
-                        <p>The sister of Doran and Oberyn, she is deceased before the events of the show.
-                        I list her here because she plays a critical role during Robert's Rebellion in what
-                        sets off some of the events in the series. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Martell} family={MartellFamily}
+              note="House Martell has a history with House Lannister in a series of events that take
+              place not long before the beginning of the show in what was called Robert's Rebellion." />
             }
             { this.state.choice === "3" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-3" name="Stark" status="Great House" leader="Eddard Stark"
-                      regions="The North" castles="Winterfell" />
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>House Stark is one of the oldest houses in the Seven Kingdoms and have ruled over
-                      The North since the beginning of time. They are one of two houses that play a significant
-                      role in the series above all other houses.</p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Rickard} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Rickard Stark</p>
-                        <p>The former head of House Stark until he was killed during Robert's Rebellion. He has
-                        4 children: Eddard, Benjen, Brandon, and Lyanna. The latter 2 played a significant role
-                        during Robert's Rebellion as well and are deceased as the series gets underway. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Eddard} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Eddard Stark</p>
-                        <p>The head of House Stark and married to Catelyn Stark, with whom he has 5 children:
-                        Robb, Sansa, Arya, Bran, and Rickon. He also has a bastard son, Jon Snow, who he raises
-                        in Winterfell.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Cat} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Catelyn Stark</p>
-                        <p>Born into House Tully, Catelyn married Eddard during Robert's Rebellion (along with
-                        her sister Lysa who married into House Arryn). The two marriages were done to form an
-                        alliance between the 3 houses during their battle against the Targaryens.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Jon} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Jon Snow</p>
-                        <p>The bastard son of Eddard. His mother is kept secret from him and everybody else by
-                        Eddard. Due to his bastard status, he often feels like an outsider
-                        despite being treated well by his father and siblings. Catelyn, however, always felt
-                        a disconnect because he was not truly her son.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Robb} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Robb Stark</p>
-                        <p>The eldest son of Eddard and Catelyn. He is proficient in swordsmanship after training
-                        from a young age but takes after his father as more of a battle commander.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Sansa} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Sansa Stark</p>
-                        <p>The eldest daughter of Eddard and Catelyn. Unlike her sister Arya, Sansa is much
-                        more "lady-like" in her interests and takes after her mother.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Arya} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Arya Stark</p>
-                        <p>The youngest daughter of Eddard and Catelyn. In contrast to Sansa,
-                        Arya is a tomboy who prefers the warfare life like that of her brothers and father.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Bran} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Bran Stark</p>
-                        <p>The second son of Eddard and Catelyn. He is in combat training by his father and
-                        brothers with the goal of one day becoming a knight.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Rickon} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Rickon Stark</p>
-                        <p>The youngest son of Eddard and Catelyn. Rickon is fairly young to play much of an
-                          importance in the beginning of the series, but keep him noted for later on in the show.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Stark} family={StarkFamily}
+              note="House Stark is one of the oldest houses in the Seven Kingdoms and have ruled over
+              The North since the beginning of time. They are one of two houses that play a significant
+              role in the series above all other houses." />
             }
             { this.state.choice === "4" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-4" name="Bolton" status="Vassal" leader="Roose Bolton"
-                      regions="The North" castles="Dreadfort" />
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>A vassal under House Stark, the Boltons come to play a bigger part as the show progresses.
-                      As their sigil shows, they are known for flaying their enimies (removing layers of skin).</p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Roose} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Roose Bolton</p>
-                        <p>The head of House Bolton and father of Ramsay, his legitimized bastard son.
-                        He is also married to Walda Frey. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Ramsay} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Ramsay Bolton</p>
-                        <p>The legitimized bastard son of Roose. He can be described as sadistic and
-                        cruel human being who enjoys torturing and killing others.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Bolton} family={BoltonFamily}
+              note="A vassal under House Stark, the Boltons come to play a bigger part as the show progresses.
+              As their sigil shows, they are known for flaying their enimies (removing layers of skin)." />
             }
             { this.state.choice === "5" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-5" name="Greyjoy" status="Great House" leader="Balon Greyjoy"
-                      regions="The Iron Islands" castles="Pyke"/>
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>The Greyjoys rule over a series of Islands on the west coast of Westeros, and their
-                      castle (Pyke) is located on one of these Islands of the same name - Pyke Island.</p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Balon} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Balon Greyjoy</p>
-                        <p>The head of House Greyjoy. The father of two: Yara and Theon. He also has two brothers
-                        in Euron and Aeron. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Euron} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Euron Greyjoy</p>
-                        <p>The brother of Balon and Aeron and uncle to Yara and Theon. As of the beginning of
-                        the series, he is in exile. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Yara} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Yara Greyjoy</p>
-                        <p>The daughter of Balon and sister of Theon. She was raised to be a warrior - which - in the ironborn culture,
-                        is unusual for women. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Theon} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Theon Greyjoy</p>
-                        <p>The son of Balon and brother of Yara. As of the beginning of the series, he is held
-                        hostage at Winterfell. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Greyjoy} family={GreyjoyFamily}
+              note="The Greyjoys rule over a series of Islands on the west coast of Westeros, and their
+              castle (Pyke) is located on one of these Islands of the same name - Pyke Island." />
             }
             { this.state.choice === "6" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-6" name="Lannister" status="Great House" leader="Tywin Lannister"
-                      regions="Westerlands" castles="Casterly Rock" />
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>House Lannister is one of the oldest and richest houses in the Seven Kingdoms. Along
-                      with the Starks, a significant portion of the show centers around these two Houses and their
-                      heated rivalry.</p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Tywin} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Tywin Lannister</p>
-                        <p>The head of House Lannister. He was married to Joanna, the mother of his 3 children -
-                        Jaime and Cersei (twins), and Tyrion. She passed away giving birth to Tyrion.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Cersei} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Cersei Lannister</p>
-                        <p>The daughter of Tywin and Joanna, and the twin sister of Jaime. She is married to
-                          Robert, and they have 3 children - Joffrey, Myrcella, and Tommen Baratheon.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Jaime} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Jaime Lannister</p>
-                        <p>The son of Tywin and Joanna, and the twin brother of Cersei. He is referred to as
-                        the Kingslayer for killing the Mad King Aerys Targaryen during Robert's Rebellion. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Tyrion} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Tyrion Lannister</p>
-                        <p>The son of Tywin and Joanna, and brother of Cersei and Jaime. Tyrion was born a dwarf.
-                        As a result of his mother dying while giving birth to him, he is hated by his own family
-                        members Cersei and Tywin. Jaime, meanwhile, has always been close with him. He loves
-                        drinking, by the way.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Lannister} family={LannisterFamily}
+              note="House Lannister is one of the oldest and richest houses in the Seven Kingdoms. Along
+              with the Starks, a significant portion of the show centers around these two Houses and their
+              heated rivalry." />
             }
             { this.state.choice === "7" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-7" name="Tyrell" status="Great House" leader="Mace Tyrell"
-                      regions="The Reach" castles="Highgarden" />
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>As of the beginning of the show, House Tyrell have sworn loyalty to Robert and House
-                      Baratheon after the events of Robert's Rebellion.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Mace} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Mace Tyrell</p>
-                        <p>The head of House Tyrell and the son of Olenna. He has 2 children: Margaery and Loras.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Olenna} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Olenna Tyrell</p>
-                        <p>The mother of Mace. Olenna is rather witty and intelligent. Despite the title as ruler
-                        of House Tyrell belonging to Mace, she holds very high influence in the Reach.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Margaery} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Margaery Tyrell</p>
-                        <p>The daughter of Mace and sister of Loras. She is known for her beauty and cleverness
-                        (probably takes that from her grandmother, Olenna).</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Loras} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Loras Tyrell</p>
-                        <p>The son of Mace and brother of Margaery. He has a gay relationship with
-                        Renly Baratheon, which they must keep a secret as homosexuality is considered a
-                        sin in the Seven Kingdoms.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Tyrell} family={TyrellFamily}
+              note="As of the beginning of the show, House Tyrell have sworn loyalty to Robert and House
+              Baratheon after the events of Robert's Rebellion." />
             }
             { this.state.choice === "8" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-8" name="Tully" status="Great House" leader="Hoster Tully"
-                      regions="The Riverlands" castles="Riverrun" />
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>House Tully has an alliance with House Stark and House Arryn through a series of
-                      marriages that take place during Robert's Rebellion.</p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Hoster} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Hoster Tully</p>
-                        <p>The head of House Tully, but mostly by title only as his health has deteriorated
-                          and so his son Edmure has taken over most duties. He also has 2 daughters: Catelyn
-                          and Lysa. He is never seen on-screen.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Edmure} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Edmure Tully</p>
-                        <p>The son of Hoster Tully and the unofficial head of House Tully due to his
-                        father's health.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Tully} family={TullyFamily}
+              note="House Tully has an alliance with House Stark and House Arryn through a series of
+              marriages that take place during Robert's Rebellion." />
             }
             { this.state.choice === "9" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-9" name="Frey" status="Vassal" leader="Walder Frey"
-                      regions="The Riverlands" castles="The Twins"/>
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>House Frey is a vassal under House Tully that comes to play a big role as the
-                      series progresses. </p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Walder} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Walder Frey</p>
-                        <p>The head of House Frey. He has been married many times and has over two dozen
-                        children, and an unknown amount of bastard sons and daughters. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Frey} family={FreyFamily}
+              note="House Frey is a vassal under House Tully that comes to play a big role as the
+              series progresses."/>
             }
             { this.state.choice === "last-10" &&
-                <div className="house-item">
-                  <div className="houseIntroCont">
-                    <HouseIntro sigil="sigil-10" name="Targaryen" status="Exiled Great House" leader="Viserys Targaryen"
-                      regions="None (based in The Free Cities)" castles="None"/>
-                    <div className="general-info">
-                      <p className="miniheading">Other Notes</p>
-                      <p>House Targaryen ruled the Seven Kingdoms for 300 years until the events of Robert's
-                      Rebellion resulted in their dethroning. The surviving members fled to Essos, which is where
-                      they reside as of the beginning of the series. </p>
-                    </div>
-                  </div>
-                  <div className="house-divider"></div>
-                  <div className="family-members">
-                    <p className="miniheading" id="mems-of-house">Members</p>
-                    <div className="member-row">
-                      <img src={Aerys} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Aerys II Targaryen</p>
-                        <p>Aerys is the former King and head of House Targaryen. He married his sister Rhaella
-                        (Targaryens are into this sort of thing) and they had 3 children: Rhaegar, Viserys,
-                        and Daenerys. He was killed in the final events of Robert's Rebellion by Jamie Lannister.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Rhaegar} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Rhaegar Targaryen</p>
-                        <p>The son of the Mad King. He was married to Elia Martell but annulled it and "abducted" and
-                        married Lyanna Stark instead - this is what started Robert's Rebellion. He was killed by Robert
-                        Baratheon towards the end of the war.</p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Viserys} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Viserys Targaryen</p>
-                        <p>The son of the Mad King and head of the exiled House Targaryen.
-                        He and his sister, Daenerys, live in the Free Cities when the series kicks off. </p>
-                      </div>
-                    </div>
-                    <div className="member-row">
-                      <img src={Daenerys} />
-                      <div className="member-info-cont">
-                        <p className="member-title">Daenerys Targaryen</p>
-                        <p>The daughter of the Mad King. Her mother, Rhaella (while pregnant with Daenerys) fled
-                        to Dragonstone with Viserys after Rhaegar died. It was there that she gave birth to Daenerys
-                        and died soon after. Along with her brother, she was taken into exile in the Free Cities.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <HouseItem contentFunc={this.setContent} general={Targaryen} family={TargaryenFamily}
+              note="House Targaryen ruled the Seven Kingdoms for 300 years until the events of Robert's
+              Rebellion resulted in their dethroning. The surviving members fled to Essos, which is where
+              they reside as of the beginning of the series."/>
             }
           </div>
         </div>
