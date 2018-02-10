@@ -260,6 +260,7 @@
 
 #house-cont {
   margin: 25px 5px 40px 5px;
+  width: 100%;
 
   #house-selecs-cont {
     @include flex(column, flex-start, center);
@@ -417,7 +418,67 @@
 
   .house-item {
     @include animate(fadein, 0.5s, 0s, forwards);
+    @include flex(row, center, flex-start);
     opacity: 0;
+    margin: 0 2.5% 2.5%;
+
+    .houseIntroCont {
+      @include flex(column, flex-start, flex-start);
+      text-align: left;
+      width: 40%;
+      padding: 20px 1% 20px 1%;
+      margin-right: 3%;
+      background-color: #80afb2;
+      border-radius: 10px;
+
+      .house-intro {
+        @include flex(row, flex-start, flex-start);
+        width: 100%;
+        margin-bottom: 35px;
+
+        .house-general {
+          @include flex(column, flex-start, flex-start);
+        }
+      }
+
+      .general-info {
+        @include flex(column, flex-start, flex-start);
+        width: 100%;
+      }
+    }
+
+    .family-members {
+      @include flex(column, flex-start, center);
+      width: 55%;
+
+      #mems-of-house {
+        padding-bottom: 30px;
+      }
+
+      .member-row {
+        @include flex(row, flex-start, flex-start);
+        width: 100%;
+        padding-bottom: 30px;
+
+        img {
+          width: 100px;
+        }
+
+        .member-info-cont {
+          @include flex(column, flex-start, flex-start);
+          padding-left: 10px;
+
+          .member-title {
+            font-size: 17px;
+            font-weight: bold;
+          }
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 
   .returnSelecs {
@@ -425,64 +486,6 @@
     top: 70px;
     left: 10px;
     padding: 10px 10px 10px 10px;
-  }
-
-  .houseIntroCont {
-    @include flex(row, flex-start, flex-start);
-    text-align: left;
-
-    .house-intro {
-      @include flex(row, flex-start, flex-start);
-      width: 50%;
-
-      .house-general {
-        @include flex(column, flex-start, flex-start);
-      }
-    }
-
-    .general-info {
-      @include flex(column, flex-start, flex-start);
-      width: 50%;
-    }
-  }
-
-  .house-divider {
-    width: calc(100% - 25px);
-    height: 1px;
-    background-color: #bfbfbf;;
-    margin: 20px 0 20px 0;
-  }
-
-  .family-members {
-    @include flex(column, flex-start, center);
-
-    #mems-of-house {
-      padding-bottom: 30px;
-    }
-
-    .member-row {
-      @include flex(row, flex-start, flex-start);
-      width: 600px;
-      padding-bottom: 30px;
-
-      img {
-        width: 100px;
-      }
-
-      .member-info-cont {
-        @include flex(column, flex-start, flex-start);
-        padding-left: 10px;
-
-        .member-title {
-          font-size: 17px;
-          font-weight: bold;
-        }
-
-        p {
-          text-align: left;
-        }
-      }
-    }
   }
 }
 
@@ -749,7 +752,6 @@
     }
   }
   #house-cont {
-    width: calc(100% - 20px);
     margin: 20px 0 20px 0;
 
     #house-selecs-cont {
@@ -758,40 +760,6 @@
         flex-wrap: wrap;
         width: 350px;
         margin: 20px;
-      }
-    }
-
-    .houseIntroCont {
-      @include flex(column, flex-start, center);
-      text-align: center;
-
-      .house-intro {
-        @include flex(column, flex-start, center);
-        width: 350px;
-
-        .house-general {
-          @include flex(column, flex-start, center);
-          padding-top: 20px;
-        }
-
-        .sigils {
-          margin-right: 0px;
-          background-image: url('../images/sigils-3.png');
-        }
-      }
-
-      .general-info {
-        @include flex(column, flex-start, center);
-        width: 350px;
-        padding-top: 20px;
-      }
-    }
-
-    .family-members > .member-row {
-      width: 350px;
-
-      .member-info-cont > .member-title {
-        font-size: 12px;
       }
     }
   }
@@ -869,7 +837,6 @@
     }
   }
   #house-cont {
-    width: calc(100% - 50px);
     margin: 50px 0 20px 0;
 
     #house-selecs-cont {
@@ -991,7 +958,6 @@
     }
   }
   #house-cont {
-    width: calc(100% - 200px);
 
     #house-selecs-cont {
       #house-selecs {
@@ -1049,42 +1015,7 @@
     }
   }
   #house-cont {
-    width: calc(100% - 200px);
     margin: 50px 0 20px 0;
-
-    .houseIntroCont {
-      @include flex(row, flex-start, flex-start);
-      text-align: left;
-
-      .house-intro {
-        @include flex(row, flex-start, flex-start);
-        width: 50%;
-
-        .house-general {
-          @include flex(column, flex-start, flex-start);
-          padding-top: 0px;
-        }
-
-        .sigils {
-          margin-right: 10px;
-          background-image: url('../images/sigils-3.png');
-        }
-      }
-
-      .general-info {
-        @include flex(column, flex-start, flex-start);
-        width: 50%;
-        padding-top: 0px;
-      }
-    }
-
-    .family-members > .member-row {
-      width: 600px;
-
-      .member-info-cont > .member-title {
-        font-size: 17px;
-      }
-    }
   }
 
   #desc-cont-reb {

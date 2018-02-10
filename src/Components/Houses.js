@@ -2,42 +2,6 @@ import React, { Component } from 'react';
 import HouseIntro from './Houses/HouseIntro';
 import Family from './Houses/Family';
 import HouseItem from "./Houses/HouseItem";
-import JonArr from "../images/jonarr-c.png"
-import Lysa from "../images/lysa-c.png"
-import Robin from "../images/robin-c.png"
-import Doran from "../images/doran-c.png"
-import Oberyn from "../images/oberyn-c.png"
-import Elia from "../images/elia-c.png"
-import Rickard from "../images/rickard-c.png"
-import Eddard from "../images/ed-c.png"
-import Cat from "../images/cat-c.png"
-import Robb from "../images/robb-c.png"
-import Sansa from "../images/sansa-c.png"
-import Arya from "../images/arya-c.png"
-import Bran from "../images/bran-c.png"
-import Jon from "../images/jon-c.png"
-import Rickon from "../images/rickon-c.png"
-import Roose from "../images/roose-c.png"
-import Ramsay from "../images/ramsay-c.png"
-import Balon from "../images/balon-c.png"
-import Euron from "../images/euron-c.png"
-import Yara from "../images/yara-c.png"
-import Theon from "../images/theon-c.png"
-import Tywin from "../images/tywin-c.png"
-import Cersei from "../images/cersei-c.png"
-import Jaime from "../images/jaime-c.png"
-import Tyrion from "../images/tyrion-c.png"
-import Mace from "../images/mace-c.png"
-import Olenna from "../images/olenna-c.png"
-import Margaery from "../images/margaery-c.png"
-import Loras from "../images/loras-c.png"
-import Hoster from "../images/hoster-c.png"
-import Edmure from "../images/edmure-c.png"
-import Walder from "../images/walder-c.png"
-import Aerys from "../images/aerys-c.png"
-import Rhaegar from "../images/rhaegar-c.png"
-import Viserys from "../images/viserys-c.png"
-import Daenerys from "../images/daenerys-c.png"
 import Header from './Header';
 
 class Houses extends Component {
@@ -74,7 +38,10 @@ class Houses extends Component {
 
     let Baratheon = [
       { sigil: "sigil-0", name: "Baratheon", status: "Great House", leader: "Robert Baratheon",
-      regions: "The Crownlands & Stormlands", castles: "Storm's End, Red Keep, and Dragonstone" }
+      regions: "The Crownlands & Stormlands", castles: "Storm's End, Red Keep, and Dragonstone",
+      note: `Given that Robert Baratheon is the King, House Baratheon automatically becomes the
+      Royal House. As the Royal House, they also rule the Crownlands, which is the location
+      of the Iron Throne (Red Keep in King's Landing) and where the King and his/her family reside.`}
     ];
     let BaratheonFamily = [
       {name: "Robert Baratheon", image: "https://i.imgur.com/EZRRQuo.png", info: `As described already, Robert is the King. He has 2 brothers, Stannis and Renly.
@@ -92,7 +59,8 @@ class Houses extends Component {
 
     let Arryn = [
       { sigil: "sigil-1", name: "Arryn", status: "Great House", leader: "Jon Arryn", regions: "The Vale",
-      castles: "The Eyrie" }];
+      castles: "The Eyrie", note: `House Arryn has ruled over The Vale for 100s of years - well before the events
+      of the show take place. Jon Arryn, as mentioned prior, is The Hand.` }];
 
     let ArrynFamily = [
       {name: "Jon Arryn", image: "https://i.imgur.com/Dipk7Sy.png", info: `The head of House Arryn and the last known Hand of the King as the series gets
@@ -107,7 +75,8 @@ class Houses extends Component {
 
     let Martell = [
       { sigil: "sigil-2", name: "Martell", status: "Great House", leader: "Doran Martell",
-        regions: "Dorne", castles: "Sunspear" }];
+        regions: "Dorne", castles: "Sunspear", note: `House Martell has a history with House Lannister in a series of events that take
+        place not long before the beginning of the show in what was called Robert's Rebellion.` }];
 
     let MartellFamily = [
       {name: "Doran Martell", image: "https://i.imgur.com/SwhOyKY.png", info: `The head of House Martell and has two siblings, Elia and Oberyn. Unlike his
@@ -122,7 +91,9 @@ class Houses extends Component {
 
     let Stark = [
       { sigil: "sigil-3", name: "Stark", status: "Great House", leader: "Eddard Stark",
-        regions: "The North", castles: "Winterfell" }];
+        regions: "The North", castles: "Winterfell", note: `House Stark is one of the oldest houses in the Seven Kingdoms and have ruled over
+        The North since the beginning of time. They are one of two houses that play a significant
+        role in the series above all other houses.` }];
 
     let StarkFamily = [
       {name: "Rickard Stark", image: "https://i.imgur.com/gd0JOZp.png", info: `The former head of House Stark until he was killed during Robert's Rebellion. He has
@@ -149,7 +120,8 @@ class Houses extends Component {
 
     let Bolton = [
       { sigil: "sigil-4", name: "Bolton", status: "Vassal", leader: "Roose Bolton",
-        regions: "The North", castles: "Dreadfort" }];
+        regions: "The North", castles: "Dreadfort", note: `A vassal under House Stark, the Boltons come to play a bigger part as the show progresses.
+        As their sigil shows, they are known for flaying their enimies (removing layers of skin).` }];
 
     let BoltonFamily = [
       {name: "Roose Bolton", image: "https://i.imgur.com/qkrrsqM.png", info: `The head of House Bolton and father of Ramsay, his legitimized bastard son.
@@ -160,7 +132,8 @@ class Houses extends Component {
 
     let Greyjoy = [
       { sigil: "sigil-5", name: "Grejoy", status: "Great House", leader: "Balon Greyjoy",
-        regions: "Iron Islands", castles: "Pyke" }];
+        regions: "Iron Islands", castles: "Pyke", note: `The Greyjoys rule over a series of Islands on the west coast of Westeros, and their
+        castle (Pyke) is located on one of these Islands of the same name - Pyke Island.`}];
 
     let GreyjoyFamily = [
       {name: "Balon Greyjoy", image: "https://i.imgur.com/uD0IKBR.png", info: `The head of House Greyjoy. The father of two: Yara and Theon. He also has two brothers
@@ -175,7 +148,9 @@ class Houses extends Component {
 
     let Lannister = [
       { sigil: "sigil-6", name: "Lannister", status: "Great House", leader: "Tywin Lannister",
-        regions: "Westerlands", castles: "Casterly Rock" }];
+        regions: "Westerlands", castles: "Casterly Rock", note: `House Lannister is one of the oldest and richest houses in the Seven Kingdoms. Along
+        with the Starks, a significant portion of the show centers around these two Houses and their
+        heated rivalry.` }];
 
     let LannisterFamily = [
       {name: "Tywin Lannister", image: "https://i.imgur.com/8uVk2DA.png", info: `The head of House Lannister. He was married to Joanna, the mother of his 3 children -
@@ -192,7 +167,8 @@ class Houses extends Component {
 
     let Tyrell = [
       { sigil: "sigil-7", name: "Tyrell", status: "Great House", leader: "Mace Tyrell",
-        regions: "The Reach", castles: "Highgarden" }];
+        regions: "The Reach", castles: "Highgarden", note: `As of the beginning of the show, House Tyrell have sworn loyalty to Robert and House
+        Baratheon after the events of Robert's Rebellion.` }];
 
     let TyrellFamily = [
       {name: "Mace Tyrell", image: "https://i.imgur.com/kzIFzBC.png", info: `The head of House Tyrell and the son of Olenna. He has 2 children: Margaery and Loras.`},
@@ -206,7 +182,8 @@ class Houses extends Component {
 
     let Tully = [
       { sigil: "sigil-8", name: "Tully", status: "Great House", leader: "Hoster Tully",
-        regions: "The Riverlands", castles: "Riverrun" }];
+        regions: "The Riverlands", castles: "Riverrun", note: `House Tully has an alliance with House Stark and House Arryn through a series of
+        marriages that take place during Robert's Rebellion.` }];
 
     let TullyFamily = [
       {name: "Hoster Tully", image: "https://i.imgur.com/JEitZjc.png", info: `The head of House Tully, but mostly by title only as his health has deteriorated
@@ -217,7 +194,8 @@ class Houses extends Component {
 
     let Frey = [
       { sigil: "sigil-9", name: "Frey", status: "Vassal", leader: "Walder Frey",
-        regions: "The Riverlands", castles: "The Twins" }];
+        regions: "The Riverlands", castles: "The Twins", note: `House Frey is a vassal under House Tully that comes to play a big role as the
+        series progresses.` }];
 
     let FreyFamily = [
       {name: "Walder Frey", image: "https://i.imgur.com/2EGVRKQ.png", info: `The head of House Frey. He has been married many times and has over two dozen
@@ -226,7 +204,9 @@ class Houses extends Component {
 
     let Targaryen = [
       { sigil: "sigil-10", name: "Targaryen", status: "Exiled Great House", leader: "Viserys Targaryen",
-        regions: "None (based in the Free Cities)", castles: "None" }];
+        regions: "None (based in the Free Cities)", castles: "None", note: `House Targaryen ruled the Seven Kingdoms for 300 years until the events of Robert's
+        Rebellion resulted in their dethroning. The surviving members fled to Essos, which is where
+        they reside as of the beginning of the series.` }];
 
     let TargaryenFamily = [
       {name: "Aerys II Targaryen", image: "https://i.imgur.com/A6Gy1MA.png", info: `Aerys is the former King and head of House Targaryen. He married his sister Rhaella
@@ -260,62 +240,47 @@ class Houses extends Component {
             }
             { this.state.choice === "0" &&
                 <HouseItem contentFunc={this.setContent} general={Baratheon} family={BaratheonFamily}
-                note="Given that Robert Baratheon is the King, House Baratheon automatically becomes the
-                Royal House. As the Royal House, they also rule the Crownlands, which is the location
-                of the Iron Throne (Red Keep in King's Landing) and where the King and his/her family reside."/>
+                note={Baratheon[0].note} />
             }
             { this.state.choice === "1" &&
               <HouseItem contentFunc={this.setContent} general={Arryn} family={ArrynFamily}
-              note="House Arryn has ruled over The Vale for 100s of years - well before the events
-              of the show take place. Jon Arryn, as mentioned prior, is The Hand." />
+              note={Arryn[0].note} />
             }
             { this.state.choice === "2" &&
               <HouseItem contentFunc={this.setContent} general={Martell} family={MartellFamily}
-              note="House Martell has a history with House Lannister in a series of events that take
-              place not long before the beginning of the show in what was called Robert's Rebellion." />
+              note={Martell[0].note} />
             }
             { this.state.choice === "3" &&
               <HouseItem contentFunc={this.setContent} general={Stark} family={StarkFamily}
-              note="House Stark is one of the oldest houses in the Seven Kingdoms and have ruled over
-              The North since the beginning of time. They are one of two houses that play a significant
-              role in the series above all other houses." />
+              note={Stark[0].note} />
             }
             { this.state.choice === "4" &&
               <HouseItem contentFunc={this.setContent} general={Bolton} family={BoltonFamily}
-              note="A vassal under House Stark, the Boltons come to play a bigger part as the show progresses.
-              As their sigil shows, they are known for flaying their enimies (removing layers of skin)." />
+              note={Bolton[0].note} />
             }
             { this.state.choice === "5" &&
               <HouseItem contentFunc={this.setContent} general={Greyjoy} family={GreyjoyFamily}
-              note="The Greyjoys rule over a series of Islands on the west coast of Westeros, and their
-              castle (Pyke) is located on one of these Islands of the same name - Pyke Island." />
+              note={Greyjoy[0].note} />
             }
             { this.state.choice === "6" &&
               <HouseItem contentFunc={this.setContent} general={Lannister} family={LannisterFamily}
-              note="House Lannister is one of the oldest and richest houses in the Seven Kingdoms. Along
-              with the Starks, a significant portion of the show centers around these two Houses and their
-              heated rivalry." />
+              note={Lannister[0].note} />
             }
             { this.state.choice === "7" &&
               <HouseItem contentFunc={this.setContent} general={Tyrell} family={TyrellFamily}
-              note="As of the beginning of the show, House Tyrell have sworn loyalty to Robert and House
-              Baratheon after the events of Robert's Rebellion." />
+              note={Tyrell[0].note} />
             }
             { this.state.choice === "8" &&
               <HouseItem contentFunc={this.setContent} general={Tully} family={TullyFamily}
-              note="House Tully has an alliance with House Stark and House Arryn through a series of
-              marriages that take place during Robert's Rebellion." />
+              note={Tully[0].note} />
             }
             { this.state.choice === "9" &&
               <HouseItem contentFunc={this.setContent} general={Frey} family={FreyFamily}
-              note="House Frey is a vassal under House Tully that comes to play a big role as the
-              series progresses."/>
+              note={Frey[0].note} />
             }
             { this.state.choice === "last-10" &&
               <HouseItem contentFunc={this.setContent} general={Targaryen} family={TargaryenFamily}
-              note="House Targaryen ruled the Seven Kingdoms for 300 years until the events of Robert's
-              Rebellion resulted in their dethroning. The surviving members fled to Essos, which is where
-              they reside as of the beginning of the series."/>
+              note={Targaryen[0].note} />
             }
           </div>
         </div>

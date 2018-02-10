@@ -572,7 +572,8 @@ a {
     border: 1px solid #f4f4f4; }
 
 #house-cont {
-  margin: 25px 5px 40px 5px; }
+  margin: 25px 5px 40px 5px;
+  width: 100%; }
   #house-cont #house-selecs-cont {
     display: flex;
     flex-direction: column;
@@ -684,67 +685,74 @@ a {
     animation: fadein 0.5s;
     animation-delay: 0s;
     animation-fill-mode: forwards;
-    opacity: 0; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 0;
+    margin: 0 2.5% 2.5%; }
+    #house-cont .house-item .houseIntroCont {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      width: 40%;
+      padding: 20px 1% 20px 1%;
+      margin-right: 3%;
+      background-color: #80afb2;
+      border-radius: 10px; }
+      #house-cont .house-item .houseIntroCont .house-intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 35px; }
+        #house-cont .house-item .houseIntroCont .house-intro .house-general {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start; }
+      #house-cont .house-item .houseIntroCont .general-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%; }
+    #house-cont .house-item .family-members {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 55%; }
+      #house-cont .house-item .family-members #mems-of-house {
+        padding-bottom: 30px; }
+      #house-cont .house-item .family-members .member-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        padding-bottom: 30px; }
+        #house-cont .house-item .family-members .member-row img {
+          width: 100px; }
+        #house-cont .house-item .family-members .member-row .member-info-cont {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding-left: 10px; }
+          #house-cont .house-item .family-members .member-row .member-info-cont .member-title {
+            font-size: 17px;
+            font-weight: bold; }
+          #house-cont .house-item .family-members .member-row .member-info-cont p {
+            text-align: left; }
   #house-cont .returnSelecs {
     position: absolute;
     top: 70px;
     left: 10px;
     padding: 10px 10px 10px 10px; }
-  #house-cont .houseIntroCont {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left; }
-    #house-cont .houseIntroCont .house-intro {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 50%; }
-      #house-cont .houseIntroCont .house-intro .house-general {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start; }
-    #house-cont .houseIntroCont .general-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 50%; }
-  #house-cont .house-divider {
-    width: calc(100% - 25px);
-    height: 1px;
-    background-color: #bfbfbf;
-    margin: 20px 0 20px 0; }
-  #house-cont .family-members {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; }
-    #house-cont .family-members #mems-of-house {
-      padding-bottom: 30px; }
-    #house-cont .family-members .member-row {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: 600px;
-      padding-bottom: 30px; }
-      #house-cont .family-members .member-row img {
-        width: 100px; }
-      #house-cont .family-members .member-row .member-info-cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-left: 10px; }
-        #house-cont .family-members .member-row .member-info-cont .member-title {
-          font-size: 17px;
-          font-weight: bold; }
-        #house-cont .family-members .member-row .member-info-cont p {
-          text-align: left; }
 
 #desc-cont-reb {
   padding: 20px !important;
@@ -970,7 +978,6 @@ a {
       align-items: center;
       text-align: center; }
   #house-cont {
-    width: calc(100% - 20px);
     margin: 20px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
       display: flex;
@@ -980,38 +987,6 @@ a {
       flex-wrap: wrap;
       width: 350px;
       margin: 20px; }
-    #house-cont .houseIntroCont {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center; }
-      #house-cont .houseIntroCont .house-intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 350px; }
-        #house-cont .houseIntroCont .house-intro .house-general {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
-          padding-top: 20px; }
-        #house-cont .houseIntroCont .house-intro .sigils {
-          margin-right: 0px;
-          background-image: url("../images/sigils-3.png"); }
-      #house-cont .houseIntroCont .general-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        width: 350px;
-        padding-top: 20px; }
-    #house-cont .family-members > .member-row {
-      width: 350px; }
-      #house-cont .family-members > .member-row .member-info-cont > .member-title {
-        font-size: 12px; }
   #desc-cont-reb {
     width: 300px; }
   .timeline ul li div {
@@ -1061,7 +1036,6 @@ a {
         margin-top: 0px;
         text-align: left; }
   #house-cont {
-    width: calc(100% - 50px);
     margin: 50px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
       display: flex;
@@ -1166,16 +1140,14 @@ a {
       justify-content: flex-start;
       align-items: flex-start;
       text-align: left; }
-  #house-cont {
-    width: calc(100% - 200px); }
-    #house-cont #house-selecs-cont #house-selecs {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      width: 760px;
-      margin: 20px; }
+  #house-cont #house-selecs-cont #house-selecs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 760px;
+    margin: 20px; }
   #desc-cont-reb {
     width: 700px; }
   .timeline ul li div {
@@ -1203,40 +1175,7 @@ a {
     grid-template-columns: 530px 470px;
     grid-template-rows: 300px; }
   #house-cont {
-    width: calc(100% - 200px);
     margin: 50px 0 20px 0; }
-    #house-cont .houseIntroCont {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left; }
-      #house-cont .houseIntroCont .house-intro {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%; }
-        #house-cont .houseIntroCont .house-intro .house-general {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          padding-top: 0px; }
-        #house-cont .houseIntroCont .house-intro .sigils {
-          margin-right: 10px;
-          background-image: url("../images/sigils-3.png"); }
-      #house-cont .houseIntroCont .general-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
-        padding-top: 0px; }
-    #house-cont .family-members > .member-row {
-      width: 600px; }
-      #house-cont .family-members > .member-row .member-info-cont > .member-title {
-        font-size: 17px; }
   #desc-cont-reb {
     width: 800px; }
   .timeline ul li div {

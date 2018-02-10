@@ -5,7 +5,6 @@ class Family extends Component {
   render() {
     return (
       <div className="family-members">
-        <p className="miniheading" id="mems-of-house">Members</p>
         {this.props.obj.map(o => {
           return <div className="member-row">
             <img src={o.image} />
