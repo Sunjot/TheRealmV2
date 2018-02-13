@@ -176,9 +176,51 @@
   }
 }
 
+#structure-cont {
+  @include flex(row, center, flex-start);
+  margin: 20px 2% 20px 2%;
+
+  #struct-choices {
+    @include flex(column, flex-start, center);
+    width: 30%;
+
+    button {
+      border-radius: 1px;
+      background-color: #72a9d3;
+      color: #f2f2f2;
+      width: 170px;
+      margin-bottom: 10px;
+      padding: 15px;
+
+      &:hover {
+        background-color: #5c8eb5;
+      }
+    }
+  }
+
+  #struct-desc {
+    @include flex(column, flex-start, center);
+    width: 65%;
+    background-color: #4e7ea3;
+    border-radius: 2px;
+    padding: 30px;
+    color: white;
+
+    .miniheading {
+      font-family: "Poppins";
+      padding: 5px 0 15px 0;
+    }
+
+    #king-cont {
+
+    }
+  }
+
+}
+
 // Structure component
 
-#structure-cont {
+/* #structure-cont {
   padding: 20px 50px 20px 50px;
 
   .miniheading {
@@ -253,7 +295,7 @@
     box-shadow: 0px 0px 2px 0px rgba(138,138,138,1);
     border: 1px solid #f4f4f4;
   }
-}
+} */
 
 // House component
 
@@ -418,74 +460,114 @@
 
   .house-item {
     @include animate(fadein, 0.5s, 0s, forwards);
-    @include flex(row, center, flex-start);
+    @include flex(column, flex-start, center);
     opacity: 0;
-    margin: 0 2.5% 2.5%;
+    margin: 0 20px 0 20px;
+    font-size: 15px;
 
     .houseIntroCont {
-      @include flex(column, flex-start, flex-start);
-      text-align: left;
-      width: 40%;
-      padding: 20px 1% 20px 1%;
-      margin-right: 3%;
-      background-color: #80afb2;
-      border-radius: 10px;
+      @include flex(column, flex-start, center);
+      text-align: center;
+      width: 60%;
+      padding: 20px;
+      margin: 0 0 40px 0;
+      border: 1px solid #afafaf;
+      border-radius: 5px;
+      background-color: #5a7199;
+      color: #f2f2f2;
 
       .house-intro {
-        @include flex(row, flex-start, flex-start);
         width: 100%;
         margin-bottom: 35px;
 
         .house-general {
-          @include flex(column, flex-start, flex-start);
+          @include flex(column, flex-start, center);
+          width: 100%;
+
+          .miniheading {
+            font-size: 20px;
+            padding-bottom: 20px;
+            font-family: 'Ubuntu';
+          }
         }
       }
 
       .general-info {
-        @include flex(column, flex-start, flex-start);
+        @include flex(column, flex-start, center);
         width: 100%;
       }
     }
 
     .family-members {
-      @include flex(column, flex-start, center);
-      width: 55%;
+      @include flex(row, center, stretch);
+      flex-wrap: wrap;
+      width: 60%;
 
       #mems-of-house {
         padding-bottom: 30px;
       }
 
       .member-row {
-        @include flex(row, flex-start, flex-start);
-        width: 100%;
-        padding-bottom: 30px;
+        @include flex(column, flex-start, center);
+        width: 43%;
+        margin: 0 1% 30px 1%;
+        border: 1px solid #5a7199;
+        padding: 15px 2% 15px 2%;
+        border-radius: 3px;
 
         img {
           width: 100px;
+          border-radius: 50%;
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
         }
 
         .member-info-cont {
-          @include flex(column, flex-start, flex-start);
-          padding-left: 10px;
+          @include flex(column, flex-start, center);
 
           .member-title {
+            font-family: 'Ubuntu';
             font-size: 17px;
             font-weight: bold;
+            margin: 10px 0 10px 0;
           }
 
           p {
-            text-align: left;
+            text-align: center;
           }
         }
       }
     }
   }
 
-  .returnSelecs {
+  #iconCont {
     position: absolute;
     top: 70px;
     left: 10px;
-    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+
+    svg:hover {
+      stroke: #344766;
+    }
+
+    &:after {
+      content: "Pick again!";
+      white-space: nowrap;
+      font-family: 'Poppins';
+      position: absolute;
+      height: 48px;
+      @include flex(column, center, flex-start);
+      top: 0;
+      left: 48px;
+      right: 0px;
+      margin: 0 5px 0 5px;
+      overflow: hidden;
+      transition: right 0.5s;
+      color: #455a7c;
+    }
+
+    &:hover:after {
+      right: -100px;
+    }
   }
 }
 
@@ -762,6 +844,23 @@
         margin: 20px;
       }
     }
+
+    .house-item {
+      font-size: 12px;
+
+      .houseIntroCont {
+        margin-top: 30px;
+        width: 90%;
+      }
+
+      .family-members {
+        width: 70%;
+
+        .member-row {
+          width: 100%;
+        }
+      }
+    }
   }
 
   #desc-cont-reb {
@@ -848,37 +947,20 @@
       }
     }
 
-    .houseIntroCont {
-      @include flex(row, flex-start, flex-start);
-      text-align: left;
+    .house-item {
+      font-size: 15px;
 
-      .house-intro {
-        @include flex(row, flex-start, flex-start);
-        width: 50%;
-
-        .house-general {
-          @include flex(column, flex-start, flex-start);
-          padding-top: 0px;
-        }
-
-        .sigils {
-          margin-right: 10px;
-          background-image: url('../images/sigils-3.png');
-        }
+      .houseIntroCont {
+        margin-top: 30px;
+        width: 70%;
       }
 
-      .general-info {
-        @include flex(column, flex-start, flex-start);
-        width: 50%;
-        padding-top: 0px;
-      }
-    }
+      .family-members {
+        width: 70%;
 
-    .family-members > .member-row {
-      width: 500px;
-
-      .member-info-cont > .member-title {
-        font-size: 14px;
+        .member-row {
+          width: 60%;
+        }
       }
     }
   }
@@ -965,6 +1047,22 @@
         flex-wrap: wrap;
         width: 760px;
         margin: 20px;
+      }
+    }
+
+    .house-item {
+
+      .houseIntroCont {
+        margin-top: 30px;
+        width: 60%;
+      }
+
+      .family-members {
+        width: 60%;
+
+        .member-row {
+          width: 43%;
+        }
       }
     }
   }

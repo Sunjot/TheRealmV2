@@ -9,8 +9,29 @@ class Structure extends Component {
       <div>
         <Header/>
         <div className="content">
-          <p className="subheading">Structure</p>
           <div id="structure-cont">
+            <div id="struct-choices">
+              <button type="button">The King</button>
+              <button type="button">The Hand</button>
+              <button type="button">The Small Council</button>
+              <button type="button">Great Houses </button>
+              <button type="button">Vassals</button>
+            </div>
+            <div id="struct-desc">
+              <div id="king-cont" className="card-shadow">
+                <p className="miniheading">The King</p>
+                <p>The Seven Kingdoms has a ruler and this person sits on the Iron Throne, which is located
+                in King's Landing - the capital of the Seven Kingdoms. They hold political authority and
+                have final say in all decisions, and so naturally everyone wants to be in that position.
+                That point also brings me to what is the main storyline in the show - the battle for claim
+                of the Iron Throne. At the start of the series, the King is Robert Baratheon.
+                How he becomes King prior to the start of the series is essential knowledge and will be discussed
+                in the last section.</p>
+              </div>
+            </div>
+
+
+            {/*
             <div id="top-half">
               <div id="king-cont" className="card-shadow">
                 <img src={Rob} ></img>
@@ -59,6 +80,7 @@ class Structure extends Component {
                   homeless.</p>
               </div>
             </div>
+          */}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HouseIntro from './HouseIntro';
 import Family from './Family';
+import * as Icon from 'react-feather';
 
 class HouseItem extends Component {
 
@@ -16,11 +17,10 @@ class HouseItem extends Component {
   render() {
     return (
       <div className="house-item">
-        <button type="button" className="returnSelecs" onClick={this.changeContent}>Select another</button>
+        <div id="iconCont" onClick={this.changeContent}><Icon.ArrowLeftCircle color="#5a7199" size={48} /></div>
         <div className="houseIntroCont">
           <HouseIntro obj={this.props.general} />
           <div className="general-info">
-            <p className="miniheading">Other Notes</p>
             <p>{this.props.note}</p>
           </div>
         </div>

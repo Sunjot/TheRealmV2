@@ -502,75 +502,116 @@ a {
         text-align: left; }
 
 #structure-cont {
-  padding: 20px 50px 20px 50px; }
-  #structure-cont .miniheading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 2% 20px 2%; }
+  #structure-cont #struct-choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%; }
+    #structure-cont #struct-choices button {
+      border-radius: 1px;
+      background-color: #72a9d3;
+      color: #f2f2f2;
+      width: 170px;
+      margin-bottom: 10px;
+      padding: 15px; }
+      #structure-cont #struct-choices button:hover {
+        background-color: #5c8eb5; }
+  #structure-cont #struct-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+    background-color: #4e7ea3;
+    border-radius: 2px;
+    padding: 30px;
+    color: white; }
+    #structure-cont #struct-desc .miniheading {
+      font-family: "Poppins";
+      padding: 5px 0 15px 0; }
+
+/* #structure-cont {
+  padding: 20px 50px 20px 50px;
+
+  .miniheading {
     font-family: "Poppins";
-    padding: 5px 0 5px 0; }
-  #structure-cont #top-half {
+    padding: 5px 0 5px 0;
+  }
+
+  #top-half {
     display: grid;
     grid-template-columns: 400px 600px;
-    grid-template-rows: 250px 250px; }
-    #structure-cont #top-half #king-cont {
+    grid-template-rows: 250px 250px;
+
+    #king-cont {
       grid-column: 1 / span 1;
       grid-row: 1 / span 2;
       margin: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 10px 20px 10px 20px; }
-      #structure-cont #top-half #king-cont img {
-        width: 140px; }
-    #structure-cont #top-half #hand-cont {
+      @include flex(column, flex-start, center);
+      padding: 10px 20px 10px 20px;
+
+      img {
+        width: 140px;
+      }
+    }
+
+    #hand-cont {
       grid-column: 2 / span 1;
       grid-row: 1 / span 1;
       margin: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      @include flex(column, flex-start, flex-start);
       text-align: left;
-      padding: 10px 20px 10px 20px; }
-    #structure-cont #top-half #council-cont {
+      padding: 10px 20px 10px 20px;
+    }
+
+    #council-cont {
       grid-column: 2 / span 1;
       grid-row: 2 / span 1;
       margin: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      @include flex(column, flex-start, flex-start);
       text-align: left;
-      padding: 10px 20px 10px 20px; }
-  #structure-cont #bottom-half {
+      padding: 10px 20px 10px 20px;
+    }
+  }
+
+  #bottom-half {
     display: grid;
     grid-template-columns: 530px 470px;
-    grid-template-rows: 300px; }
-    #structure-cont #bottom-half #house-cont {
+    grid-template-rows: 300px;
+
+    #house-cont {
       grid-column: 1 / span 1;
       grid-row: 1 / span 1;
       margin: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      @include flex(column, flex-start, flex-start);
       text-align: left;
-      padding: 10px 20px 10px 20px; }
-    #structure-cont #bottom-half #other-cont {
+      padding: 10px 20px 10px 20px;
+    }
+
+    #other-cont {
       grid-column: 2 / span 1;
       grid-row: 1 / span 1;
       margin: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      @include flex(column, flex-start, flex-start);
       text-align: left;
-      padding: 10px 20px 10px 20px; }
-  #structure-cont .card-shadow {
-    -webkit-box-shadow: 0px 0px 2px 0px #8a8a8a;
-    -moz-box-shadow: 0px 0px 2px 0px #8a8a8a;
-    box-shadow: 0px 0px 2px 0px #8a8a8a;
-    border: 1px solid #f4f4f4; }
+      padding: 10px 20px 10px 20px;
+    }
+  }
 
+  // numbers generated courtesy of https://www.cssmatic.com/box-shadow
+  .card-shadow {
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(138,138,138,1);
+    box-shadow: 0px 0px 2px 0px rgba(138,138,138,1);
+    border: 1px solid #f4f4f4;
+  }
+} */
 #house-cont {
   margin: 25px 5px 40px 5px;
   width: 100%; }
@@ -686,73 +727,105 @@ a {
     animation-delay: 0s;
     animation-fill-mode: forwards;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     opacity: 0;
-    margin: 0 2.5% 2.5%; }
+    margin: 0 20px 0 20px;
+    font-size: 15px; }
     #house-cont .house-item .houseIntroCont {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left;
-      width: 40%;
-      padding: 20px 1% 20px 1%;
-      margin-right: 3%;
-      background-color: #80afb2;
-      border-radius: 10px; }
+      align-items: center;
+      text-align: center;
+      width: 60%;
+      padding: 20px;
+      margin: 0 0 40px 0;
+      border: 1px solid #afafaf;
+      border-radius: 5px;
+      background-color: #5a7199;
+      color: #f2f2f2; }
       #house-cont .house-item .houseIntroCont .house-intro {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
         width: 100%;
         margin-bottom: 35px; }
         #house-cont .house-item .houseIntroCont .house-intro .house-general {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          align-items: flex-start; }
+          align-items: center;
+          width: 100%; }
+          #house-cont .house-item .houseIntroCont .house-intro .house-general .miniheading {
+            font-size: 20px;
+            padding-bottom: 20px;
+            font-family: 'Ubuntu'; }
       #house-cont .house-item .houseIntroCont .general-info {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
         width: 100%; }
     #house-cont .house-item .family-members {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      width: 55%; }
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      width: 60%; }
       #house-cont .house-item .family-members #mems-of-house {
         padding-bottom: 30px; }
       #house-cont .house-item .family-members .member-row {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;
-        width: 100%;
-        padding-bottom: 30px; }
+        align-items: center;
+        width: 43%;
+        margin: 0 1% 30px 1%;
+        border: 1px solid #5a7199;
+        padding: 15px 2% 15px 2%;
+        border-radius: 3px; }
         #house-cont .house-item .family-members .member-row img {
-          width: 100px; }
+          width: 100px;
+          border-radius: 50%;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
         #house-cont .house-item .family-members .member-row .member-info-cont {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          align-items: flex-start;
-          padding-left: 10px; }
+          align-items: center; }
           #house-cont .house-item .family-members .member-row .member-info-cont .member-title {
+            font-family: 'Ubuntu';
             font-size: 17px;
-            font-weight: bold; }
+            font-weight: bold;
+            margin: 10px 0 10px 0; }
           #house-cont .house-item .family-members .member-row .member-info-cont p {
-            text-align: left; }
-  #house-cont .returnSelecs {
+            text-align: center; }
+  #house-cont #iconCont {
     position: absolute;
     top: 70px;
     left: 10px;
-    padding: 10px 10px 10px 10px; }
+    cursor: pointer; }
+    #house-cont #iconCont svg:hover {
+      stroke: #344766; }
+    #house-cont #iconCont:after {
+      content: "Pick again!";
+      white-space: nowrap;
+      font-family: 'Poppins';
+      position: absolute;
+      height: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      top: 0;
+      left: 48px;
+      right: 0px;
+      margin: 0 5px 0 5px;
+      overflow: hidden;
+      transition: right 0.5s;
+      color: #455a7c; }
+    #house-cont #iconCont:hover:after {
+      right: -100px; }
 
 #desc-cont-reb {
   padding: 20px !important;
@@ -987,6 +1060,15 @@ a {
       flex-wrap: wrap;
       width: 350px;
       margin: 20px; }
+    #house-cont .house-item {
+      font-size: 12px; }
+      #house-cont .house-item .houseIntroCont {
+        margin-top: 30px;
+        width: 90%; }
+      #house-cont .house-item .family-members {
+        width: 70%; }
+        #house-cont .house-item .family-members .member-row {
+          width: 100%; }
   #desc-cont-reb {
     width: 300px; }
   .timeline ul li div {
@@ -1045,38 +1127,15 @@ a {
       flex-wrap: wrap;
       width: 600px;
       margin: 20px; }
-    #house-cont .houseIntroCont {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left; }
-      #house-cont .houseIntroCont .house-intro {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%; }
-        #house-cont .houseIntroCont .house-intro .house-general {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          padding-top: 0px; }
-        #house-cont .houseIntroCont .house-intro .sigils {
-          margin-right: 10px;
-          background-image: url("../images/sigils-3.png"); }
-      #house-cont .houseIntroCont .general-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
-        padding-top: 0px; }
-    #house-cont .family-members > .member-row {
-      width: 500px; }
-      #house-cont .family-members > .member-row .member-info-cont > .member-title {
-        font-size: 14px; }
+    #house-cont .house-item {
+      font-size: 15px; }
+      #house-cont .house-item .houseIntroCont {
+        margin-top: 30px;
+        width: 70%; }
+      #house-cont .house-item .family-members {
+        width: 70%; }
+        #house-cont .house-item .family-members .member-row {
+          width: 60%; }
   #desc-cont-reb {
     width: 550px; }
   .timeline ul li div {
@@ -1148,6 +1207,13 @@ a {
     flex-wrap: wrap;
     width: 760px;
     margin: 20px; }
+  #house-cont .house-item .houseIntroCont {
+    margin-top: 30px;
+    width: 60%; }
+  #house-cont .house-item .family-members {
+    width: 60%; }
+    #house-cont .house-item .family-members .member-row {
+      width: 43%; }
   #desc-cont-reb {
     width: 700px; }
   .timeline ul li div {
