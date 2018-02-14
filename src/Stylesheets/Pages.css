@@ -238,16 +238,6 @@ a {
     #me-cont a span {
       font-size: 1.5rem; }
 
-.float-none {
-  transform: translateX(100%);
-  width: 100%; }
-
-.float-in {
-  animation: floatin 3s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  width: 100%; }
-
 .fade-none {
   opacity: 0; }
 
@@ -281,16 +271,6 @@ a {
     transform: translate(0px, 0px); }
   to {
     transform: translate(0px, -20px); } }
-
-@keyframes floatin {
-  0% {
-    transform: translate(100%, 400px); }
-  50% {
-    transform: translate(-20px, -20px); }
-  70% {
-    transform: translate(-40px, 20px); }
-  100% {
-    transform: translate(0%, 0%); } }
 
 @keyframes height {
   0% {
@@ -428,8 +408,7 @@ a {
   #map-wrap #mapLink {
     position: absolute;
     height: 100%;
-    width: 100%;
-    z-index: 16; }
+    width: 100%; }
 
 #westeros-divider {
   width: 85%;
@@ -517,7 +496,7 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: max-content; }
+    width: 280px; }
     #structure-cont #struct-choices button {
       border-radius: 1px;
       border: 1px solid #72a9d3;
@@ -554,82 +533,6 @@ a {
         animation-fill-mode: forwards;
         opacity: 0; }
 
-/* #structure-cont {
-  padding: 20px 50px 20px 50px;
-
-  .miniheading {
-    font-family: "Poppins";
-    padding: 5px 0 5px 0;
-  }
-
-  #top-half {
-    display: grid;
-    grid-template-columns: 400px 600px;
-    grid-template-rows: 250px 250px;
-
-    #king-cont {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 2;
-      margin: 5px;
-      @include flex(column, flex-start, center);
-      padding: 10px 20px 10px 20px;
-
-      img {
-        width: 140px;
-      }
-    }
-
-    #hand-cont {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
-      margin: 5px;
-      @include flex(column, flex-start, flex-start);
-      text-align: left;
-      padding: 10px 20px 10px 20px;
-    }
-
-    #council-cont {
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
-      margin: 5px;
-      @include flex(column, flex-start, flex-start);
-      text-align: left;
-      padding: 10px 20px 10px 20px;
-    }
-  }
-
-  #bottom-half {
-    display: grid;
-    grid-template-columns: 530px 470px;
-    grid-template-rows: 300px;
-
-    #house-cont {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
-      margin: 5px;
-      @include flex(column, flex-start, flex-start);
-      text-align: left;
-      padding: 10px 20px 10px 20px;
-    }
-
-    #other-cont {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
-      margin: 5px;
-      @include flex(column, flex-start, flex-start);
-      text-align: left;
-      padding: 10px 20px 10px 20px;
-    }
-  }
-
-  // numbers generated courtesy of https://www.cssmatic.com/box-shadow
-  .card-shadow {
-    -webkit-box-shadow: 0px 0px 2px 0px rgba(138,138,138,1);
-    -moz-box-shadow: 0px 0px 2px 0px rgba(138,138,138,1);
-    box-shadow: 0px 0px 2px 0px rgba(138,138,138,1);
-    border: 1px solid #f4f4f4;
-  }
-} */
 #house-cont {
   margin: 25px 5px 40px 5px;
   width: 100%; }
@@ -1039,7 +942,7 @@ a {
       #structure-cont #struct-choices button {
         width: 100px;
         margin: 0 5px 10px 5px;
-        padding: 5px; }
+        padding: 10px; }
     #structure-cont #struct-desc {
       width: 90%;
       margin-top: 10px; }
@@ -1124,9 +1027,9 @@ a {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      width: max-content; }
+      width: 190px; }
       #structure-cont #struct-choices button {
-        width: 170px;
+        width: 120px;
         margin: 0 20px 10px 20px;
         padding: 15px; }
     #structure-cont #struct-desc {
@@ -1183,9 +1086,9 @@ a {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      width: max-content; }
+      width: 220px; }
       #structure-cont #struct-choices button {
-        width: 170px;
+        width: 150px;
         margin: 0 20px 10px 20px;
         padding: 15px; }
     #structure-cont #struct-desc {
@@ -1236,7 +1139,7 @@ a {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      width: max-content; }
+      width: 280px; }
       #structure-cont #struct-choices button {
         width: 170px;
         margin: 0 40px 10px 40px;

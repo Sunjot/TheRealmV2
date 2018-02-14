@@ -171,16 +171,6 @@ a {
     #me-cont a span {
       font-size: 1.5rem; }
 
-.float-none {
-  transform: translateX(100%);
-  width: 100%; }
-
-.float-in {
-  animation: floatin 3s;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-  width: 100%; }
-
 .fade-none {
   opacity: 0; }
 
@@ -214,16 +204,6 @@ a {
     transform: translate(0px, 0px); }
   to {
     transform: translate(0px, -20px); } }
-
-@keyframes floatin {
-  0% {
-    transform: translate(100%, 400px); }
-  50% {
-    transform: translate(-20px, -20px); }
-  70% {
-    transform: translate(-40px, 20px); }
-  100% {
-    transform: translate(0%, 0%); } }
 
 @keyframes height {
   0% {

@@ -9,12 +9,10 @@ class NavCont extends Component {
     super();
 
     this.handleClick = this.handleClick.bind(this);
-    this.floatDiv = this.floatDiv.bind(this);
     this.backPress = this.backPress.bind(this);
 
     this.state = {
-      button_id: "-1",
-      floatClass: "float-none",
+      button_id: "-1"
     }
   }
 
@@ -34,12 +32,6 @@ class NavCont extends Component {
     });
   }
 
-  floatDiv() { // animate float in when element enters viewport
-    this.setState({
-      floatClass: "float-in"
-    });
-  }
-
   backPress(e) { // when user presses backspace, go from preview to navbox component
     if (this.state.button_id !== "-1"){
       if (e.keyCode === 8) {
@@ -52,7 +44,7 @@ class NavCont extends Component {
 
   render() {
     return (
-      <div className={this.state.floatClass}>
+      <div>
         <Waypoint
           onEnter={this.floatDiv}
           bottomOffset="100px"
