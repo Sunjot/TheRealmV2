@@ -176,46 +176,64 @@
   }
 }
 
+#struct-cont-super > .subheading {
+  font-family: "Ubuntu";
+  color: #5c8eb5;
+  font-size: 28px;
+}
+
 #structure-cont {
   @include flex(row, center, flex-start);
-  margin: 20px 2% 20px 2%;
+  margin: 20px 1% 20px 1%;
 
   #struct-choices {
     @include flex(column, flex-start, center);
-    width: 30%;
+    width: max-content;
 
     button {
       border-radius: 1px;
-      background-color: #72a9d3;
-      color: #f2f2f2;
+      border: 1px solid #72a9d3;
+      background-color: white;
+      color: black;
       width: 170px;
-      margin-bottom: 10px;
+      margin: 0 40px 10px 40px;
       padding: 15px;
 
       &:hover {
         background-color: #5c8eb5;
+        color: white;
+        transition: 0.25s background-color;
       }
+    }
+
+    .struct-btn-active {
+      background-color: #5c8eb5;
+      color: white;
     }
   }
 
   #struct-desc {
-    @include flex(column, flex-start, center);
     width: 65%;
-    background-color: #4e7ea3;
-    border-radius: 2px;
-    padding: 30px;
-    color: white;
 
-    .miniheading {
-      font-family: "Poppins";
-      padding: 5px 0 15px 0;
-    }
+    .struct-card {
+      @include flex(column, flex-start, center);
+      background-color: #4e7ea3;
+      border-radius: 2px;
+      padding: 20px;
+      color: white;
+      height: 205px;
 
-    #king-cont {
+      .miniheading {
+        font-family: "Poppins";
+        padding: 5px 0 15px 0;
+      }
 
+      p {
+        @include animate(fadein, 0.2s, 0s, forwards);
+        opacity: 0;
+      }
     }
   }
-
 }
 
 // Structure component
@@ -788,48 +806,28 @@
     }
   }
   #structure-cont {
-    #top-half {
-      display: grid;
-      grid-template-columns: 300px;
-      grid-template-rows: 265px 150px 165px;
+    @include flex(column, flex-start, center);
+    margin: 20px 1% 20px 1%;
 
-      #king-cont {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        img {
-          width: 80px;
-        }
-      }
-      #hand-cont {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-        @include flex(column, flex-start, center);
-        text-align: center;
-      }
-      #council-cont {
-        grid-column: 1 / span 1;
-        grid-row: 3 / span 1;
-        @include flex(column, flex-start, center);
-        text-align: center;
+    #struct-choices {
+      @include flex(row, center, flex-start);
+      flex-wrap: wrap;
+      width: 90%;
+
+      button {
+        width: 100px;
+        margin: 0 5px 10px 5px;
+        padding: 5px;
       }
     }
-    #bottom-half {
-      display: grid;
-      grid-template-columns: 300px;
-      grid-template-rows: 185px 175px;
 
-      #house-cont {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        @include flex(column, flex-start, center);
-        text-align: center;
-      }
+    #struct-desc {
+      width: 90%;
+      margin-top: 10px;
 
-      #other-cont {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
-        @include flex(column, flex-start, center);
-        text-align: center;
+      .struct-card {
+        padding: 20px;
+        height: 120px;
       }
     }
   }
@@ -935,6 +933,31 @@
       }
     }
   }
+  #structure-cont {
+    @include flex(row, center, flex-start);
+    margin: 20px 1% 20px 1%;
+
+    #struct-choices {
+      @include flex(column, flex-start, center);
+      width: max-content;
+
+      button {
+        width: 170px;
+        margin: 0 20px 10px 20px;
+        padding: 15px;
+      }
+    }
+
+    #struct-desc {
+      width: 65%;
+      margin-top: 0px;
+
+      .struct-card {
+        padding: 20px;
+        height: 120px;
+      }
+    }
+  }
   #house-cont {
     margin: 50px 0 20px 0;
 
@@ -994,48 +1017,27 @@
     padding: 30px 100px 30px 100px;
   }
   #structure-cont {
-    #top-half {
-      display: grid;
-      grid-template-columns: 300px 450px;
-      grid-template-rows: 200px 200px;
+    @include flex(row, center, flex-start);
+    margin: 20px 1% 20px 1%;
 
-      #king-cont {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 2;
-        img {
-          width: 120px;
-        }
-      }
-      #hand-cont {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-        @include flex(column, flex-start, flex-start);
-        text-align: left;
-      }
-      #council-cont {
-        grid-column: 2 / span 1;
-        grid-row: 2 / span 1;
-        @include flex(column, flex-start, flex-start);
-        text-align: left;
+    #struct-choices {
+      @include flex(column, flex-start, center);
+      width: max-content;
+
+      button {
+        width: 170px;
+        margin: 0 20px 10px 20px;
+        padding: 15px;
       }
     }
-    #bottom-half {
-      display: grid;
-      grid-template-columns: 400px 350px;
-      grid-template-rows: 250px;
 
-      #house-cont {
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        @include flex(column, flex-start, flex-start);
-        text-align: left;
-      }
+    #struct-desc {
+      width: 65%;
+      margin-top: 0px;
 
-      #other-cont {
-        grid-column: 2 / span 1;
-        grid-row: 1 / span 1;
-        @include flex(column, flex-start, flex-start);
-        text-align: left;
+      .struct-card {
+        padding: 20px;
+        height: 170px;
       }
     }
   }
@@ -1095,21 +1097,28 @@
     padding: 0px 25px 0px 25px;
   }
   #structure-cont {
-    #top-half {
-      display: grid;
-      grid-template-columns: 400px 600px;
-      grid-template-rows: 250px 250px;
+    @include flex(row, center, flex-start);
+    margin: 20px 1% 20px 1%;
 
-      #king-cont {
-        img {
-          width: 140px;
-        }
+    #struct-choices {
+      @include flex(column, flex-start, center);
+      width: max-content;
+
+      button {
+        width: 170px;
+        margin: 0 40px 10px 40px;
+        padding: 15px;
       }
     }
-    #bottom-half {
-      display: grid;
-      grid-template-columns: 530px 470px;
-      grid-template-rows: 300px;
+
+    #struct-desc {
+      width: 900px;
+      margin-top: 0px;
+
+      .struct-card {
+        padding: 20px;
+        height: 205px;
+      }
     }
   }
   #house-cont {

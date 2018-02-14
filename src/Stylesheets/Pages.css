@@ -501,40 +501,58 @@ a {
         margin-top: 0px;
         text-align: left; }
 
+#struct-cont-super > .subheading {
+  font-family: "Ubuntu";
+  color: #5c8eb5;
+  font-size: 28px; }
+
 #structure-cont {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  margin: 20px 2% 20px 2%; }
+  margin: 20px 1% 20px 1%; }
   #structure-cont #struct-choices {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 30%; }
+    width: max-content; }
     #structure-cont #struct-choices button {
       border-radius: 1px;
-      background-color: #72a9d3;
-      color: #f2f2f2;
+      border: 1px solid #72a9d3;
+      background-color: white;
+      color: black;
       width: 170px;
-      margin-bottom: 10px;
+      margin: 0 40px 10px 40px;
       padding: 15px; }
       #structure-cont #struct-choices button:hover {
-        background-color: #5c8eb5; }
+        background-color: #5c8eb5;
+        color: white;
+        transition: 0.25s background-color; }
+    #structure-cont #struct-choices .struct-btn-active {
+      background-color: #5c8eb5;
+      color: white; }
   #structure-cont #struct-desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 65%;
-    background-color: #4e7ea3;
-    border-radius: 2px;
-    padding: 30px;
-    color: white; }
-    #structure-cont #struct-desc .miniheading {
-      font-family: "Poppins";
-      padding: 5px 0 15px 0; }
+    width: 65%; }
+    #structure-cont #struct-desc .struct-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #4e7ea3;
+      border-radius: 2px;
+      padding: 20px;
+      color: white;
+      height: 205px; }
+      #structure-cont #struct-desc .struct-card .miniheading {
+        font-family: "Poppins";
+        padding: 5px 0 15px 0; }
+      #structure-cont #struct-desc .struct-card p {
+        animation: fadein 0.2s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+        opacity: 0; }
 
 /* #structure-cont {
   padding: 20px 50px 20px 50px;
@@ -1005,51 +1023,29 @@ a {
         margin-left: 0px;
         margin-top: 10px;
         text-align: left; }
-  #structure-cont #top-half {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 265px 150px 165px; }
-    #structure-cont #top-half #king-cont {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1; }
-      #structure-cont #top-half #king-cont img {
-        width: 80px; }
-    #structure-cont #top-half #hand-cont {
-      grid-column: 1 / span 1;
-      grid-row: 2 / span 1;
+  #structure-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 1% 20px 1%; }
+    #structure-cont #struct-choices {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center; }
-    #structure-cont #top-half #council-cont {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center; }
-  #structure-cont #bottom-half {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 185px 175px; }
-    #structure-cont #bottom-half #house-cont {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center; }
-    #structure-cont #bottom-half #other-cont {
-      grid-column: 1 / span 1;
-      grid-row: 2 / span 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center; }
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 90%; }
+      #structure-cont #struct-choices button {
+        width: 100px;
+        margin: 0 5px 10px 5px;
+        padding: 5px; }
+    #structure-cont #struct-desc {
+      width: 90%;
+      margin-top: 10px; }
+      #structure-cont #struct-desc .struct-card {
+        padding: 20px;
+        height: 120px; }
   #house-cont {
     margin: 20px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
@@ -1117,6 +1113,28 @@ a {
         margin-left: 30px;
         margin-top: 0px;
         text-align: left; }
+  #structure-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 1% 20px 1%; }
+    #structure-cont #struct-choices {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: max-content; }
+      #structure-cont #struct-choices button {
+        width: 170px;
+        margin: 0 20px 10px 20px;
+        padding: 15px; }
+    #structure-cont #struct-desc {
+      width: 65%;
+      margin-top: 0px; }
+      #structure-cont #struct-desc .struct-card {
+        padding: 20px;
+        height: 120px; }
   #house-cont {
     margin: 50px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
@@ -1154,51 +1172,28 @@ a {
     padding: 0px 20px 0px 20px; }
   .desc-cont {
     padding: 30px 100px 30px 100px; }
-  #structure-cont #top-half {
-    display: grid;
-    grid-template-columns: 300px 450px;
-    grid-template-rows: 200px 200px; }
-    #structure-cont #top-half #king-cont {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 2; }
-      #structure-cont #top-half #king-cont img {
-        width: 120px; }
-    #structure-cont #top-half #hand-cont {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
+  #structure-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 1% 20px 1%; }
+    #structure-cont #struct-choices {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left; }
-    #structure-cont #top-half #council-cont {
-      grid-column: 2 / span 1;
-      grid-row: 2 / span 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left; }
-  #structure-cont #bottom-half {
-    display: grid;
-    grid-template-columns: 400px 350px;
-    grid-template-rows: 250px; }
-    #structure-cont #bottom-half #house-cont {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left; }
-    #structure-cont #bottom-half #other-cont {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      text-align: left; }
+      align-items: center;
+      width: max-content; }
+      #structure-cont #struct-choices button {
+        width: 170px;
+        margin: 0 20px 10px 20px;
+        padding: 15px; }
+    #structure-cont #struct-desc {
+      width: 65%;
+      margin-top: 0px; }
+      #structure-cont #struct-desc .struct-card {
+        padding: 20px;
+        height: 170px; }
   #house-cont #house-selecs-cont #house-selecs {
     display: flex;
     flex-direction: row;
@@ -1230,16 +1225,28 @@ a {
     width: 58px; }
   #headerCont > .header-links {
     padding: 0px 25px 0px 25px; }
-  #structure-cont #top-half {
-    display: grid;
-    grid-template-columns: 400px 600px;
-    grid-template-rows: 250px 250px; }
-    #structure-cont #top-half #king-cont img {
-      width: 140px; }
-  #structure-cont #bottom-half {
-    display: grid;
-    grid-template-columns: 530px 470px;
-    grid-template-rows: 300px; }
+  #structure-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 1% 20px 1%; }
+    #structure-cont #struct-choices {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: max-content; }
+      #structure-cont #struct-choices button {
+        width: 170px;
+        margin: 0 40px 10px 40px;
+        padding: 15px; }
+    #structure-cont #struct-desc {
+      width: 900px;
+      margin-top: 0px; }
+      #structure-cont #struct-desc .struct-card {
+        padding: 20px;
+        height: 205px; }
   #house-cont {
     margin: 50px 0 20px 0; }
   #desc-cont-reb {
