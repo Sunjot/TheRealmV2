@@ -139,18 +139,64 @@
   padding-bottom: 0px;
 }
 
-#essos-divider {
-  width: 95%;
-  height: 1px;
-  background-color: #bfbfbf;
+#content-essos {
+  overflow: hidden
+}
+
+.fc-active {
+  transform: translateX(33.3%);
+}
+
+.sb-active {
+  transform: translateX(0%);
+}
+
+.ds-active {
+  transform: translateX(-33.3%);
+}
+
+.sl {
+  transition: transform 1s ease-in-out;
+}
+
+#essos-selecs {
+  @include flex(row, center, flex-start);
+  margin-top: 20px;
+
+  .essos-ch {
+    @include flex(column, flex-start, center);
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+    font-family: "Ubuntu";
+    font-size: 20px;
+
+    #ul-active {
+      @include animate(expandUL, 1s, 0s, forwards);
+      height: 1px;
+      width: 0%;
+      background-color: black;
+      margin-top: 5px;
+    }
+
+    #no-ul {
+      @include animate(collapseUL, 0.2s, 0s, forwards);
+      height: 1px;
+      width: 0%;
+      background-color: black;
+      margin-top: 5px;
+    }
+  }
 }
 
 #essos-cont {
-  @include flex(column, flex-start, center);
+  @include flex(row, flex-start, flex-start);
+  width: 300%;
 
   .essos-subsec {
     @include flex(column, flex-start, flex-start);
-    margin: 50px 50px 60px 50px;
+    width: 100%;
+    margin: 40px 50px 60px 50px;
+    overflow: hidden;
 
     .miniheading {
       padding-bottom: 10px;
@@ -663,6 +709,24 @@
   }
 }
 
+@keyframes expandUL {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes collapseUL {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
 // Media queries
 
 @media (min-width: 300px) {
@@ -706,27 +770,7 @@
       flex-direction: column-reverse;
     }
   }
-  #essos-cont {
 
-    .essos-subsec {
-      margin: 50px 50px 60px 50px;
-
-      .desc-img {
-        @include flex(column, flex-start, flex-start);
-
-        img {
-          width: 100%;
-        }
-
-        .desc {
-          width: 100%;
-          margin-left: 0px;
-          margin-top: 10px;
-          text-align: left;
-        }
-      }
-    }
-  }
   #structure-cont {
     @include flex(column, flex-start, center);
     margin: 20px 1% 20px 1%;
@@ -831,28 +875,6 @@
     }
     #beyond-wall {
       flex-direction: row;
-    }
-  }
-
-  #essos-cont {
-
-    .essos-subsec {
-      margin: 50px 50px 60px 50px;
-
-      .desc-img {
-        @include flex(row, flex-start, flex-start);
-
-        img {
-          width: 45%;
-        }
-
-        .desc {
-          width: 50%;
-          margin-left: 30px;
-          margin-top: 0px;
-          text-align: left;
-        }
-      }
     }
   }
   #structure-cont {

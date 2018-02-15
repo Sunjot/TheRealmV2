@@ -6,21 +6,73 @@ import Header from './Header';
 
 class Essos extends Component {
 
+  constructor() {
+    super();
+
+    this.state = {
+      activeSub: 'sl fc-active',
+      fcActive: 'ul-active',
+      sbActive: 'no-ul',
+      dsActive: 'no-ul'
+    }
+  }
+
+  setActive = (val) => {
+
+    if (val === "0") {
+      this.setState({
+        activeSub: 'sl fc-active',
+        fcActive: 'ul-active',
+        sbActive: 'no-ul',
+        dsActive: 'no-ul'
+      });
+    }
+    if (val === "1") {
+      this.setState({
+        activeSub: 'sl sb-active',
+        fcActive: 'no-ul',
+        sbActive: 'ul-active',
+        dsActive: 'no-ul'
+      });
+    }
+    if (val === "2") {
+      this.setState({
+        activeSub: 'sl ds-active',
+        fcActive: 'no-ul',
+        sbActive: 'no-ul',
+        dsActive: 'ul-active'
+      });
+    }
+  }
+
   render() {
 
     return (
       <div>
         <Header/>
-        <div className="content">
+        <div className="content" id="content-essos">
           <p className="subheading">Essos</p>
           <p className="desc-cont" id="desc-cont-essos">While not as relevant as Westeros, it is still essential
           that we at least briefly go over the significance of Essos in the show. If you looked at the map,
           you'll see that Essos is a very large continent. Most of it, however, has been untouched.
           The focus is going to be on 3 regions: the Free Cities, Slaver's Bay, and the Dothraki Sea.
           All of them play an important role in a long-term storyline and so we'll briefly go over each.</p>
-          <div id="essos-cont">
+          <div id="essos-selecs">
+            <div className="essos-ch" onClick={() => this.setActive("0")}>
+              <p>Free Cities</p>
+              <div id={this.state.fcActive}></div>
+            </div>
+            <div className="essos-ch" onClick={() => this.setActive("1")}>
+              <p>Slaver's Bay</p>
+              <div id={this.state.sbActive}></div>
+            </div>
+            <div className="essos-ch" onClick={() => this.setActive("2")}>
+              <p>Dothraki Sea</p>
+              <div id={this.state.dsActive}></div>
+            </div>
+          </div>
+          <div id="essos-cont" className={this.state.activeSub}>
             <div id="free-cities-cont" className="essos-subsec">
-              <p className="miniheading">Free Cities</p>
               <div className="desc-img">
                 <img id="" src={Braavos}></img>
                 <p className="desc">The Free Cities, just like the Seven Kingdoms, is made up of 9 regions -
@@ -34,9 +86,7 @@ class Essos extends Component {
                 the Iron Bank of Braavos - the most powerful bank in the Known World, as it funds the Iron Throne.</p>
               </div>
             </div>
-            <div id="essos-divider"></div>
             <div id="slavers-cont" className="essos-subsec">
-              <p className="miniheading">Slaver's Bay</p>
               <div className="desc-img">
                 <img id="" src={Meereen}></img>
                 <p className="desc">Okay, I lied just slightly. Some of the surviving colonies of the volcanic
@@ -49,9 +99,7 @@ class Essos extends Component {
                 slave trade.</p>
               </div>
             </div>
-            <div id="essos-divider"></div>
             <div id="dothraki-cont" className="essos-subsec">
-              <p className="miniheading">Dothraki Sea</p>
               <div className="desc-img">
                 <img id="" src={Dothraki}></img>
                 <p className="desc">It's not what you think it is. The "sea" refers to a sea of
