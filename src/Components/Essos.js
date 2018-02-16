@@ -12,36 +12,56 @@ class Essos extends Component {
     this.state = {
       activeSub: 'sl fc-active',
       fcActive: 'ul-active',
-      sbActive: 'no-ul',
-      dsActive: 'no-ul'
+      sbActive: '',
+      dsActive: ''
     }
   }
 
   setActive = (val) => {
 
+    let prev = "";
+
+    if (this.state.fcActive === "ul-active")
+      prev = "fc";
+    if (this.state.sbActive === "ul-active")
+      prev = "sb";
+    if (this.state.dsActive === "ul-active")
+      prev = "ds";
+
     if (val === "0") {
       this.setState({
         activeSub: 'sl fc-active',
-        fcActive: 'ul-active',
-        sbActive: 'no-ul',
-        dsActive: 'no-ul'
+        fcActive: 'ul-active'
       });
+
+      if (prev === "sb")
+        this.setState({ sbActive: 'no-ul' });
+      else
+        this.setState({ dsActive: 'no-ul' });
+
     }
     if (val === "1") {
       this.setState({
         activeSub: 'sl sb-active',
-        fcActive: 'no-ul',
-        sbActive: 'ul-active',
-        dsActive: 'no-ul'
+        sbActive: 'ul-active'
       });
+
+      if (prev === "fc")
+        this.setState({ fcActive: 'no-ul' });
+      else
+        this.setState({ dsActive: 'no-ul' });
+
     }
     if (val === "2") {
       this.setState({
         activeSub: 'sl ds-active',
-        fcActive: 'no-ul',
-        sbActive: 'no-ul',
         dsActive: 'ul-active'
       });
+
+      if (prev === "fc")
+        this.setState({ fcActive: 'no-ul' });
+      else
+        this.setState({ sbActive: 'no-ul' });
     }
   }
 
@@ -51,27 +71,42 @@ class Essos extends Component {
       <div>
         <Header/>
         <div className="content" id="content-essos">
-          <p className="subheading">Essos</p>
-          <p className="desc-cont" id="desc-cont-essos">While not as relevant as Westeros, it is still essential
-          that we at least briefly go over the significance of Essos in the show. If you looked at the map,
-          you'll see that Essos is a very large continent. Most of it, however, has been untouched.
-          The focus is going to be on 3 regions: the Free Cities, Slaver's Bay, and the Dothraki Sea.
-          All of them play an important role in a long-term storyline and so we'll briefly go over each.</p>
+          <div id="desc-cont-essos">
+            <p className="subheading">Essos</p>
+            <p className="desc-cont">While not as relevant as Westeros, it is still essential
+            that we at least briefly go over the significance of Essos in the show. If you looked at the map,
+            you'll see that Essos is a very large continent. Most of it, however, has been untouched.
+            The focus is going to be on 3 regions: the Free Cities, Slaver's Bay, and the Dothraki Sea.
+            All of them play an important role in a long-term storyline and so we'll briefly go over each.</p>
+          </div>
           <div id="essos-selecs">
-            <div className="essos-ch" onClick={() => this.setActive("0")}>
-              <p>Free Cities</p>
-              <div id={this.state.fcActive}></div>
-            </div>
             <div className="essos-ch" onClick={() => this.setActive("1")}>
               <p>Slaver's Bay</p>
-              <div id={this.state.sbActive}></div>
+              <div className={this.state.sbActive}></div>
+            </div>
+            <div className="essos-ch" onClick={() => this.setActive("0")}>
+              <p>Free Cities</p>
+              <div className={this.state.fcActive}></div>
             </div>
             <div className="essos-ch" onClick={() => this.setActive("2")}>
               <p>Dothraki Sea</p>
-              <div id={this.state.dsActive}></div>
+              <div className={this.state.dsActive}></div>
             </div>
           </div>
           <div id="essos-cont" className={this.state.activeSub}>
+            <div id="slavers-cont" className="essos-subsec">
+              <div className="desc-img">
+                <img id="" src={Meereen}></img>
+                <p className="desc">Okay, I lied just slightly. Some of the surviving colonies of the volcanic
+                eruptions also turned into Slaver's Bay, which lies southeast of the Free Cities. There are 3 city-states
+                in Slaver's Bay that are considered the most powerful and so we only need to worry about those: Meereen,
+                Astapor, and Yunkai.
+                <br/><br/>As the name suggests, Slaver's Bay is rampant with slavery. Well technically,
+                majority of Essos is (including some of the Free Cities - Braavos being one of the exceptions).
+                However, that name is given to this particular region because it is the location for the international
+                slave trade.</p>
+              </div>
+            </div>
             <div id="free-cities-cont" className="essos-subsec">
               <div className="desc-img">
                 <img id="" src={Braavos}></img>
@@ -84,19 +119,6 @@ class Essos extends Component {
                 These city-states include: Braavos, Lorath, Lys, Myr, Norvos, Pentos, Qohor, Tyroth and Volantis.
                 Braavos (pictured here) is the most influential of these city-states and is also the location for
                 the Iron Bank of Braavos - the most powerful bank in the Known World, as it funds the Iron Throne.</p>
-              </div>
-            </div>
-            <div id="slavers-cont" className="essos-subsec">
-              <div className="desc-img">
-                <img id="" src={Meereen}></img>
-                <p className="desc">Okay, I lied just slightly. Some of the surviving colonies of the volcanic
-                eruptions also turned into Slaver's Bay, which lies southeast of the Free Cities. There are 3 city-states
-                in Slaver's Bay that are considered the most powerful and so we only need to worry about those: Meereen,
-                Astapor, and Yunkai.
-                <br/><br/>As the name suggests, Slaver's Bay is rampant with slavery. Well technically,
-                majority of Essos is (including some of the Free Cities - Braavos being one of the exceptions).
-                However, that name is given to this particular region because it is the location for the international
-                slave trade.</p>
               </div>
             </div>
             <div id="dothraki-cont" className="essos-subsec">

@@ -445,22 +445,30 @@ a {
       width: 50%; }
 
 #desc-cont-essos {
-  padding-bottom: 0px; }
+  background-color: #4a5e8e;
+  width: 75%;
+  margin-top: 50px;
+  color: #efefef;
+  border-radius: 2px; }
+  #desc-cont-essos .subheading {
+    padding: 10px 0 0 0; }
+  #desc-cont-essos .desc-cont {
+    padding: 15px 15px 30px 15px !important; }
 
 #content-essos {
   overflow: hidden; }
 
 .fc-active {
-  transform: translateX(33.3%); }
+  transform: translateX(0%); }
 
 .sb-active {
-  transform: translateX(0%); }
+  transform: translateX(33.3%); }
 
 .ds-active {
   transform: translateX(-33.3%); }
 
 .sl {
-  transition: transform 1s ease-in-out; }
+  transition: transform 0.75s ease-in-out; }
 
 #essos-selecs {
   display: flex;
@@ -476,23 +484,25 @@ a {
     margin: 0 15px 0 15px;
     cursor: pointer;
     font-family: "Ubuntu";
-    font-size: 20px; }
-    #essos-selecs .essos-ch #ul-active {
+    font-size: 20px;
+    color: #344672; }
+    #essos-selecs .essos-ch .ul-active {
       animation: expandUL 1s;
       animation-delay: 0s;
       animation-fill-mode: forwards;
       height: 1px;
       width: 0%;
-      background-color: black;
+      background-color: #344672;
       margin-top: 5px; }
-    #essos-selecs .essos-ch #no-ul {
-      animation: collapseUL 0.2s;
+    #essos-selecs .essos-ch .no-ul {
+      animation: collapseUL 0.3s;
       animation-delay: 0s;
       animation-fill-mode: forwards;
       height: 1px;
       width: 0%;
-      background-color: black;
-      margin-top: 5px; }
+      background-color: #344672;
+      margin-top: 5px;
+      transition: width 2s; }
 
 #essos-cont {
   display: flex;
@@ -521,9 +531,14 @@ a {
         width: 45%; }
       #essos-cont .essos-subsec .desc-img .desc {
         width: 50%;
-        margin-left: 30px;
-        margin-top: 0px;
-        text-align: left; }
+        text-align: left;
+        padding: 30px 30px 0 30px;
+        background-color: #505c7a;
+        color: #efefef;
+        position: relative;
+        left: -1px;
+        align-self: stretch;
+        font-size: 14px; }
 
 #struct-cont-super > .subheading {
   font-family: "Ubuntu";
@@ -969,6 +984,29 @@ a {
       margin: 20px 0 0 0; }
   #westeros-cont #beyond-wall {
     flex-direction: column-reverse; }
+  #desc-cont-essos {
+    width: 90%; }
+  #essos-selecs > .essos-ch {
+    font-size: 13px; }
+  #essos-cont .essos-subsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    #essos-cont .essos-subsec .desc-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 320px; }
+      #essos-cont .essos-subsec .desc-img img {
+        width: 100%; }
+      #essos-cont .essos-subsec .desc-img .desc {
+        width: auto;
+        padding: 30px 30px 30px 30px;
+        left: 0px;
+        font-size: 12px;
+        text-align: center; }
   #structure-cont {
     display: flex;
     flex-direction: column;
@@ -1045,6 +1083,13 @@ a {
       margin: 0; }
   #westeros-cont #beyond-wall {
     flex-direction: row; }
+  #essos-selecs > .essos-ch {
+    font-size: 15px; }
+  #essos-cont > .essos-subsec > .desc-img {
+    width: 600px; }
+    #essos-cont > .essos-subsec > .desc-img .desc {
+      font-size: 14px;
+      text-align: center; }
   #structure-cont {
     display: flex;
     flex-direction: row;
@@ -1104,6 +1149,12 @@ a {
     padding: 0px 20px 0px 20px; }
   .desc-cont {
     padding: 30px 100px 30px 100px; }
+  #desc-cont-essos {
+    width: 75%; }
+  #essos-selecs > .essos-ch {
+    font-size: 17px; }
+  #essos-cont > .essos-subsec > .desc-img {
+    width: 600px; }
   #structure-cont {
     display: flex;
     flex-direction: row;
@@ -1157,6 +1208,27 @@ a {
     width: 58px; }
   #headerCont > .header-links {
     padding: 0px 25px 0px 25px; }
+  #essos-selecs > .essos-ch {
+    font-size: 20px; }
+  #essos-cont .essos-subsec {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    #essos-cont .essos-subsec .desc-img {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: auto; }
+      #essos-cont .essos-subsec .desc-img img {
+        width: 45%; }
+      #essos-cont .essos-subsec .desc-img .desc {
+        width: 50%;
+        padding: 30px 30px 0px 30px;
+        left: -1px;
+        font-size: 14px;
+        text-align: left; }
   #structure-cont {
     display: flex;
     flex-direction: row;
