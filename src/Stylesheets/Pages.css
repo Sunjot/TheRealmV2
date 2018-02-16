@@ -410,19 +410,26 @@ a {
     height: 100%;
     width: 100%; }
 
-#westeros-divider {
-  width: 85%;
-  height: 1px;
-  background-color: #bfbfbf;
-  margin-bottom: 10px; }
+#westeros-info-cont {
+  background-color: #21596d;
+  width: 70%;
+  margin: 50px 0 50px 0;
+  padding: 15px;
+  color: #efefef;
+  border-radius: 2px; }
+  #westeros-info-cont .subheading {
+    padding-bottom: 0; }
+  #westeros-info-cont .desc-cont {
+    padding: 15px 15px 30px 15px !important; }
 
 #westeros-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding-top: 25px; }
+  width: 1100px;
+  margin-bottom: 50px;
+  color: #f7f7f7; }
   #westeros-cont .miniheading {
     padding-bottom: 15px; }
   #westeros-cont .westeros-subsec {
@@ -430,7 +437,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%; }
+    width: 100%;
+    background-color: #44798c; }
     #westeros-cont .westeros-subsec .info {
       display: flex;
       flex-direction: column;
@@ -439,9 +447,7 @@ a {
       #westeros-cont .westeros-subsec .info .desc {
         margin: 0 50px 0 50px;
         font-size: 0.9rem; }
-    #westeros-cont .westeros-subsec #kl-pic {
-      width: 50%; }
-    #westeros-cont .westeros-subsec #wall-pic {
+    #westeros-cont .westeros-subsec #kl-pic, #westeros-cont .westeros-subsec #wall-pic {
       width: 50%; }
 
 #desc-cont-essos {
@@ -964,26 +970,41 @@ a {
     padding: 0px 15px 0px 15px; }
   .desc-cont {
     padding: 20px 50px 20px 50px; }
-  #westeros-cont .westeros-subsec {
+  #westeros-info-cont {
+    width: 85%;
+    margin: 20px 0 50px 0;
+    font-size: 13px; }
+  #westeros-cont {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; }
-    #westeros-cont .westeros-subsec .info {
+    align-items: center;
+    width: 80%; }
+    #westeros-cont #seven-kingdoms {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      margin-right: 0px; }
+    #westeros-cont .westeros-subsec {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      #westeros-cont .westeros-subsec .info .desc {
-        margin: 0 50px 0 50px; }
-    #westeros-cont .westeros-subsec #kl-pic {
+      justify-content: flex-start;
+      align-items: center;
       width: 100%;
-      margin: 20px 0 20px 0; }
-    #westeros-cont .westeros-subsec #wall-pic {
-      width: 100%;
-      margin: 20px 0 0 0; }
-  #westeros-cont #beyond-wall {
-    flex-direction: column-reverse; }
+      border-radius: 2px;
+      margin-bottom: 40px; }
+      #westeros-cont .westeros-subsec .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0 20px 0; }
+        #westeros-cont .westeros-subsec .info .miniheading {
+          font-size: 18px; }
+        #westeros-cont .westeros-subsec .info .desc {
+          margin: 0 20px 0 20px;
+          font-size: 13px; }
+      #westeros-cont .westeros-subsec #kl-pic, #westeros-cont .westeros-subsec #wall-pic {
+        width: 100%; }
   #desc-cont-essos {
     width: 90%; }
   #essos-selecs > .essos-ch {
@@ -1063,26 +1084,6 @@ a {
     padding: 30px 70px 30px 70px; } }
 
 @media (min-width: 650px) {
-  #westeros-cont .westeros-subsec {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    #westeros-cont .westeros-subsec .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      #westeros-cont .westeros-subsec .info .desc {
-        margin: 0 50px 0 50px; }
-    #westeros-cont .westeros-subsec #kl-pic {
-      width: 50%;
-      margin: 0; }
-    #westeros-cont .westeros-subsec #wall-pic {
-      width: 50%;
-      margin: 0; }
-  #westeros-cont #beyond-wall {
-    flex-direction: row; }
   #essos-selecs > .essos-ch {
     font-size: 15px; }
   #essos-cont > .essos-subsec > .desc-img {
@@ -1149,6 +1150,39 @@ a {
     padding: 0px 20px 0px 20px; }
   .desc-cont {
     padding: 30px 100px 30px 100px; }
+  #westeros-info-cont {
+    width: 70%;
+    margin: 50px 0 50px 0;
+    font-size: 15px; }
+  #westeros-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 80%; }
+    #westeros-cont #seven-kingdoms {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      margin-right: 20px; }
+    #westeros-cont .westeros-subsec {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 50%;
+      border-radius: 2px;
+      margin-bottom: 0px; }
+      #westeros-cont .westeros-subsec .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 0 20px 0; }
+        #westeros-cont .westeros-subsec .info .desc {
+          margin: 0 50px 0 50px;
+          font-size: 13px; }
+      #westeros-cont .westeros-subsec #kl-pic, #westeros-cont .westeros-subsec #wall-pic {
+        width: 100%; }
   #desc-cont-essos {
     width: 75%; }
   #essos-selecs > .essos-ch {
@@ -1208,6 +1242,36 @@ a {
     width: 58px; }
   #headerCont > .header-links {
     padding: 0px 25px 0px 25px; }
+  #westeros-info-cont {
+    width: 70%;
+    margin: 50px 0 50px 0; }
+  #westeros-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1100px; }
+    #westeros-cont #seven-kingdoms {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 0; }
+    #westeros-cont .westeros-subsec {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-radius: 0px; }
+      #westeros-cont .westeros-subsec .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #westeros-cont .westeros-subsec .info .desc {
+          margin: 0 50px 0 50px;
+          font-size: 14px; }
+      #westeros-cont .westeros-subsec #kl-pic, #westeros-cont .westeros-subsec #wall-pic {
+        width: 50%; }
   #essos-selecs > .essos-ch {
     font-size: 20px; }
   #essos-cont .essos-subsec {
