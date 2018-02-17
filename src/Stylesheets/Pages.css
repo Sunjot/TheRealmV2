@@ -974,6 +974,10 @@ a {
     width: 85%;
     margin: 20px 0 50px 0;
     font-size: 13px; }
+    #westeros-info-cont .subheading {
+      font-size: 18px; }
+    #westeros-info-cont .desc-cont {
+      padding: 15px 5px 15px 5px !important; }
   #westeros-cont {
     display: flex;
     flex-direction: column;
@@ -1154,6 +1158,10 @@ a {
     width: 70%;
     margin: 50px 0 50px 0;
     font-size: 15px; }
+    #westeros-info-cont .subheading {
+      font-size: 28px; }
+    #westeros-info-cont .desc-cont {
+      padding: 15px 10px 15px 10px !important; }
   #westeros-cont {
     display: flex;
     flex-direction: row;
