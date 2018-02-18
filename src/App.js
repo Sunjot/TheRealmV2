@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './Stylesheets/App.css';
 import './Stylesheets/Pages.css';
 import Home from './Components/Home';
-import Start from './Components/Start';
 import World from './Components/World';
 import Westeros from './Components/Westeros';
 import Essos from './Components/Essos';
@@ -17,7 +16,6 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route exact path="/" component={Home}/>
-          <Route exact path="/start" component={Start}/>
           <Route exact path="/world" component={World}/>
           <Route exact path="/westeros" component={Westeros}/>
           <Route exact path="/essos" component={Essos}/>

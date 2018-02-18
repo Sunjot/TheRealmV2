@@ -50,11 +50,16 @@
 
 #world-desc-cont {
   width: 70%;
-  margin: 40px 0 40px 0;
-  padding: 15px;
-  background-color: #8d836f;
-  color: #efefef;
+  margin: 50px 0 50px 0;
+  padding: 15px 0 15px 0;
+  border: 1px solid #8d836f;
+  color: white;
   border-radius: 2px;
+  background-color: #4f5772;
+
+  .subheading {
+    padding: 0;
+  }
 }
 
 #map-wrap {
@@ -103,7 +108,7 @@
   background-color: #21596d;
   width: 70%;
   margin: 50px 0 50px 0;
-  padding: 15px;
+  padding: 15px 0 15px 0;
   color: #efefef;
   border-radius: 2px;
 
@@ -112,7 +117,7 @@
   }
 
   .desc-cont {
-    padding: 15px 15px 30px 15px !important;
+    padding: 15px 30px 30px 15px !important;
   }
 }
 
@@ -152,15 +157,16 @@
   background-color: #4a5e8e;
   width: 75%;
   margin-top: 50px;
+  padding: 15px 0 15px 0;
   color: #efefef;
   border-radius: 2px;
 
   .subheading {
-    padding: 10px 0 0 0;
+    padding: 0;
   }
 
   .desc-cont {
-    padding: 15px 15px 30px 15px !important;
+    padding: 15px 30px 30px 30px !important;
   }
 }
 
@@ -256,7 +262,6 @@
 // Structure component
 
 #struct-cont-super > .subheading {
-  font-family: "Ubuntu";
   color: #5c8eb5;
   font-size: 28px;
 }
@@ -319,7 +324,7 @@
 
 
 #house-cont {
-  margin: 25px 5px 40px 5px;
+  margin: 5px 5px 40px 5px;
   width: 100%;
 
   #house-selecs-cont {
@@ -767,6 +772,16 @@
   }
   #world-desc-cont {
     width: 85%;
+    margin: 20px 0 20px 0;
+
+    .subheading {
+      font-size: 18px;
+    }
+
+    .desc-cont {
+      font-size: 13px;
+      padding: 15px 15px 0px 15px !important;
+    }
   }
   #map-wrap > #continent-wrap > .continent-sec {
 
@@ -789,7 +804,7 @@
     }
 
     .desc-cont {
-      padding: 15px 5px 15px 5px !important;
+      padding: 15px 15px 15px 15px !important;
     }
   }
   #westeros-cont {
@@ -828,7 +843,17 @@
     }
   }
   #desc-cont-essos {
-    width: 90%;
+    width: 85%;
+    margin: 20px 0 20px 0;
+
+    .subheading {
+      font-size: 18px;
+    }
+
+    .desc-cont {
+      font-size: 13px;
+      padding: 15px 15px 15px 15px !important;
+    }
   }
   #essos-selecs > .essos-ch {
     font-size: 13px;
@@ -884,7 +909,7 @@
     }
   }
   #house-cont {
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
 
     #house-selecs-cont {
       #house-selecs {
@@ -965,7 +990,7 @@
     }
   }
   #house-cont {
-    margin: 50px 0 20px 0;
+    margin: 5px 0 20px 0;
 
     #house-selecs-cont {
       #house-selecs {
@@ -1013,6 +1038,16 @@
   }
   #world-desc-cont {
     width: 70%;
+    margin: 50px 0 50px 0;
+
+    .subheading {
+      font-size: 28px;
+    }
+
+    .desc-cont {
+      font-size: 15px;
+      padding: 15px 30px 0px 30px !important;
+    }
   }
   #map-wrap > #continent-wrap > .continent-sec {
 
@@ -1035,7 +1070,7 @@
     }
 
     .desc-cont {
-      padding: 15px 10px 15px 10px !important;
+      padding: 15px 30px 15px 30px !important;
     }
   }
   #westeros-cont {
@@ -1070,7 +1105,17 @@
     }
   }
   #desc-cont-essos {
+    margin: 50px 0 20px 0;
     width: 75%;
+
+    .subheading {
+      font-size: 28px;
+    }
+
+    .desc-cont {
+      font-size: 15px;
+      padding: 15px 30px 30px 30px !important;
+    }
   }
   #essos-selecs > .essos-ch {
     font-size: 17px;
@@ -1158,6 +1203,19 @@
   #headerCont > .header-links {
     padding: 0px 25px 0px 25px;
   }
+  #world-desc-cont {
+    width: 1100px;
+    margin: 50px 0 50px 0;
+
+    .subheading {
+      font-size: 28px;
+    }
+
+    .desc-cont {
+      font-size: 15px;
+      padding: 15px 30px 0px 30px !important;
+    }
+  }
   #map-wrap > #continent-wrap > .continent-sec {
 
     @include flex(column, center, center);
@@ -1170,7 +1228,7 @@
     }
   }
   #westeros-info-cont {
-    width: 70%;
+    width: 1100px;
     margin: 50px 0 50px 0;
   }
   #westeros-cont {
@@ -1202,7 +1260,9 @@
       }
     }
   }
-
+  #desc-cont-essos {
+    width: 1100px;
+  }
   #essos-selecs > .essos-ch {
     font-size: 20px;
   }
@@ -1213,7 +1273,7 @@
 
       .desc-img {
         @include flex(row, flex-start, flex-start);
-        width: auto;
+        width: 1100px;
 
         img {
           width: 45%;
@@ -1223,7 +1283,7 @@
           width: 50%;
           padding: 30px 30px 0px 30px;
           left: -1px;
-          font-size: 14px;
+          font-size: 15px;
           text-align: left;
         }
       }
@@ -1255,7 +1315,7 @@
     }
   }
   #house-cont {
-    margin: 50px 0 20px 0;
+    margin: 5px 0 20px 0;
   }
 
   #desc-cont-reb {

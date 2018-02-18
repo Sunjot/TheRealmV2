@@ -17,45 +17,40 @@ class Preview extends Component {
     let linkString = ``;
 
     if (this.props.bid === "0") {
-      linkString = `/start`
-      descString = `
-          A small introduction to the series if you're going in completely blind.`;
-    }
-    if (this.props.bid === "1") {
       linkString = `/world`
       descString = `
           Before we can dive into the details, we need to know what the world of Game of Thrones looks like.
           What are the different lands that exist and what will their importance be throughout the series?`;
     }
-    if (this.props.bid === "2") {
+    if (this.props.bid === "1") {
       linkString = `/westeros`
       descString = `
           An essential introduction to the continent of Westeros, which is where a large chunk of the action will
           take place. Considering how big Westeros is and the million times the various regions will be mentioned,
           you'll definitely want to read this one over.`;
     }
-    if (this.props.bid === "3") {
+    if (this.props.bid === "2") {
       linkString = `/essos`
       descString = `
           Not to be overshadowed by Westeros, Essos is another continent of importance involving some key
           characters. Just like Westeros, there are plenty of areas throughout that'll come up regularly
           through dialogue.`;
     }
-    if (this.props.bid === "4") {
+    if (this.props.bid === "3") {
       linkString = `/structure`
       descString = `
           What's a commoner to a lord? What's a lord to a king? From the one with the crown down to the
           homeless guy, you probably want to know about the ranks
           and who holds authority over who in the show. It's not that complicated!`;
     }
-    if (this.props.bid === "5") {
+    if (this.props.bid === "4") {
       linkString = `/houses`
       descString = `
           Alright, so there are hundreds of houses in existence, but there are a select few that are focal
           points throughout the series. We'll give a brief overview of each and mention some of the
           key family members.`;
     }
-    if (this.props.bid === "6") {
+    if (this.props.bid === "5") {
       linkString = `/rebellion`
       descString = `
           In order to understand the state of the show in episode 1 and the storylines that follow, we must

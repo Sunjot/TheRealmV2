@@ -373,11 +373,14 @@ a {
 
 #world-desc-cont {
   width: 70%;
-  margin: 40px 0 40px 0;
-  padding: 15px;
-  background-color: #8d836f;
-  color: #efefef;
-  border-radius: 2px; }
+  margin: 50px 0 50px 0;
+  padding: 15px 0 15px 0;
+  border: 1px solid #8d836f;
+  color: white;
+  border-radius: 2px;
+  background-color: #4f5772; }
+  #world-desc-cont .subheading {
+    padding: 0; }
 
 #map-wrap {
   display: flex;
@@ -419,13 +422,13 @@ a {
   background-color: #21596d;
   width: 70%;
   margin: 50px 0 50px 0;
-  padding: 15px;
+  padding: 15px 0 15px 0;
   color: #efefef;
   border-radius: 2px; }
   #westeros-info-cont .subheading {
     padding-bottom: 0; }
   #westeros-info-cont .desc-cont {
-    padding: 15px 15px 30px 15px !important; }
+    padding: 15px 30px 30px 15px !important; }
 
 #westeros-cont {
   display: flex;
@@ -459,12 +462,13 @@ a {
   background-color: #4a5e8e;
   width: 75%;
   margin-top: 50px;
+  padding: 15px 0 15px 0;
   color: #efefef;
   border-radius: 2px; }
   #desc-cont-essos .subheading {
-    padding: 10px 0 0 0; }
+    padding: 0; }
   #desc-cont-essos .desc-cont {
-    padding: 15px 15px 30px 15px !important; }
+    padding: 15px 30px 30px 30px !important; }
 
 #content-essos {
   overflow: hidden; }
@@ -552,7 +556,6 @@ a {
         font-size: 14px; }
 
 #struct-cont-super > .subheading {
-  font-family: "Ubuntu";
   color: #5c8eb5;
   font-size: 28px; }
 
@@ -605,7 +608,7 @@ a {
         opacity: 0; }
 
 #house-cont {
-  margin: 25px 5px 40px 5px;
+  margin: 5px 5px 40px 5px;
   width: 100%; }
   #house-cont #house-selecs-cont {
     display: flex;
@@ -968,7 +971,13 @@ a {
   #headerCont > .header-links {
     padding: 0px 15px 0px 15px; }
   #world-desc-cont {
-    width: 85%; }
+    width: 85%;
+    margin: 20px 0 20px 0; }
+    #world-desc-cont .subheading {
+      font-size: 18px; }
+    #world-desc-cont .desc-cont {
+      font-size: 13px;
+      padding: 15px 15px 0px 15px !important; }
   #map-wrap > #continent-wrap > .continent-sec {
     display: flex;
     flex-direction: column;
@@ -986,7 +995,7 @@ a {
     #westeros-info-cont .subheading {
       font-size: 18px; }
     #westeros-info-cont .desc-cont {
-      padding: 15px 5px 15px 5px !important; }
+      padding: 15px 15px 15px 15px !important; }
   #westeros-cont {
     display: flex;
     flex-direction: column;
@@ -1019,7 +1028,13 @@ a {
       #westeros-cont .westeros-subsec #kl-pic, #westeros-cont .westeros-subsec #wall-pic {
         width: 100%; }
   #desc-cont-essos {
-    width: 90%; }
+    width: 85%;
+    margin: 20px 0 20px 0; }
+    #desc-cont-essos .subheading {
+      font-size: 18px; }
+    #desc-cont-essos .desc-cont {
+      font-size: 13px;
+      padding: 15px 15px 15px 15px !important; }
   #essos-selecs > .essos-ch {
     font-size: 13px; }
   #essos-cont .essos-subsec {
@@ -1065,7 +1080,7 @@ a {
         padding: 20px;
         height: 120px; }
   #house-cont {
-    margin: 20px 0 20px 0; }
+    margin: 10px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
       display: flex;
       flex-direction: row;
@@ -1121,7 +1136,7 @@ a {
         padding: 20px;
         height: 120px; }
   #house-cont {
-    margin: 50px 0 20px 0; }
+    margin: 5px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
       display: flex;
       flex-direction: row;
@@ -1150,7 +1165,13 @@ a {
   #headerCont > .header-links {
     padding: 0px 20px 0px 20px; }
   #world-desc-cont {
-    width: 70%; }
+    width: 70%;
+    margin: 50px 0 50px 0; }
+    #world-desc-cont .subheading {
+      font-size: 28px; }
+    #world-desc-cont .desc-cont {
+      font-size: 15px;
+      padding: 15px 30px 0px 30px !important; }
   #map-wrap > #continent-wrap > .continent-sec {
     display: flex;
     flex-direction: column;
@@ -1168,7 +1189,7 @@ a {
     #westeros-info-cont .subheading {
       font-size: 28px; }
     #westeros-info-cont .desc-cont {
-      padding: 15px 10px 15px 10px !important; }
+      padding: 15px 30px 15px 30px !important; }
   #westeros-cont {
     display: flex;
     flex-direction: row;
@@ -1199,7 +1220,13 @@ a {
       #westeros-cont .westeros-subsec #kl-pic, #westeros-cont .westeros-subsec #wall-pic {
         width: 100%; }
   #desc-cont-essos {
+    margin: 50px 0 20px 0;
     width: 75%; }
+    #desc-cont-essos .subheading {
+      font-size: 28px; }
+    #desc-cont-essos .desc-cont {
+      font-size: 15px;
+      padding: 15px 30px 30px 30px !important; }
   #essos-selecs > .essos-ch {
     font-size: 17px; }
   #essos-cont > .essos-subsec > .desc-img {
@@ -1257,6 +1284,14 @@ a {
     width: 58px; }
   #headerCont > .header-links {
     padding: 0px 25px 0px 25px; }
+  #world-desc-cont {
+    width: 1100px;
+    margin: 50px 0 50px 0; }
+    #world-desc-cont .subheading {
+      font-size: 28px; }
+    #world-desc-cont .desc-cont {
+      font-size: 15px;
+      padding: 15px 30px 0px 30px !important; }
   #map-wrap > #continent-wrap > .continent-sec {
     display: flex;
     flex-direction: column;
@@ -1268,7 +1303,7 @@ a {
     #map-wrap > #continent-wrap > .continent-sec .desc {
       font-size: 16px; }
   #westeros-info-cont {
-    width: 70%;
+    width: 1100px;
     margin: 50px 0 50px 0; }
   #westeros-cont {
     display: flex;
@@ -1297,6 +1332,8 @@ a {
           font-size: 14px; }
       #westeros-cont .westeros-subsec #kl-pic, #westeros-cont .westeros-subsec #wall-pic {
         width: 50%; }
+  #desc-cont-essos {
+    width: 1100px; }
   #essos-selecs > .essos-ch {
     font-size: 20px; }
   #essos-cont .essos-subsec {
@@ -1309,14 +1346,14 @@ a {
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
-      width: auto; }
+      width: 1100px; }
       #essos-cont .essos-subsec .desc-img img {
         width: 45%; }
       #essos-cont .essos-subsec .desc-img .desc {
         width: 50%;
         padding: 30px 30px 0px 30px;
         left: -1px;
-        font-size: 14px;
+        font-size: 15px;
         text-align: left; }
   #structure-cont {
     display: flex;
@@ -1341,7 +1378,7 @@ a {
         padding: 20px;
         height: 205px; }
   #house-cont {
-    margin: 50px 0 20px 0; }
+    margin: 5px 0 20px 0; }
   #desc-cont-reb {
     width: 800px; }
   .timeline ul li div {

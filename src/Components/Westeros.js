@@ -13,12 +13,13 @@ class Westeros extends Component {
         <div className="content">
           <div id="westeros-info-cont">
             <p className="subheading">Westeros</p>
-            <p className="desc-cont">If you read the previous section, you know that I mentioned the importance
+            <p className="desc-cont">
+              If you read the previous section, you know that I mentioned the importance
               of Westeros. Almost all the action in the show takes place here. I also made a point to mention
               that this continent is split into two areas - the Seven Kingdoms and the area Beyond the Wall.
               However, it isn't that simple. We must break it down even further! I mean, it's called the Seven
-              Kingdoms for a reason - it's important we go into detail on what these kingdoms actually are.
-              Not only that, but what exactly lies Beyond the Wall? Not to worry, everything will be addressed!
+              Kingdoms for a reason - we should probably know what exactly these kingdoms are and what purpose
+              they serve. Not only that, but what exactly lies Beyond the Wall? All will be explained!
             </p>
           </div>
           <div id="westeros-cont">

@@ -30,7 +30,6 @@ class Header extends Component {
   render() {
     let links = [
       { name: "Home", short: "Home", link: "/" },
-      { name: "Start", short: "St", link: "/start" },
       { name: "World", short: "Wo", link: "/world" },
       { name: "Westeros", short: "Wes", link: "/westeros" },
       { name: "Essos", short: "Es", link: "/essos" },
