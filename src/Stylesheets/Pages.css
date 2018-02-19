@@ -355,13 +355,42 @@ a {
   height: 60px;
   width: 100%;
   background-color: #f7f7f7;
-  border-bottom: 1px solid #afaeae; }
+  border-bottom: 1px solid #afaeae;
+  font-family: "Ubuntu"; }
   #headerMiddle .header-links {
     padding: 0 25px 0 25px;
     color: #262626;
     transition: color 0.25s; }
     #headerMiddle .header-links:hover {
       color: #93b7d6; }
+  #headerMiddle #mobile-cont #headerIcon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; }
+  #headerMiddle #mobile-cont #mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 0px;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #f7f7f7;
+    z-index: 100;
+    padding-top: 20px; }
+    #headerMiddle #mobile-cont #mobile-nav #close-icon {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px; }
+    #headerMiddle #mobile-cont #mobile-nav .header-links-m {
+      font-size: 18px;
+      color: black;
+      margin: 15px 0 15px 20px;
+      opacity: 0; }
 
 .page-container {
   display: flex;
@@ -931,6 +960,28 @@ a {
   animation-delay: 0s;
   animation-fill-mode: forwards; }
 
+.expand-nav {
+  animation: expandNav 0.75s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out; }
+  .expand-nav .header-links-m {
+    animation: fadeandslidein 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out; }
+
+.collapse-nav {
+  animation: collapseNav 0.75s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out; }
+  .collapse-nav .header-links-m {
+    animation: fadeandslideout 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out; }
+
 @keyframes rotateimage {
   0% {
     transform: rotate(0deg); }
@@ -984,6 +1035,34 @@ a {
     width: 100%; }
   to {
     width: 0%; } }
+
+@keyframes expandNav {
+  from {
+    right: -200px; }
+  to {
+    right: 0px; } }
+
+@keyframes fadeandslidein {
+  from {
+    opacity: 0;
+    transform: translateX(30px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes collapseNav {
+  from {
+    right: 0px; }
+  to {
+    right: -200px; } }
+
+@keyframes fadeandslideout {
+  from {
+    opacity: 1;
+    transform: translateX(0px); }
+  to {
+    opacity: 0;
+    transform: translateX(30px); } }
 
 @media (min-width: 300px) {
   #headerMiddle > .header-links {
