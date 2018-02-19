@@ -29,7 +29,6 @@ class Header extends Component {
 
   render() {
     let links = [
-      { name: "Home", short: "Home", link: "/" },
       { name: "World", short: "Wo", link: "/world" },
       { name: "Westeros", short: "Wes", link: "/westeros" },
       { name: "Essos", short: "Es", link: "/essos" },
@@ -39,14 +38,17 @@ class Header extends Component {
 
     return (
       <div id="headerCont">
-        { links.map(l => {
-          return <Link
-                    className="header-links"
-                    to={l.link}
-                    key={l.name}>
-                      {this.state.winW > 650? l.name : l.short}
-                  </Link>
-        })}
+        <Link to="/"><div id="home-left" ></div></Link>
+        <div id="headerMiddle">
+          { links.map(l => {
+            return <Link
+                      className="header-links"
+                      to={l.link}
+                      key={l.name}>
+                        {this.state.winW > 650? l.name : l.short}
+                    </Link>
+          })}
+        </div>
       </div>
     );
   }

@@ -8,6 +8,24 @@
 // Header
 
 #headerCont {
+  @include flex(row, flex-start, center);
+}
+
+#home-left {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 60px;
+  height: 43px;
+  background-image: url('../images/logo.png');
+  background-size: 60px 43px;
+
+  &:hover {
+    background-image: url('../images/logo-hover.png');
+  }
+}
+
+#headerMiddle {
   @include flex(row, center, center);
   height: 60px;
   width: 100%;
@@ -17,6 +35,7 @@
   .header-links {
     padding: 0 25px 0 25px;
     color: #262626;
+    transition: color 0.25s;
 
     &:hover {
       color: #93b7d6;
@@ -767,7 +786,7 @@
 // Media queries
 
 @media (min-width: 300px) {
-  #headerCont > .header-links {
+  #headerMiddle > .header-links {
     padding: 0px 15px 0px 15px;
   }
   #world-desc-cont {
@@ -1033,7 +1052,7 @@
 }
 
 @media (min-width: 768px){
-  #headerCont > .header-links {
+  #headerMiddle > .header-links {
     padding: 0px 20px 0px 20px;
   }
   #world-desc-cont {
@@ -1200,7 +1219,7 @@
       width: 58px;
     }
   }
-  #headerCont > .header-links {
+  #headerMiddle > .header-links {
     padding: 0px 25px 0px 25px;
   }
   #world-desc-cont {
