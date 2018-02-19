@@ -9,20 +9,23 @@ import Essos from './Components/Essos';
 import Structure from './Components/Structure';
 import Houses from './Components/Houses';
 import Rebellion from './Components/Rebellion';
+import ScrollToTop from './Components/ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/world" component={World}/>
-          <Route exact path="/westeros" component={Westeros}/>
-          <Route exact path="/essos" component={Essos}/>
-          <Route exact path="/structure" component={Structure}/>
-          <Route exact path="/houses" component={Houses}/>
-          <Route exact path="/rebellion" component={Rebellion}/>
-        </div>
+        <ScrollToTop>
+          <div className="App">
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/world" component={World}/>
+            <Route exact path="/westeros" component={Westeros}/>
+            <Route exact path="/essos" component={Essos}/>
+            <Route exact path="/structure" component={Structure}/>
+            <Route exact path="/houses" component={Houses}/>
+            <Route exact path="/rebellion" component={Rebellion}/>
+          </div>
+        </ScrollToTop>
       </Router>
     );
   }
