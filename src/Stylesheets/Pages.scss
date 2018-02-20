@@ -136,6 +136,9 @@
     z-index: 15;
     color: white;
     width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 
     .continent-sec {
       @include flex(column, center, center);
@@ -195,6 +198,7 @@
 
     .info {
       @include flex(column, center, center);
+      width: 50%;
 
       .desc {
         margin: 0 50px 0 50px;
@@ -339,6 +343,7 @@
       width: 170px;
       margin: 0 40px 10px 40px;
       padding: 15px;
+      font-size: 10px;
 
       &:hover {
         background-color: #5c8eb5;
@@ -372,6 +377,7 @@
       p {
         @include animate(fadein, 0.2s, 0s, forwards);
         opacity: 0;
+        font-size: 16px;
       }
     }
   }
@@ -661,6 +667,11 @@
   background: #335084;
   color: #ededed;
   width: 800px;
+  font-size: 14px;
+
+  .subheading {
+    font-size: 28px;
+  }
 }
 
 .timeline {
@@ -699,9 +710,12 @@
   text-align: left;
   opacity: 0;
   border-radius: 3px;
+  font-size: 14px;
 
   .miniheading {
+    font-size: 20px;
     padding-bottom: 10px;
+    text-align: left;
   }
 }
 
@@ -944,6 +958,7 @@
       .info {
         @include flex(column, flex-start, center);
         padding: 20px 0 20px 0;
+        width: 100%;
 
         .miniheading {
           font-size: 18px;
@@ -1010,9 +1025,10 @@
       width: 90%;
 
       button {
-        width: 100px;
+        width: 120px;
         margin: 0 5px 10px 5px;
         padding: 10px;
+        font-size: 10px;
       }
     }
 
@@ -1022,7 +1038,11 @@
 
       .struct-card {
         padding: 20px;
-        height: 120px;
+        height: 160px;
+
+        p {
+          font-size: 10px;
+        }
       }
     }
   }
@@ -1058,10 +1078,19 @@
 
   #desc-cont-reb {
     width: 300px;
+
+    .subheading {
+      font-size: 20px;
+    }
   }
 
   .timeline ul li div {
     width: 120px;
+    font-size: 11px;
+
+    .miniheading {
+      font-size: 16px;
+    }
   }
 
   .timeline ul li:nth-child(even) div {
@@ -1094,6 +1123,7 @@
         width: 120px;
         margin: 0 20px 10px 20px;
         padding: 15px;
+        font-size: 12px;
       }
     }
 
@@ -1103,7 +1133,11 @@
 
       .struct-card {
         padding: 20px;
-        height: 120px;
+        height: 160px;
+
+        p {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -1139,10 +1173,19 @@
 
   #desc-cont-reb {
     width: 550px;
+
+    .subheading {
+      font-size: 24px;
+    }
   }
 
   .timeline ul li div {
     width: 220px;
+    font-size: 14px;
+
+    .miniheading {
+      font-size: 20px;
+    }
   }
 
   .timeline ul li:nth-child(even) div {
@@ -1210,6 +1253,7 @@
       .info {
         @include flex(column, flex-start, center);
         padding: 20px 0 20px 0;
+        width: 100%;
 
         .desc {
           margin: 0 50px 0 50px;
@@ -1262,7 +1306,11 @@
 
       .struct-card {
         padding: 20px;
-        height: 170px;
+        height: 190px;
+
+        p {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -1296,6 +1344,10 @@
 
   #desc-cont-reb {
     width: 700px;
+
+    .subheading {
+      font-size: 28px;
+    }
   }
 
   .timeline ul li div {
@@ -1366,6 +1418,7 @@
 
       .info {
         @include flex(column, center, center);
+        width: 50%;
 
         .desc {
           margin: 0 50px 0 50px;
@@ -1419,6 +1472,7 @@
         width: 170px;
         margin: 0 40px 10px 40px;
         padding: 15px;
+        font-size: 14px;
       }
     }
 
@@ -1429,6 +1483,10 @@
       .struct-card {
         padding: 20px;
         height: 205px;
+
+        p {
+          font-size: 16px;
+        }
       }
     }
   }

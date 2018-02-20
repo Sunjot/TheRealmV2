@@ -3,7 +3,8 @@ html {
   height: 100%; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 #root, .App {
   height: 100%; }
@@ -121,13 +122,16 @@ a {
     padding: 0 20px 0 20px;
     height: 200px; }
     .intro-cont #intro-sec .subheading {
-      padding-right: 75px; }
+      padding-right: 75px;
+      font-size: 18px;
+      width: 30%; }
     .intro-cont #intro-sec .divider {
       border-right: 1px solid #2A3A3F; }
   .intro-cont #desc {
-    width: 60%;
+    width: 70%;
     text-align: center;
-    padding-left: 75px; }
+    padding-left: 75px;
+    font-size: 10px; }
 
 .nav-prev {
   display: flex;
@@ -143,15 +147,28 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 15px; }
+    padding: 15px;
+    flex-wrap: wrap; }
+  .nav-prev button, .nav-prev a {
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: background-color 0.25s; }
+    .nav-prev button:hover, .nav-prev a:hover {
+      background-color: #2A3A3F;
+      color: white; }
   .nav-prev #sectionDesc {
     margin: 0 100px 10px 100px;
-    max-width: 1000px; }
+    max-width: 1000px;
+    font-size: 16px; }
   .nav-prev #previewButtons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start; }
+  .nav-prev .subheading {
+    font-size: 26px; }
 
 #me-cont {
   display: flex;
@@ -218,19 +235,25 @@ a {
       font-size: 3.25rem; }
     .cover-img-cont #cover-text #cover-desc {
       font-size: 2.25rem; }
-  .button-row > button {
-    padding: 3px 12px 3px 12px; }
   .nav-prev {
     height: 200px; }
+    .nav-prev button, .nav-prev a {
+      font-size: 11px; }
     .nav-prev #sectionDesc {
-      margin: 0 20px 10px 20px; }
+      margin: 0 20px 10px 20px;
+      font-size: 11px; }
+    .nav-prev .subheading {
+      font-size: 18px; }
   .intro-cont {
     padding: 25px 0 25px 0; }
     .intro-cont #desc {
-      width: 60%;
-      padding-left: 20px; }
+      width: 70%;
+      padding-left: 20px;
+      font-size: 10px; }
     .intro-cont #intro-sec > .subheading {
-      padding-right: 20px; }
+      padding-right: 20px;
+      font-size: 18px;
+      width: 30%; }
   #me-cont {
     height: 200px; } }
 
@@ -244,21 +267,42 @@ a {
   .nav-prev {
     height: 300px; }
     .nav-prev #sectionDesc {
-      margin: 0 40px 10px 40px; }
+      margin: 0 40px 10px 40px;
+      font-size: 12px; }
+    .nav-prev .subheading {
+      font-size: 22px; }
   .intro-cont {
     padding: 50px 0 50px 0; }
   #me-cont {
     height: 300px; } }
 
 @media (min-width: 650px) {
-  .button-row > button {
-    padding: 10px; }
+  .nav-prev button, .nav-prev a {
+    font-size: 12px; }
   .intro-cont #desc {
     width: 70%;
-    padding-left: 75px; }
+    padding-left: 75px;
+    font-size: 14px; }
   .intro-cont #intro-sec > .subheading {
-    padding-right: 75px; } }
+    padding-right: 15px;
+    font-size: 24px;
+    width: 30%; } }
 
 @media (min-width: 768px) {
   .nav-prev > #sectionDesc {
-    margin: 0 100px 10px 100px; } }
+    margin: 0 100px 10px 100px;
+    font-size: 16px; } }
+
+@media (min-width: 1280px) {
+  .nav-prev button, .nav-prev a {
+    font-size: 16px; }
+  .nav-prev .subheading {
+    font-size: 26px; }
+  .intro-cont #desc {
+    width: 70%;
+    padding-left: 75px;
+    font-size: 16px; }
+  .intro-cont #intro-sec > .subheading {
+    padding-right: 15px;
+    font-size: 28px;
+    width: 30%; } }

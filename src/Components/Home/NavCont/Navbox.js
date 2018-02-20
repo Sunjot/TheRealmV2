@@ -41,7 +41,7 @@ class Navbox extends Component {
         <div id="button-row">
           { buttons.map(b => { // map through title/id, create button for each
             return <button id={b.id} key={b.title} type="button"
-              onClick={this.props.navClick}>{this.state.winW > 650 ? b.title : b.short}</button>
+              onClick={this.props.navClick}>{b.title}</button>
           })}
         </div>
       </div>

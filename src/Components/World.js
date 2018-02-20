@@ -32,12 +32,11 @@ class World extends Component {
               <div id="essos-cont" className="continent-sec">
                 <p className="subheading">Essos</p>
                 <p className="desc">The middle and eastern region on the map is known as Essos. While we won't see
-                a whole lot of action taking place here (relative to Westeros), one of the long-term storylines in 
+                a whole lot of action taking place here (relative to Westeros), one of the long-term storylines in
                 the show is based in Essos. So, it's still important that we get to know the
                 different regions there at the very least.</p>
               </div>
             </div>
-            <a id="mapLink" href="https://i.imgur.com/6FYvVrJ.jpg" target="_blank" rel="noopener noreferrer" />
             <img id="map-cont" src={Map}></img>
           </div>
         </div>

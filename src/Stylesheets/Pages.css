@@ -3,7 +3,8 @@ html {
   height: 100%; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 #root, .App {
   height: 100%; }
@@ -70,7 +71,8 @@ html {
   height: 100%; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  overflow-x: hidden; }
 
 #root, .App {
   height: 100%; }
@@ -188,13 +190,16 @@ a {
     padding: 0 20px 0 20px;
     height: 200px; }
     .intro-cont #intro-sec .subheading {
-      padding-right: 75px; }
+      padding-right: 75px;
+      font-size: 18px;
+      width: 30%; }
     .intro-cont #intro-sec .divider {
       border-right: 1px solid #2A3A3F; }
   .intro-cont #desc {
-    width: 60%;
+    width: 70%;
     text-align: center;
-    padding-left: 75px; }
+    padding-left: 75px;
+    font-size: 10px; }
 
 .nav-prev {
   display: flex;
@@ -210,15 +215,28 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 15px; }
+    padding: 15px;
+    flex-wrap: wrap; }
+  .nav-prev button, .nav-prev a {
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: background-color 0.25s; }
+    .nav-prev button:hover, .nav-prev a:hover {
+      background-color: #2A3A3F;
+      color: white; }
   .nav-prev #sectionDesc {
     margin: 0 100px 10px 100px;
-    max-width: 1000px; }
+    max-width: 1000px;
+    font-size: 16px; }
   .nav-prev #previewButtons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start; }
+  .nav-prev .subheading {
+    font-size: 26px; }
 
 #me-cont {
   display: flex;
@@ -285,19 +303,25 @@ a {
       font-size: 3.25rem; }
     .cover-img-cont #cover-text #cover-desc {
       font-size: 2.25rem; }
-  .button-row > button {
-    padding: 3px 12px 3px 12px; }
   .nav-prev {
     height: 200px; }
+    .nav-prev button, .nav-prev a {
+      font-size: 11px; }
     .nav-prev #sectionDesc {
-      margin: 0 20px 10px 20px; }
+      margin: 0 20px 10px 20px;
+      font-size: 11px; }
+    .nav-prev .subheading {
+      font-size: 18px; }
   .intro-cont {
     padding: 25px 0 25px 0; }
     .intro-cont #desc {
-      width: 60%;
-      padding-left: 20px; }
+      width: 70%;
+      padding-left: 20px;
+      font-size: 10px; }
     .intro-cont #intro-sec > .subheading {
-      padding-right: 20px; }
+      padding-right: 20px;
+      font-size: 18px;
+      width: 30%; }
   #me-cont {
     height: 200px; } }
 
@@ -311,24 +335,45 @@ a {
   .nav-prev {
     height: 300px; }
     .nav-prev #sectionDesc {
-      margin: 0 40px 10px 40px; }
+      margin: 0 40px 10px 40px;
+      font-size: 12px; }
+    .nav-prev .subheading {
+      font-size: 22px; }
   .intro-cont {
     padding: 50px 0 50px 0; }
   #me-cont {
     height: 300px; } }
 
 @media (min-width: 650px) {
-  .button-row > button {
-    padding: 10px; }
+  .nav-prev button, .nav-prev a {
+    font-size: 12px; }
   .intro-cont #desc {
     width: 70%;
-    padding-left: 75px; }
+    padding-left: 75px;
+    font-size: 14px; }
   .intro-cont #intro-sec > .subheading {
-    padding-right: 75px; } }
+    padding-right: 15px;
+    font-size: 24px;
+    width: 30%; } }
 
 @media (min-width: 768px) {
   .nav-prev > #sectionDesc {
-    margin: 0 100px 10px 100px; } }
+    margin: 0 100px 10px 100px;
+    font-size: 16px; } }
+
+@media (min-width: 1280px) {
+  .nav-prev button, .nav-prev a {
+    font-size: 16px; }
+  .nav-prev .subheading {
+    font-size: 26px; }
+  .intro-cont #desc {
+    width: 70%;
+    padding-left: 75px;
+    font-size: 16px; }
+  .intro-cont #intro-sec > .subheading {
+    padding-right: 15px;
+    font-size: 28px;
+    width: 30%; } }
 
 #headerCont {
   display: flex;
@@ -448,7 +493,10 @@ a {
     position: absolute;
     z-index: 15;
     color: white;
-    width: 100%; }
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
     #map-wrap #continent-wrap .continent-sec {
       display: flex;
       flex-direction: column;
@@ -498,7 +546,8 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 50%; }
       #westeros-cont .westeros-subsec .info .desc {
         margin: 0 50px 0 50px;
         font-size: 0.9rem; }
@@ -625,7 +674,8 @@ a {
       color: black;
       width: 170px;
       margin: 0 40px 10px 40px;
-      padding: 15px; }
+      padding: 15px;
+      font-size: 10px; }
       #structure-cont #struct-choices button:hover {
         background-color: #5c8eb5;
         color: white;
@@ -652,7 +702,8 @@ a {
         animation: fadein 0.2s;
         animation-delay: 0s;
         animation-fill-mode: forwards;
-        opacity: 0; }
+        opacity: 0;
+        font-size: 16px; }
 
 #house-cont {
   margin: 5px 5px 40px 5px;
@@ -875,7 +926,10 @@ a {
   border-radius: 3px;
   background: #335084;
   color: #ededed;
-  width: 800px; }
+  width: 800px;
+  font-size: 14px; }
+  #desc-cont-reb .subheading {
+    font-size: 28px; }
 
 .timeline {
   margin-right: 46px;
@@ -912,9 +966,12 @@ a {
   color: white;
   text-align: left;
   opacity: 0;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-size: 14px; }
   .timeline ul li div .miniheading {
-    padding-bottom: 10px; }
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: left; }
 
 .timeline ul li div::before {
   content: '';
@@ -1116,7 +1173,8 @@ a {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 20px 0 20px 0; }
+        padding: 20px 0 20px 0;
+        width: 100%; }
         #westeros-cont .westeros-subsec .info .miniheading {
           font-size: 18px; }
         #westeros-cont .westeros-subsec .info .desc {
@@ -1167,15 +1225,18 @@ a {
       flex-wrap: wrap;
       width: 90%; }
       #structure-cont #struct-choices button {
-        width: 100px;
+        width: 120px;
         margin: 0 5px 10px 5px;
-        padding: 10px; }
+        padding: 10px;
+        font-size: 10px; }
     #structure-cont #struct-desc {
       width: 90%;
       margin-top: 10px; }
       #structure-cont #struct-desc .struct-card {
         padding: 20px;
-        height: 120px; }
+        height: 160px; }
+        #structure-cont #struct-desc .struct-card p {
+          font-size: 10px; }
   #house-cont {
     margin: 10px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
@@ -1197,8 +1258,13 @@ a {
           width: 100%; }
   #desc-cont-reb {
     width: 300px; }
+    #desc-cont-reb .subheading {
+      font-size: 20px; }
   .timeline ul li div {
-    width: 120px; }
+    width: 120px;
+    font-size: 11px; }
+    .timeline ul li div .miniheading {
+      font-size: 16px; }
   .timeline ul li:nth-child(even) div {
     left: -240px; } }
 
@@ -1225,13 +1291,16 @@ a {
       #structure-cont #struct-choices button {
         width: 120px;
         margin: 0 20px 10px 20px;
-        padding: 15px; }
+        padding: 15px;
+        font-size: 12px; }
     #structure-cont #struct-desc {
       width: 65%;
       margin-top: 0px; }
       #structure-cont #struct-desc .struct-card {
         padding: 20px;
-        height: 120px; }
+        height: 160px; }
+        #structure-cont #struct-desc .struct-card p {
+          font-size: 12px; }
   #house-cont {
     margin: 5px 0 20px 0; }
     #house-cont #house-selecs-cont #house-selecs {
@@ -1253,8 +1322,13 @@ a {
           width: 60%; }
   #desc-cont-reb {
     width: 550px; }
+    #desc-cont-reb .subheading {
+      font-size: 24px; }
   .timeline ul li div {
-    width: 220px; }
+    width: 220px;
+    font-size: 14px; }
+    .timeline ul li div .miniheading {
+      font-size: 20px; }
   .timeline ul li:nth-child(even) div {
     left: -340px; } }
 
@@ -1310,7 +1384,8 @@ a {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 20px 0 20px 0; }
+        padding: 20px 0 20px 0;
+        width: 100%; }
         #westeros-cont .westeros-subsec .info .desc {
           margin: 0 50px 0 50px;
           font-size: 13px; }
@@ -1349,7 +1424,9 @@ a {
       margin-top: 0px; }
       #structure-cont #struct-desc .struct-card {
         padding: 20px;
-        height: 170px; }
+        height: 190px; }
+        #structure-cont #struct-desc .struct-card p {
+          font-size: 14px; }
   #house-cont #house-selecs-cont #house-selecs {
     display: flex;
     flex-direction: row;
@@ -1367,6 +1444,8 @@ a {
       width: 43%; }
   #desc-cont-reb {
     width: 700px; }
+    #desc-cont-reb .subheading {
+      font-size: 28px; }
   .timeline ul li div {
     width: 300px; }
   .timeline ul li:nth-child(even) div {
@@ -1423,7 +1502,8 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        width: 50%; }
         #westeros-cont .westeros-subsec .info .desc {
           margin: 0 50px 0 50px;
           font-size: 14px; }
@@ -1467,13 +1547,16 @@ a {
       #structure-cont #struct-choices button {
         width: 170px;
         margin: 0 40px 10px 40px;
-        padding: 15px; }
+        padding: 15px;
+        font-size: 14px; }
     #structure-cont #struct-desc {
       width: 900px;
       margin-top: 0px; }
       #structure-cont #struct-desc .struct-card {
         padding: 20px;
         height: 205px; }
+        #structure-cont #struct-desc .struct-card p {
+          font-size: 16px; }
   #house-cont {
     margin: 5px 0 20px 0; }
   #desc-cont-reb {
