@@ -49,7 +49,6 @@ class Cover extends Component {
 
   render() {
 
-    console.log("hey");
     return (
       <div className="cover-img-cont">
         <div id="cover-text">

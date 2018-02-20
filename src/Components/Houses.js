@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import HouseIntro from './Houses/HouseIntro';
-import Family from './Houses/Family';
 import HouseItem from "./Houses/HouseItem";
 import Header from './Header';
 

@@ -96,7 +96,7 @@ class Essos extends Component {
           <div id="essos-cont" className={this.state.activeSub}>
             <div id="slavers-cont" className="essos-subsec">
               <div className="desc-img">
-                <img id="" src={Meereen}></img>
+                <img alt="meereen-pic" id="" src={Meereen}></img>
                 <p className="desc">Okay, I lied just slightly. Some of the surviving colonies of the volcanic
                 eruptions also turned into Slaver's Bay, which lies southeast of the Free Cities. There are 3 city-states
                 in Slaver's Bay that are considered the most powerful and so we only need to worry about those: Meereen,
@@ -109,7 +109,7 @@ class Essos extends Component {
             </div>
             <div id="free-cities-cont" className="essos-subsec">
               <div className="desc-img">
-                <img id="" src={Braavos}></img>
+                <img alt="braavos-pic" id="" src={Braavos}></img>
                 <p className="desc">The Free Cities, just like the Seven Kingdoms, is made up of 9 regions -
                 each a city-state on the western end of Essos. To keep things simple as to how they came to be
                 - this land was ruled by Valyrians (blonde-haired, blue-eyed individuals) and their dragons until a
@@ -123,7 +123,7 @@ class Essos extends Component {
             </div>
             <div id="dothraki-cont" className="essos-subsec">
               <div className="desc-img">
-                <img id="" src={Dothraki}></img>
+                <img alt="dothraki-pic" id="" src={Dothraki}></img>
                 <p className="desc">It's not what you think it is. The "sea" refers to a sea of
                 grass east of the Free Cities, not an actual sea. This area is run by these terrifying looking
                 warriors called Dothraki's (shocker) who are mounted on horses. They don't believe in money and

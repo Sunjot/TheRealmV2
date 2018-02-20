@@ -37,7 +37,7 @@ class World extends Component {
                 different regions there at the very least.</p>
               </div>
             </div>
-            <img id="map-cont" src={Map}></img>
+            <img alt="got-map" id="map-cont" src={Map}></img>
           </div>
         </div>
       </div>

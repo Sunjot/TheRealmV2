@@ -36,10 +36,10 @@ class Westeros extends Component {
                   Iron Islands, The Westernlands, The Crownlands, The Stormlands, The Reach, and Dorne.
                 </p>
               </div>
-              <img id="kl-pic" src={KingsLanding}></img>
+              <img alt="kl-pic" id="kl-pic" src={KingsLanding}></img>
             </div>
             <div id="beyond-wall" className="westeros-subsec">
-              <img id="wall-pic" src={TheWall}></img>
+              <img alt="wall-pic" id="wall-pic" src={TheWall}></img>
               <div className="info">
                 <p className="miniheading">Beyond the Wall</p>
                 <p className="desc">

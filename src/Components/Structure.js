@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Rob from "../images/rob-c.png";
 import Header from './Header';
 
 class Structure extends Component {
@@ -28,19 +27,19 @@ class Structure extends Component {
     });
 
 
-    if (val == "0") {
+    if (val === "0") {
       this.setState({ btn0Active: "struct-btn-active" });
     }
-    if (val == "1") {
+    if (val === "1") {
       this.setState({ btn1Active: "struct-btn-active" });
     }
-    if (val == "2") {
+    if (val === "2") {
       this.setState({ btn2Active: "struct-btn-active" });
     }
-    if (val == "3") {
+    if (val === "3") {
       this.setState({ btn3Active: "struct-btn-active" });
     }
-    if (val == "4") {
+    if (val === "4") {
       this.setState({ btn4Active: "struct-btn-active" });
     }
   }

@@ -7,7 +7,7 @@ class Family extends Component {
       <div className="family-members">
         {this.props.obj.map(o => {
           return <div className="member-row">
-            <img src={o.image} />
+            <img alt="character" src={o.image} />
             <div className="member-info-cont">
               <p className="member-title">{o.name}</p>
               <p>{o.info}</p>
