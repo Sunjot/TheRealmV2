@@ -54,7 +54,7 @@ class Rebellion extends Component {
     And so we begin - strap on tight.`;
 
     return (
-      <div>
+      <div className="route-cont">
         <Header/>
         <div className="content">
           <div className="desc-cont" id="desc-cont-reb">

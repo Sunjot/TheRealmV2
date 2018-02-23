@@ -7,30 +7,15 @@ class Header extends Component {
   constructor() {
     super();
     this.checkResize = this.checkResize.bind(this);
-    this.navExpand = this.navExpand.bind(this);
-    this.navCollapse = this.navCollapse.bind(this);
 
     this.state = {
-      winW: window.innerWidth,
-      navToggle: ''
+      winW: window.innerWidth
     };
   }
 
   checkResize(e) {
     this.setState({
       winW: window.innerWidth
-    });
-  }
-
-  navExpand() {
-    this.setState({
-      navToggle: 'expand-nav'
-    });
-  }
-
-  navCollapse() {
-    this.setState({
-      navToggle: 'collapse-nav'
     });
   }
 
@@ -65,24 +50,6 @@ class Header extends Component {
                           {l.name}
                       </Link>
             })
-          }
-          { this.state.winW < 650 &&
-            <div id="mobile-cont">
-              <div id="headerIcon">
-                <Icon.Menu color="black" size={34} onClick={() => this.navExpand()} />
-              </div>
-              <div id="mobile-nav" className={this.state.navToggle}>
-                <Icon.X color="black" id="close-icon" size={24} onClick={() => this.navCollapse()} />
-                { links.map(l => {
-                    return <Link
-                              className="header-links-m"
-                              to={l.link}
-                              key={l.name}>
-                                {l.name}
-                            </Link>
-                })}
-              </div>
-            </div>
           }
         </div>
       </div>

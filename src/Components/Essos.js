@@ -68,7 +68,7 @@ class Essos extends Component {
   render() {
 
     return (
-      <div>
+      <div className="route-cont">
         <Header/>
         <div className="content" id="content-essos">
           <div id="desc-cont-essos">

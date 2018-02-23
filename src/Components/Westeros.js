@@ -8,7 +8,7 @@ class Westeros extends Component {
   render() {
 
     return (
-      <div>
+      <div className="route-cont">
         <Header/>
         <div className="content">
           <div id="westeros-info-cont">

@@ -221,7 +221,7 @@ class Houses extends Component {
 
 
     return (
-      <div>
+      <div className="route-cont">
         <Header/>
         <div className="content">
           <div id="house-cont">

@@ -3,11 +3,58 @@ html {
   height: 100%; }
 
 body {
-  height: 100%;
-  overflow-x: hidden; }
+  height: 100%; }
 
 #root, .App {
   height: 100%; }
+
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden; }
+
+.route-cont {
+  width: 100%; }
+
+#mobile-cont {
+  width: 200px;
+  position: absolute;
+  height: 100%;
+  right: -200px; }
+  #mobile-cont #headerIcon {
+    position: absolute;
+    left: -40px;
+    top: 10px;
+    cursor: pointer;
+    transition: opacity 0.5s; }
+  #mobile-cont .show-mi {
+    opacity: 1; }
+  #mobile-cont .hide-mi {
+    opacity: 0; }
+  #mobile-cont #mobile-nav {
+    padding-top: 20px;
+    font-family: "Ubuntu";
+    position: relative;
+    height: 100%;
+    background-color: #f7f7f7; }
+    #mobile-cont #mobile-nav #close-icon {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px; }
+    #mobile-cont #mobile-nav .header-links-m {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 18px;
+      color: black;
+      margin: 15px 0 15px 20px;
+      opacity: 1; }
 
 p {
   margin: 0px; }
@@ -42,6 +89,28 @@ a {
   a:hover {
     cursor: pointer; }
 
+.expand-nav {
+  animation: expandNav 0.75s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out; }
+  .expand-nav .header-links-m {
+    animation: fadeandslidein 2s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out; }
+
+.collapse-nav {
+  animation: collapseNav 0.75s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  transition-timing-function: ease-in-out; }
+  .collapse-nav .header-links-m {
+    animation: fadeandslideout 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-in-out; }
+
 @keyframes slidefade {
   from {
     transform: translateX(-20px);
@@ -50,6 +119,38 @@ a {
     transform: translateX(0px);
     opacity: 1; } }
 
+@keyframes expandNav {
+  from {
+    right: -200px; }
+  to {
+    right: 0px; } }
+
+@keyframes fadeandslidein {
+  from {
+    opacity: 0;
+    transform: translateX(30px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+@keyframes collapseNav {
+  from {
+    right: 0px; }
+  to {
+    right: -200px; } }
+
+@keyframes fadeandslideout {
+  from {
+    opacity: 1;
+    transform: translateX(0px); }
+  to {
+    opacity: 0;
+    transform: translateX(30px); } }
+
+@media (min-width: 0px) {
+  .App {
+    width: 100%; } }
+
 @media (min-width: 300px) {
   html {
     font-size: 35%; } }
@@ -57,6 +158,10 @@ a {
 @media (min-width: 500px) {
   html {
     font-size: 50%; } }
+
+@media (min-width: 650px) {
+  .App {
+    width: 100%; } }
 
 @media (min-width: 768px) {
   html {
