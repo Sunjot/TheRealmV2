@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import * as Icon from 'react-feather';
 
 class Header extends Component {
 
