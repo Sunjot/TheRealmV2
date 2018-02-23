@@ -44,7 +44,8 @@ body {
   width: 200px;
   position: absolute;
   height: 100%;
-  right: -200px;
+  transform: translateX(200px);
+  right: 0;
 
   #headerIcon {
     position: absolute;
@@ -166,10 +167,10 @@ a {
 
 @keyframes expandNav {
   from {
-    right: -200px;
+    transform: translateX(200px);
   }
   to {
-    right: 0px;
+    transform: translateX(0);
   }
 }
 
@@ -186,10 +187,10 @@ a {
 
 @keyframes collapseNav {
   from {
-    right: 0px;
+    transform: translateX(0);
   }
   to {
-    right: -200px;
+    transform: translateX(200px);
   }
 }
 
