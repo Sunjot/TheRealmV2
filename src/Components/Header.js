@@ -12,7 +12,7 @@ class Header extends Component {
     };
   }
 
-  checkResize(e) {
+  checkResize(e) { // called every time the window is resized and updates window size in the state
     this.setState({
       winW: window.innerWidth
     });
@@ -29,12 +29,12 @@ class Header extends Component {
 
   render() {
     let links = [
-      { name: "World", short: "Wo", link: "/world" },
-      { name: "Westeros", short: "Wes", link: "/westeros" },
-      { name: "Essos", short: "Es", link: "/essos" },
-      { name: "Structure", short: "Str", link: "/structure" },
-      { name: "Houses", short: "H", link: "/houses" },
-      { name: "Rebellion", short: "Reb", link: "/rebellion" }];
+      { name: "World", link: "/world" },
+      { name: "Westeros", link: "/westeros" },
+      { name: "Essos", link: "/essos" },
+      { name: "Structure", link: "/structure" },
+      { name: "Houses", link: "/houses" },
+      { name: "Rebellion", link: "/rebellion" }];
 
     return (
       <div id="headerCont">

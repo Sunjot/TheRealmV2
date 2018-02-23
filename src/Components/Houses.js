@@ -7,11 +7,13 @@ class Houses extends Component {
   constructor() {
     super();
 
+    // by default the choice is -1, which renders the choices
     this.state = {
       choice: "-1"
     }
   }
 
+  // when a sigil is clicked, set the choice in the state to render the appropriate section
   setContent = (val) => {
     this.setState({
       choice: val
@@ -236,7 +238,7 @@ class Houses extends Component {
                 </div>
               </div>
             }
-            { this.state.choice === "0" &&
+            { this.state.choice === "0" &&  // choices 0 through 10 render different houses
                 <HouseItem contentFunc={this.setContent} general={Baratheon} family={BaratheonFamily}
                 note={Baratheon[0].note} />
             }

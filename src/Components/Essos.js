@@ -9,6 +9,7 @@ class Essos extends Component {
   constructor() {
     super();
 
+    // by default, the free cities is the active section and the underlined one
     this.state = {
       activeSub: 'sl fc-active',
       fcActive: 'ul-active',
@@ -17,10 +18,13 @@ class Essos extends Component {
     }
   }
 
+  // when one of the 3 buttons is clicked, this method slides in the appropriate section
+  // and underlines the button
   setActive = (val) => {
 
     let prev = "";
 
+    // store the previously active section so we know which underline to remove when a new section is clicked
     if (this.state.fcActive === "ul-active")
       prev = "fc";
     if (this.state.sbActive === "ul-active")
@@ -28,37 +32,37 @@ class Essos extends Component {
     if (this.state.dsActive === "ul-active")
       prev = "ds";
 
-    if (val === "0") {
+    if (val === "0") { // if free cities is clicked, set class/id to slide in that content section
       this.setState({
         activeSub: 'sl fc-active',
         fcActive: 'ul-active'
       });
 
-      if (prev === "sb")
+      if (prev === "sb") // check the previous active section (1 of 2) and add class to remove the underline
         this.setState({ sbActive: 'no-ul' });
       else
         this.setState({ dsActive: 'no-ul' });
 
     }
-    if (val === "1") {
+    if (val === "1") { // if slaver's bay is clicked, set class/id to slide in that content section
       this.setState({
         activeSub: 'sl sb-active',
         sbActive: 'ul-active'
       });
 
-      if (prev === "fc")
+      if (prev === "fc") // check the previous active section (1 of 2) and add class to remove the underline
         this.setState({ fcActive: 'no-ul' });
       else
         this.setState({ dsActive: 'no-ul' });
 
     }
-    if (val === "2") {
+    if (val === "2") { // if dothraki sea is clicked, set class/id to slide in that content section
       this.setState({
         activeSub: 'sl ds-active',
         dsActive: 'ul-active'
       });
 
-      if (prev === "fc")
+      if (prev === "fc") // check the previous active section (1 of 2) and add class to remove the underline
         this.setState({ fcActive: 'no-ul' });
       else
         this.setState({ sbActive: 'no-ul' });

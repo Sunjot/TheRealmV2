@@ -21,6 +21,7 @@ class App extends Component {
     this.navExpand = this.navExpand.bind(this);
     this.navCollapse = this.navCollapse.bind(this);
 
+    // by default, the menu nav is collapsed
     this.state = {
       winW: window.innerWidth,
       navToggle: '',
@@ -28,20 +29,20 @@ class App extends Component {
     };
   }
 
-  checkResize(e) {
+  checkResize(e) { // sets window size everytime the window is resized
     this.setState({
       winW: window.innerWidth
     });
   }
 
-  navExpand() {
+  navExpand() { // when the menu icon is pressed, set the expand class for the menu nav and hidden class for icon
     this.setState({
       navToggle: 'expand-nav',
       menuIconVisib: 'hide-mi'
     });
   }
 
-  navCollapse() {
+  navCollapse() { // when the x icon is pressed, set the collapse class for the menu nav and  show class for icon
     this.setState({
       navToggle: 'collapse-nav',
       menuIconVisib: 'show-mi'
@@ -78,6 +79,7 @@ class App extends Component {
             <Route exact path="/houses" component={Houses}/>
             <Route exact path="/rebellion" component={Rebellion}/>
             { this.state.winW < 650 &&
+              // once the windoww size is under 650, we want to render the menu nav for mobile use
               <div id="mobile-cont" className={this.state.navToggle}>
                 <div id="headerIcon" className={this.state.menuIconVisib}>
                   <Icon.Menu color="black" size={34} onClick={() => this.navExpand()} />
