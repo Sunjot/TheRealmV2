@@ -47,7 +47,7 @@ class Rebellion extends Component {
       {title: "The Aftermath", divid: "2", info: `Back at King's Landing, Eddard was not happy with the way House Lannister handled things and
       wanted them punished, but Robert was more forgiving with the Targaryen dynasty finally over.
       He claimed the Iron Throne, married Cersei Lannister and made Jon Arryn his Hand. `},
-      
+
       {title: "15 Years Later...", divid: "1", info: `Ah yes, so we reach episode 1. Daenerys is a lot older but
       still in the Free Cities with her brother; Robert and Cersei have a couple kids now; and Eddard
       is back in the North and has a few kids of his own with Catelyn. However, it's not all sunshine

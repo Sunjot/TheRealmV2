@@ -23,13 +23,13 @@ class Block extends Component {
         block: "block-in-right"
       })
     }
-
   }
 
   render() {
     return (
       <li>
         <Waypoint
+          scrollableAncestor={window}
           onEnter={this.activate}
           bottomOffset="100px"
         />

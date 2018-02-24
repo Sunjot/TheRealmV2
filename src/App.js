@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ScrollToTop from './Components/ScrollToTop'
 import './Stylesheets/App.css';
 import './Stylesheets/Pages.css';
 import Home from './Components/Home';
@@ -9,7 +10,6 @@ import Essos from './Components/Essos';
 import Structure from './Components/Structure';
 import Houses from './Components/Houses';
 import Rebellion from './Components/Rebellion';
-import ScrollToTop from './Components/ScrollToTop';
 import * as Icon from 'react-feather';
 import { Link } from 'react-router-dom';
 

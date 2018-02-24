@@ -1,17 +1,16 @@
-import { Component } from 'react';
-import { withRouter } from 'react-router';
+import React, {Component} from 'react'
+import {withRouter} from 'react-router-dom'
 
-/* This component lets a page scroll to the top when clicking on a new route
-   Code courtesy of https://reacttraining.com/react-router/web/guides/scroll-restoration */
 class ScrollToTop extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
       window.scrollTo(0, 0)
     }
+    console.log("first");
   }
 
   render() {
-    return this.props.children
+    return <div>{this.props.children}</div>
   }
 }
 
